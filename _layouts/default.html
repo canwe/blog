@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="Veerasundar" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/blog/css/syntax.css" type="text/css" />
+
+   <!-- twitter bootstrap -->
+   <link rel="stylesheet" href="/blog/css/bootstrap.min.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/blog/css/screen.css" type="text/css" media="screen, projection" />
+
+</head>
+<body>
+
+<div class="site">
+  <div class='container'>
+    <header class="row">
+      <section class="span3 logo">
+        <h2>
+            <a href="/blog" title="back to home">Veerasundar</a> <span>/ Web app developer</span>
+        </h2>
+      </section>
+      <section class="span3 external">
+        <ul class="links">
+          <li>
+              <a href="http://veerasundar.com/resume" target="_blank">
+                  <img src="http://veerasundar.com/img/resume.png" alt="Blog" title="my resume" height="32" width="32">
+              </a>
+          </li>
+          <li>
+              <a href="http://in.linkedin.com/in/veerasundar" target="_blank">
+                  <img src="http://veerasundar.com/img/linkedin.png" alt="Blog" title="my LinkedIn profile" height="32" width="32">
+              </a>
+          </li>
+          <li>
+              <a href="http://stackoverflow.com/users/42372/veera" target="_blank">
+                  <img src="http://veerasundar.com/img/soflow.png" alt="Blog" title="Stack Over Flow profile" height="32" width="32">
+              </a>
+          </li>
+          <li>
+              <a href="https://github.com/vraa" target="_blank">
+                  <img src="http://veerasundar.com/img/github.png" alt="Blog" title="I'm @ GitHub" height="32" width="32">
+              </a>
+          </li>
+          <li>
+              <a href="http://twitter.com/vraa" target="_blank">
+                  <img src="http://veerasundar.com/img/twitter.png" alt="Blog" title="Twitter handle @vraa" height="32" width="32">
+              </a>
+          </li>
+        </ul>
+      </section>
+    </header>
+  </div>
+  
+  {{ content }}
+  
+</div>
+
+<!-- GOOGLE ANALYTICS -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2028306-23']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- END/ GOOGLE ANALYTICS -->
+</body>
+</html>
