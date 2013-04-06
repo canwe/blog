@@ -34,24 +34,27 @@ ul.posts li span{
 }
 
 .hero{
-  margin: .2em 0 2em 0;
+  margin: .2em 0 1em 0;
   padding:.5em 0;
   background-color: #91A3B0;
   color: #fafafa;
   text-align: center;
+  font-family: Courier;
 }
   .hero a{
     color: #fff;
     text-decoration: none;
     border-bottom: 1px dashed;
   }
-.hero h1, .hero h2{
-  text-shadow:0 0 2px #00f;
-}
 
 .endfinity{
   margin:1em 0;
   text-align: center;
+}
+
+#post{
+  font:1.3em Georgia;
+  line-height: 1.6em;
 }
 
 #post .content.container h1{
@@ -74,3 +77,23 @@ ul.posts li span{
     .arrow a[href='/blog']{
       display: none;
     }
+#post pre{
+  margin:1em -6em;
+  border-left: 2px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+#post li{
+  line-height: 1.5em;
+}
+.ad{
+  text-align: center;
+  margin:1em 0;
+}
+.content{
+  margin-top: 1em;
+}
+
+#post .title{
+  text-align: center;
+}
