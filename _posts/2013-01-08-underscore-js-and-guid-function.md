@@ -25,6 +25,7 @@ I have been using [this code snippet][4] to generate pseudo unique IDs for somet
 
  [4]: http://stackoverflow.com/a/2117523/42372 "guid in JavaScript"
 
+  {% highlight js %}
     _.mixin({
         guid : function(){
           return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -33,5 +34,6 @@ I have been using [this code snippet][4] to generate pseudo unique IDs for somet
           });
         }
       });
+  {% endhighlight %}
 
 Once the above code is in place, then creating a unique ID is as simple as calling *_.guid()*.
