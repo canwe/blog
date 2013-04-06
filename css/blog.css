@@ -1,0 +1,165 @@
+.site{
+  color: #9D9D9D;
+  font-family: 'PT Serif', serif;
+}
+
+.card{
+  margin-top: 5em;
+}
+
+header{
+  color: #666;
+  background-color: #C6F0F2;
+  border-bottom: 5px solid #B2DCDE;
+  border-radius: 1em 1em 0 0;
+}
+  @media (max-width: 480px) {
+    header{
+      background-color: #fff;
+      border-bottom:none;
+    }
+  }
+  header > div{
+    padding:1em 0;
+  }
+  header h1 a{
+    color: #666;
+  }
+    header h1 a:hover{
+      text-decoration: none;
+    }
+
+  .photo{
+    text-align: center;
+  }
+    .photo .location{
+      margin-top:1em;
+    }
+    .photo img{
+      border-radius: 1em;
+      margin-top: -3em;
+      border-top: 10px solid #B2DCDE;
+      border-bottom: 10px solid #B2DCDE;
+    }
+
+.details h2{
+  font-size: 2em;
+  color: #B2DCDE;
+}
+  .details a{
+    color: #9D9D9D;
+    border-bottom: 1px dotted;
+  }
+    .details a:hover{
+      text-decoration: none;
+      border-bottom-style: solid;
+      color: #666;
+    }
+  .details ol{
+    margin-top: 2em;
+    list-style: none;
+  }
+    .details ol li{
+      margin:1em 0;
+    }
+.about{
+
+}
+  .about .icon-edit{
+    color: #000;
+  }
+  .about .icon-thumbs-up{
+    color: #3B5998;
+  }
+  .about .icon-linkedin{
+    color: #4875B4;
+  }
+.projects{
+
+  }
+  .projects .red{
+    color: #f00;
+  }
+  .projects .green{
+    color: #0f0;
+  }
+  .projects .blue{
+    color: #00f;
+  }
+  .projects .yellow{
+    color: #ff0;
+  }
+
+ol.contact{
+  list-style: none;
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+  ol.contact li{
+    display: inline-block;
+    margin: 0 .21em;
+  }
+.contact{
+
+}
+  .contact .icon-twitter{
+    color: #4099ff;
+  }
+  .contact .icon-github{
+    color: #000;
+  }
+  .contact .icon-envelope{
+    color: orange;
+  }
+
+footer{
+  font-size: .8em;
+  margin-top:2em;
+}
+
+
+/* posts page */
+ol.posts{
+  margin: 0;
+  margin-top: 1em;
+}
+  ol.posts li{
+    padding:1em .5em;
+  }
+
+#post{
+  color: #333;
+  line-height: 2em;
+  font-size: 1.2em;
+}
+  #post pre{
+    margin: 0;
+    -moz-transition:margin 1s;
+    -webkit-transition:margin 1s;
+    transition:margin 1s;
+  }
+
+    #post pre:hover{
+      margin-right:-10em;
+    }
+  #post h1, #post h2, #post h3, #post h4{
+    margin-top: 1em;
+  }
+    #post article > h1:nth-child(1){
+      display: none;
+    }
+  #post time{
+    color: #aaa;
+    font-size: .8em;
+  }
+  #post ol li, #post ul li{
+    line-height: 2em;
+  }
+  #post blockquote p{
+    line-height: 1.5em;
+  }
+#post > article, #post > section{
+  margin-top:2em;
+}
+
