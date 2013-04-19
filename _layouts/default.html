@@ -3,12 +3,14 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <title>{{ page.title }} : Veera Sundar</title>
+  <title>{{ page.title }}</title>
 
   <meta name="author" content="Veerasundar" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Veera Sundar is a Web developer who loves to program with JavaScript and design using HTML5 and CSS3. He is also an experienced Java developer. He is currently working at PayPal as Senior Software Engineer." />
-  <meta name="keywords" content="veerasundar, veera, sundar, java, web, developer, html5, javascript, css3, jquery, backbone, node" />
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  {% endif %}
+  <meta name="keywords" content="{{ page.tags | join: ', ' }}" />
 
   <!--Google font -->
   <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
@@ -18,6 +20,7 @@
 
   <!-- twitter bootstrap -->
   <link rel="stylesheet" href="/blog/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/blog/css/bootstrap-responsive.min.css" />
 
   <!-- font awesomeness -->
   <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
@@ -31,6 +34,12 @@
     <div class='row'>
         <!-- create a wrapper that has a width of 5 columns -->
         <div class='wrapper offset3 span6'>
+
+            <section class='search row'>
+              <div class='span6'>
+                <iframe src="http://duckduckgo.com/search.html?width=200&site=veerasundar.com" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
+              </div>
+            </section>
 
             <header class='row'>
                 <!-- name and job title -->

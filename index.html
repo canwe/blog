@@ -1,11 +1,25 @@
 ---
 layout: default
 title: Veerasundar - web app developer
+description: Veera Sundar is a Web developer who loves to program with JavaScript and design using HTML5 and CSS3. He is also an experienced Java developer. He is currently working at PayPal as Senior Software Engineer.
+tags:
+  - veerasundar
+  - veera
+  - sundar
+  - java
+  - web
+  - developer
+  - html5
+  - javascript
+  - css3
+  - jquery
+  - backbone
+  - nodejs
 ---
-
 <ol class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
     <li><a href="/blog{{ post.url }}">{{ post.title }}</a><small> / {{ post.date | date_to_string }}</small></li>
   {% endfor %}
+  <li>[<a href="archive.html" title="Archives">See all posts</a>]</li>
 </ol>
-
+<hr/>

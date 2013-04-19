@@ -122,10 +122,13 @@ footer{
 /* posts page */
 ol.posts{
   margin: 0;
+  padding:0;
   margin-top: 1em;
 }
   ol.posts li{
-    padding:1em .5em;
+    padding:1em;
+    font-size: 1.1em;
+    letter-spacing: .1em;
   }
 
 #post{
@@ -135,14 +138,7 @@ ol.posts{
 }
   #post pre{
     margin: 0;
-    -moz-transition:margin 1s;
-    -webkit-transition:margin 1s;
-    transition:margin 1s;
   }
-
-    #post pre:hover{
-      margin-right:-10em;
-    }
   #post h1, #post h2, #post h3, #post h4{
     margin-top: 1em;
   }
@@ -163,3 +159,9 @@ ol.posts{
   margin-top:2em;
 }
 
+.search{
+  opacity:.5;
+}
+  .search > div{
+    margin-left: 0;
+  }
