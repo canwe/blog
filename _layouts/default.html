@@ -35,23 +35,31 @@
         <!-- create a wrapper that has a width of 5 columns -->
         <div class='wrapper offset3 span6'>
 
-            <section class='search row'>
+            <!-- MAIN CONTENT -->
+            <article class='row'>
               <div class='span6'>
-                <iframe src="http://duckduckgo.com/search.html?width=200&site=veerasundar.com" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
+                <!– google_ad_section_start –>
+                {{ content }}
+                <!– google_ad_section_end –>
               </div>
-            </section>
+            </article>
+            <!-- END OF MAIN CONTENT -->
 
-            <header class='row'>
-                <!-- name and job title -->
-                <div class='name span4'>
-                    <p>Hello, I am </p>
-                    <h1><a href='http://veerasundar.com/blog'>Veera Sundar</a>.</h1>
-                    <p>I create web apps with <em>JavaScript</em> & <em>Java</em>.</p>
+            <!-- THE STICKY SIDEBAR -->
+            <aside>
+              <!-- SEARCH BOX -->
+              <section class='search'>
+                <div class=''>
+                  <iframe src="http://duckduckgo.com/search.html?width=200&site=veerasundar.com" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
                 </div>
+              </section>
+              <!-- END OF SEARCH BOX -->
 
+              <!-- HERO -->
+              <header>
                 <!-- photo -->
-                <div class='photo span2 hidden-phone'>
-                    <img src='http://veerasundar.com/img/veera.jpg' alt='Veera' title='Veera Sundar' width='100' />
+                <div class='photo hidden-phone'>
+                    <a href='http://veerasundar.com/blog'><img src='http://veerasundar.com/img/veera.jpg' alt='Veera' title='Veera Sundar' width="175" /></a>
                     <ol class='contact'>
                         <li>
                             <a class='email' href='mailto:veera.k.sundar@gmail.com' title='my contact email address'><i class='icon-envelope'></i></a>
@@ -64,13 +72,31 @@
                         </li>
                     </ol>
                 </div>
-            </header>
+                <!-- name and job title -->
+                <div class='name'>
+                    <p>Hello, I am </p>
+                    <h1><a href='http://veerasundar.com/blog'>Veera Sundar</a>.</h1>
+                    <p>I create web apps with <em>JavaScript</em> & <em>Java</em>.</p>
+                </div>
 
-            <article class='row'>
-              <div class='span6'>
-                {{ content }}
-              </div>
-            </article>
+                <div class='ad hidden-phone'>
+                  <script type="text/javascript"><!--
+                  google_ad_client = "ca-pub-4601926589924919";
+                  /* jekyll-sidebar-big */
+                  google_ad_slot = "2404477861";
+                  google_ad_width = 300;
+                  google_ad_height = 250;
+                  //-->
+                  </script>
+                  <script type="text/javascript"
+                  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                  </script>
+                </div>
+
+              </header>
+              <!-- END OF HERO -->
+            </aside>
+            <!-- END OF THE STICKY SIDEBAR -->
 
             <section class='row details'>
                 <div class='about span2'>

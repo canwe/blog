@@ -16,6 +16,7 @@ tags:
   - backbone
   - nodejs
 ---
+<h2>Recent posts</h2>
 <ol class="posts">
   {% for post in site.posts limit:5 %}
     <li><a href="/blog{{ post.url }}">{{ post.title }}</a><small> / {{ post.date | date_to_string }}</small></li>
