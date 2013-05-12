@@ -45,9 +45,10 @@ header{
       margin-top: 20px;
     }
 
+/** styles for the details section / common from home page **/
 .details h2{
   font-size: 2em;
-  color: #333;
+  color: #000;
 }
   .details a{
     color: #333;
@@ -56,7 +57,7 @@ header{
     .details a:hover{
       text-decoration: none;
       border-bottom-style: solid;
-      color: #333;
+      color: #00f;
     }
   .details ol{
     margin-top: 2em;
@@ -65,9 +66,20 @@ header{
     .details ol li{
       margin:1em 0;
     }
+  .details p{
+    line-height: 1.5em;
+  }
+  .details > div{
+    margin-left: 0;
+    padding-left: 30px;
+  }
 .about{
-
+  border-top: 5px solid #2ecc71;
 }
+  .about li a i{
+    margin-right: 5px;
+    display: inline-block;
+  }
   .about .icon-edit{
     color: #000;
   }
@@ -78,43 +90,34 @@ header{
     color: #4875B4;
   }
 .projects{
-
-  }
-  .projects .red{
-    color: #f00;
-  }
-  .projects .green{
-    color: #0f0;
-  }
-  .projects .blue{
-    color: #00f;
-  }
-  .projects .yellow{
-    color: #ff0;
-  }
-
-ol.contact{
-  list-style: none;
-  margin: 0;
-  margin-top: 1em;
-  font-size: 1.2em;
+  border-top: 5px solid #3498db;
 }
-  ol.contact li{
+  .projects li a i{
+    margin-right: 5px;
     display: inline-block;
-    margin: 0 .21em;
   }
 .contact{
-
+  border-top: 5px solid #9b59b6;
 }
-  .contact .icon-twitter{
-    color: #4099ff;
+  .contact a{
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 30px;
   }
-  .contact .icon-github{
-    color: #000;
+  .contact a.email{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=gmail.com);
   }
-  .contact .icon-envelope{
-    color: orange;
+  .contact a.twitter{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=twitter.com); 
   }
+  .contact a.bitbucket{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=bitbucket.org);
+  }
+  .contact a.github{
+    background-image:url(http://www.google.com/s2/u/0/favicons?domain=github.com);
+  }
+x
+/** end of details section style **/
 
 footer{
   font-size: .8em;
@@ -133,6 +136,16 @@ ol.posts{
     font-size: 1.1em;
     letter-spacing: .1em;
   }
+
+  /* posts in aside */
+  aside ol.posts{
+    list-style: none;
+    margin-top: .2em;
+    font-size: .9em;
+  }
+    aside ol.posts li{
+      padding: .2em;
+    }
 
 #post{
   color: #333;
@@ -168,7 +181,7 @@ ol.posts{
     margin-left: 0;
   }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
     aside{
       position: static;
       border-right: none;

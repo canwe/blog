@@ -1,4 +1,5 @@
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:title/
-url: /blog/
+baseurl: /blog
+
