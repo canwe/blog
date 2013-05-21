@@ -32,13 +32,12 @@ function prompt{
      Get-Location
      ) -Leaf
   
-  if(Test-Path .git){
-    git branch | foreach{
-      if($_ -match "^\*(.*)"){
-       $p += " [" + $matches[1] + " ] "
-      }
+  git branch | foreach{
+    if($_ -match "^\*(.*)"){
+     $p += " [" + $matches[1] + " ] "
     }
   }
+  
   $p = $p + ">"
   Write-Host $p -NoNewline -ForegroundColor Green
   return " "
