@@ -180,6 +180,12 @@ ol.posts{
   .search > div{
     margin-left: 0;
   }
+.social{
+  margin-top: 2em;
+}
+  .social > div{
+    margin: .5em 0;
+  }
 
 @media (max-width: 1200px) {
     aside{

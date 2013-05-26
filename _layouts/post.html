@@ -13,8 +13,30 @@ postpage: yes
     <article>
         {{ content }}
     </article>
-    
+
     <!– google_ad_section_end –>
+    <section class='other-posts row'>
+        {% if page.previous.url %}
+            <section class='previous span3'>
+                <h3><i class="icon-hand-left"></i> Previous Post</h3>
+                <p>
+                    <a href="/blog{{page.previous.url}}" title="Previous post: {{page.previous.title}}">{{page.previous.title}}</a>
+                </p>    
+            </section>
+        {% endif %}
+
+
+        {% if page.next.url %}
+            <section class='next span3'>
+                <h3>Next Post <i class="icon-hand-right"></i></h3>
+                <p>
+                    <a href="/blog{{page.next.url}}" title="Next post: {{page.next.title}}">{{page.next.title}}</a>
+                </p>    
+            </section>
+        {% endif %}
+        </section>
+
+    </section>
 
     <!-- comments section -->
     <section id="disqus_thread"></section>

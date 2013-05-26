@@ -62,17 +62,11 @@
               </section>
               <!-- END OF SEARCH BOX -->
 
-              {% if page.postpage  %}
-                <!-- RECENT POSTS (only on individual posts) -->
-                <h3>blog / recent </h3>
-                <ol class="posts">
-                  {% for post in site.posts limit:5 %}
-                    <li><a href="/blog{{ post.url }}">{{ post.title }}</a><!--<small> / {{ post.date | date_to_string }}</small>--></li>
-                  {% endfor %}
-                  <li>[<a href="/blog/archive.html" title="Archives">See all posts</a>]</li>
-                </ol>
-                <!-- END OF RECENT POSTS -->
-              {% endif %}
+              <!-- SOCIALIZE -->
+              <section class='social'>
+                <div class="g-plus" data-href="//plus.google.com/112623957029861555682" data-rel="publisher"></div>
+              </section>
+              <!-- END OF SOCIALIZE -->
 
             </aside>
 
@@ -109,5 +103,15 @@
 
   </script>
   <!-- END/ GOOGLE ANALYTICS -->
+
+  <!-- SOCIAL SCRIPTS -->
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+  <!-- END SOCIALIZE SCRIPTS -->
 </body>
 </html>
