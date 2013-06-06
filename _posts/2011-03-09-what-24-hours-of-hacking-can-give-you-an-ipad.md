@@ -31,9 +31,7 @@ In the last event, I was part of the team **FooBar **who came at the first place
 
  [2]: http://code.google.com/p/zxing/
 
-Overall, it was amazing experience. One day before the event, we were at zero, having only the idea in our hand. But, at the end of the event, we were having a product running on the server and a mobile application ready for the demo. We couldn't believe ourselves, when our team name was announced on the stage! ![:)][3] 
-
- [3]: http://veerasundar.com/blog/wp-includes/images/smilies/icon_smile.gif
+Overall, it was amazing experience. One day before the event, we were at zero, having only the idea in our hand. But, at the end of the event, we were having a product running on the server and a mobile application ready for the demo. We couldn't believe ourselves, when our team name was announced on the stage!
 
 And, btw, if you are an Android developer and wants to get **$25,000**, then don't miss to participate in [PayPal X Developer Challenge!][4]
 
@@ -41,17 +39,17 @@ And, btw, if you are an Android developer and wants to get **$25,000**, then don
 
 Here are some photographs taken during the event.
 
-**FooBar team:**(from left) Sam, Elankeeran, Koushik, Veera and Venkatesh  
+*FooBar team:*(from left) Sam, Elankeeran, Koushik, Veera and Venkatesh.
 ![][5]
 
- [5]: http://veerasundar.com/img/2011/03/hackathon-1.jpg "hackathon-1"
+ [5]: http://veerasundar.com/img/2011/03/hackathon-1.jpg 
 
-Our team, explaining our product to PayPal VP **Nik Sathe**  
-[![][7]][7]
+Our team, explaining our product to PayPal VP *Nik Sathe*.
+![][7]
 
- []: http://veerasundar.com/img/2011/03/hackathon-2.jpg
+ [7]: http://veerasundar.com/img/2011/03/hackathon-2.jpg
 
-and finally, the winners are'¦  
-[![][8]][8]
+and finally, the winners are:
+![][8]
 
- []: http://veerasundar.com/img/2011/03/hackathon-3.jpg
+ [8]: http://veerasundar.com/img/2011/03/hackathon-3.jpg
