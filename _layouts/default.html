@@ -56,9 +56,7 @@
 
               <!-- SEARCH BOX -->
               <section class='search'>
-                <div class=''>
-                  <iframe src="http://duckduckgo.com/search.html?width=200&site=veerasundar.com" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
-                </div>
+                <gcse:searchbox></gcse:searchbox>
               </section>
               <!-- END OF SEARCH BOX -->
 
@@ -66,6 +64,9 @@
 
             <article class='row'>
               <div class='span6'>
+
+                <gcse:searchresults></gcse:searchresults>
+
                 <!– google_ad_section_start –>
                 {{ content }}
                 <!– google_ad_section_end –>
@@ -108,5 +109,20 @@
   </script>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>            
   <!-- END SOCIALIZE SCRIPTS -->
+
+  <!-- GOOGLE CUSTOM SEARCH -->
+  <script>
+    (function() {
+      var cx = '015471807713217959162:_fvqaqlmrhw';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <!-- END GOOGLE CUSTOM SEARCH -->
 </body>
 </html>
