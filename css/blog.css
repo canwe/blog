@@ -171,9 +171,29 @@ ol.posts{
   #post blockquote p{
     line-height: 1.5em;
   }
+  #post article a{
+    text-decoration: none;
+    border-bottom: 1px solid;
+    transition-property:text-shadow;
+    transition-duration:.5s;
+  }
+    #post article a:hover{
+      text-shadow:0 0 2px #ffffaf;
+    }
 #post > article, #post > section{
   margin-top:2em;
 }
+
+#post .site-nav{
+  position: fixed;
+  background-color: #fafafa;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+}
+  #post .site-nav a{
+    padding: .5em 1em;
+  }
 
 .search{
 }
@@ -182,6 +202,8 @@ ol.posts{
   }
 .social{
   margin-top: 2em;
+  padding-bottom: 1em;
+  background-color: #fafafa;
 }
   .social i{
     color: #f00;
