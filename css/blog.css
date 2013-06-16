@@ -44,6 +44,29 @@ header{
     .ad{
       margin-top: 20px;
     }
+  .elsewhere{
+    list-style: none;
+    font-size: 1.2em;
+    margin-top: 2em;
+    text-align: left;
+  }
+    .elsewhere li{
+      margin: 2em 0;
+    }
+    .elsewhere a{
+      padding: .5em 1em;
+      border:3px solid #34495E;
+      transition-property:border-radius, background-color, border, color;
+      transition-duration:.5s;   
+      border-radius: 1em;  
+      color: #34495E; 
+    }
+      .elsewhere a:hover{
+        background-color: #34495E;
+        color: #fff;
+        border-radius: 0;
+        text-decoration: none;
+      }
 
 /** styles for the details section / common from home page **/
 .details h2{
@@ -204,7 +227,13 @@ ol.posts{
   margin-top: 2em;
   padding-bottom: 1em;
   background-color: #fafafa;
+  transition-property:background-color, box-shadow;
+  transition-duration:.5s;
 }
+  .social:hover{
+    background-color: #ffffaf;
+    box-shadow: 0 0 3px orange;
+  }
   .social .icon-facebook{
     color: #3b5999;
   }
