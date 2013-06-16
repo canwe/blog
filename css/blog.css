@@ -205,8 +205,17 @@ ol.posts{
   padding-bottom: 1em;
   background-color: #fafafa;
 }
-  .social i{
+  .social .icon-facebook{
+    color: #3b5999;
+  }
+  .social .icon-share{
     color: #f00;
+  }
+  .social .channels{
+    text-align: right;
+  }
+  .social .channels h3{
+    margin-right: 2em;
   }
 
 @media (max-width: 1200px) {
