@@ -35,6 +35,17 @@
         <!-- create a wrapper that has a width of 5 columns -->
         <div class='wrapper offset3 span6'>
 
+            <article class='row'>
+              <div class='span6'>
+
+                <gcse:searchresults></gcse:searchresults>
+
+                <!– google_ad_section_start –>
+                {{ content }}
+                <!– google_ad_section_end –>
+              </div>
+            </article>
+
             <!-- THE STICKY SIDEBAR -->
             <aside>
               
@@ -88,16 +99,6 @@
 
             </aside>
 
-            <article class='row'>
-              <div class='span6'>
-
-                <gcse:searchresults></gcse:searchresults>
-
-                <!– google_ad_section_start –>
-                {{ content }}
-                <!– google_ad_section_end –>
-              </div>
-            </article>
             <!-- END OF MAIN CONTENT -->
 
             <footer class='row'>
