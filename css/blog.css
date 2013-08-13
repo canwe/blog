@@ -150,9 +150,8 @@ footer{
 
 /* posts page */
 ol.posts{
-  margin: 0;
+  margin: 1em;
   padding:0;
-  margin-top: 1em;
 }
   ol.posts li{
     padding:1em;

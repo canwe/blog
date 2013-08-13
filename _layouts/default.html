@@ -31,6 +31,23 @@
 
 <body class='site'>
   <div class='card container'>
+
+    <!-- Navigation bar, visible only on phones -->
+    <div class='navbar visible-phone'>
+      <div class="navbar-inner">
+        <a class="brand" href="http://veerasundar.com/blog" title="home">Veerasundar / Blog</a>
+        <ul class="nav">
+          <li>
+            <a href="http://veerasundar.com/blog"><i class="icon-home"></i></a>
+          </li>
+          <li>
+            <a href="mailto:veera.k.sundar@gmail.com" title="contact"><i class="icon-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Navigation bar -->
+
     <div class='row'>
         <!-- create a wrapper that has a width of 5 columns -->
         <div class='wrapper offset3 span6'>
@@ -38,7 +55,9 @@
             <article class='row'>
               <div class='span6'>
 
-                <gcse:searchresults></gcse:searchresults>
+                <div class="visible-desktop">
+                  <gcse:searchresults></gcse:searchresults>
+                </div>
 
                 <!– google_ad_section_start –>
                 {{ content }}
