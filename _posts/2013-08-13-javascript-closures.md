@@ -70,4 +70,4 @@ If we recall, in JavaScript, a closure will contain the function and the set of 
 
 In the above code, when we declare the inner function at line #2, JavaScript creates a closure and puts this function and the variable `message` (which is accessible to the function) in it. So, when the inner function getting called after we return from `sayHello` it still has access to the variable `message`.
 
-That explains the basics of Closure. In my next post, I'll be covering some more examples closure. Feel free to comment if you have any feedback.
+That explains the basics of Closure. In my next post, I'll be covering some more [examples of closure](http://veerasundar.com/blog/2013/08/javascript-closure-examples/). Feel free to comment if you have any feedback.
