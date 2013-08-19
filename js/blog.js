@@ -5,7 +5,9 @@
   $(function(){
 
     if($('#post').length){
-      mixpanel.track('post_load', {id : $('#postId').val()});
+      var postId = $('#postId').val();
+      postId = postId.substr(postId.lastIndexOf('/'));
+      mixpanel.track('post_load', {id : postId});
     }else{
       mixpanel.track('blog_load');
     }
