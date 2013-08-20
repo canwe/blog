@@ -11,8 +11,6 @@ postpage: yes
         <a href="javascript:window.scrollTo(0,0);" title="Scroll to top"><i class='icon-circle-arrow-up'></i> Top</a>
     </div>
 
-    <!– google_ad_section_start –>
-
     <h1>{{ page.title }} </h1>
 
     <time><i class='icon-calendar'></i> {{ page.date | date: "%d %B %Y" }} </time>
@@ -21,32 +19,45 @@ postpage: yes
     <article>
         {{ content }}
     </article>
-    <!– google_ad_section_end –>
 
     <!-- PREVIOUS / NEXT -->
     <section class='other-posts row'>
-        {% if page.previous.url %}
-            <section class='previous span3'>
-                <h3><i class="icon-hand-left"></i> Previous Post</h3>
-                <p>
-                    <a data-postId="{{page.previous.id}}" href="/blog{{page.previous.url}}" title="Previous post: {{page.previous.title}}">{{page.previous.title}}</a>
-                </p>    
-            </section>
-        {% endif %}
-
-
-        {% if page.next.url %}
-            <section class='next span3'>
-                <h3>Next Post <i class="icon-hand-right"></i></h3>
-                <p>
-                    <a data-postId="{{page.next.id}}" href="/blog{{page.next.url}}" title="Next post: {{page.next.title}}">{{page.next.title}}</a>
-                </p>    
-            </section>
-        {% endif %}
+        <section class='span3'>
+            {% if page.previous.url %}
+                <section class='previous'>
+                    <h3><i class="icon-hand-left"></i> Previous Post</h3>
+                    <p>
+                        <a id="{{page.previous.id}}" href="/blog{{page.previous.url}}" title="Previous post: {{page.previous.title}}">{{page.previous.title}}</a>
+                    </p>    
+                </section>
+            {% endif %}
+            {% if page.next.url %}
+                <section class='next'>
+                    <h3>Next Post <i class="icon-hand-right"></i></h3>
+                    <p>
+                        <a id="{{page.next.id}}" href="/blog{{page.next.url}}" title="Next post: {{page.next.title}}">{{page.next.title}}</a>
+                    </p>
+                </section>
+            {% endif %}
         </section>
-
+        <section class='related span3'>
+            <h3>Related</h3>
+            <ol>
+                {% for post in site.related_posts limit:3 %}
+                  <li><a href="/blog{{ post.url }}" id="{{post.id}}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ol>
+        </section>
     </section>
     <!-- end PREVIOUS / NEXT -->
+
+    <!-- RELATED POSTS -->
+    <section class='related row'>
+        <section class='span6'>
+            
+        </section>
+    </section>
+    <!-- END of RELATED POSTS -->
 
     <!-- SOCIALIZE -->
     <section class='social row'>

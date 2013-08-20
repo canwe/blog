@@ -25,11 +25,18 @@
     });
 
     $('.other-posts .previous a').on('click', function(){
-      mixpanel.track('post_previous', {id : trimDate($(this).data('postId'))});
+      mixpanel.track('post_previous', {id : trimDate($(this).attr('id'))});
+      return true;
     });
 
     $('.other-posts .next a').on('click', function(){
-      mixpanel.track('post_next', {id : trimDate($(this).data('postId'))});
+      mixpanel.track('post_next', {id : trimDate($(this).attr('id'))});
+      return true;
+    });
+
+    $('.related a').on('click', function(){
+      mixpanel.track('post_related', {id : trimDate($(this).attr('id'))});
+      return true;
     });
 
   });

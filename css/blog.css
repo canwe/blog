@@ -221,6 +221,15 @@ ol.posts{
   .search > div{
     margin-left: 0;
   }
+.other-posts .previous h3{
+  color: #2ECC71;
+}
+.other-posts .next h3{
+  color: #3498DB;
+}
+.other-posts .related h3{
+  color: #9B59B6;
+}
 .social{
   margin-top: 2em;
   padding-bottom: 1em;
@@ -274,4 +283,8 @@ ol.posts{
       position: static;
       border-right: none;
     }
+  }
+  .gad{
+    text-align: center;
+    margin: 1em auto;
   }
