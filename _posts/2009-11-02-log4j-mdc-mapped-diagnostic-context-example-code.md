@@ -20,122 +20,129 @@ As a continuation of my previous post about [Log4j MDC (Mapped Diagnostic Contex
 
 ## The Servlet Class:
 
-    package com.veerasundar.code.log4jmdc;
-    
-    import java.io.IOException;
-    import javax.servlet.ServletException;
-    import javax.servlet.http.HttpServlet;
-    import javax.servlet.http.HttpServletRequest;
-    import javax.servlet.http.HttpServletResponse;
-    
-    import org.apache.log4j.Logger;
-    
-    /**
-     * A good-for-nothing servlet which is just writing few messages to the logger
-     * object. Since we've configured in the log4j.properties file to include the
-     * userName, taken from MDC, every message will be appended with the user name
-     * that is set from the AuthenticationFilter
-     *
-     */
-    public class Log4jMdcDemo extends HttpServlet {
-    
-    	private static Logger logger = Logger.getLogger(Log4jMdcDemo.class);
-    
-    	public Log4jMdcDemo() {
-    	}
-    
-    	protected void doGet(HttpServletRequest request,
-    			HttpServletResponse response) throws ServletException, IOException {
-    		doService(request, response);
-    	}
-    
-    	protected void doPost(HttpServletRequest request,
-    			HttpServletResponse response) throws ServletException, IOException {
-    		doService(request, response);
-    	}
-    
-    	protected void doService(HttpServletRequest request,
-    			HttpServletResponse response) throws ServletException, IOException {
-    
-    		logger.info("This is  demo for the Log4j MDC concept");
-    		logger.info("From Veerasundar.com/blog");
-    		logger.debug("Just some sample messages");
-    	}
-    }
+{% highlight java %}
+package com.veerasundar.code.log4jmdc;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.log4j.Logger;
+
+/**
+ * A good-for-nothing servlet which is just writing few messages to the logger
+ * object. Since we've configured in the log4j.properties file to include the
+ * userName, taken from MDC, every message will be appended with the user name
+ * that is set from the AuthenticationFilter
+ *
+ */
+public class Log4jMdcDemo extends HttpServlet {
+
+	private static Logger logger = Logger.getLogger(Log4jMdcDemo.class);
+
+	public Log4jMdcDemo() {
+	}
+
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		doService(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		doService(request, response);
+	}
+
+	protected void doService(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+
+		logger.info("This is  demo for the Log4j MDC concept");
+		logger.info("From Veerasundar.com/blog");
+		logger.debug("Just some sample messages");
+	}
+}
+{% endhighlight %}
 
 ## A Filter to put the user name in MDC for every request call
 
-    package com.veerasundar.code.log4jmdc;
-    
-    import java.io.IOException;
-    
-    import javax.servlet.Filter;
-    import javax.servlet.FilterChain;
-    import javax.servlet.FilterConfig;
-    import javax.servlet.ServletException;
-    import javax.servlet.ServletRequest;
-    import javax.servlet.ServletResponse;
-    
-    import org.apache.log4j.MDC;
-    
-    /**
-     * An example authentication filter which is used to intercept all the requests
-     * for fetching the user name from it and put the user name to the Log4j Mapped
-     * Diagnostic Context (MDC), so that the user name could be used for
-     * differentiating log messages.
-     *
-     * @author veerasundar.com/blog
-     *
-     */
-    public class AuthenticationFilter implements Filter {
-    
-    	@Override
-    	public void doFilter(ServletRequest request, ServletResponse response,
-    			FilterChain chain) throws IOException, ServletException {
-    
-    		try {
-    			/*
-    			 * This code puts the value "userName" to the Mapped Diagnostic
-    			 * context. Since MDc is a static class, we can directly access it
-    			 * with out creating a new object from it. Here, instead of hard
-    			 * coding the user name, the value can be retrieved from a HTTP
-    			 * Request object.
-    			 */
-    			MDC.put("userName", "veera");
-    
-    			chain.doFilter(request, response);
-    
-    		} finally {
-    			MDC.remove("userName");
-    		}
-    
-    	}
-    
-    }
+{% highlight java %}
+
+package com.veerasundar.code.log4jmdc;
+
+import java.io.IOException;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+import org.apache.log4j.MDC;
+
+/**
+ * An example authentication filter which is used to intercept all the requests
+ * for fetching the user name from it and put the user name to the Log4j Mapped
+ * Diagnostic Context (MDC), so that the user name could be used for
+ * differentiating log messages.
+ *
+ * @author veerasundar.com/blog
+ *
+ */
+public class AuthenticationFilter implements Filter {
+
+	@Override
+	public void doFilter(ServletRequest request, ServletResponse response,
+			FilterChain chain) throws IOException, ServletException {
+
+		try {
+			/*
+			 * This code puts the value "userName" to the Mapped Diagnostic
+			 * context. Since MDc is a static class, we can directly access it
+			 * with out creating a new object from it. Here, instead of hard
+			 * coding the user name, the value can be retrieved from a HTTP
+			 * Request object.
+			 */
+			MDC.put("userName", "veera");
+
+			chain.doFilter(request, response);
+
+		} finally {
+			MDC.remove("userName");
+		}
+
+	}
+
+}
+{% endhighlight %}
 
 ## Web.xml file to glue together Servlet and Filter
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <web-app id="WebApp_ID" version="2.4"   xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-        <servlet>
-            <description/>
-            <display-name>Log4jMdcDemo</display-name>
-            <servlet-name>Log4jMdcDemo</servlet-name>
-            <servlet-class>com.veerasundar.code.log4jmdc.Log4jMdcDemo</servlet-class>
-        </servlet>
-        <servlet-mapping>
-            <servlet-name>Log4jMdcDemo</servlet-name>
-            <url-pattern>/Log4jMdcDemo</url-pattern>
-        </servlet-mapping>
-        <filter>
-            <filter-name>AuthFilter</filter-name>
-            <filter-class>com.veerasundar.code.log4jmdc.AuthenticationFilter</filter-class>
-        </filter>
-        <filter-mapping>
-            <filter-name>AuthFilter</filter-name>
-            <url-pattern>/*</url-pattern>
-        </filter-mapping>
-    </web-app>
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"   xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <description/>
+        <display-name>Log4jMdcDemo</display-name>
+        <servlet-name>Log4jMdcDemo</servlet-name>
+        <servlet-class>com.veerasundar.code.log4jmdc.Log4jMdcDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Log4jMdcDemo</servlet-name>
+        <url-pattern>/Log4jMdcDemo</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>com.veerasundar.code.log4jmdc.AuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>
+{% endhighlight %}
 
 ## Log4j.properties file which uses the data present in MDC
 
