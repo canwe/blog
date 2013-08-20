@@ -4,10 +4,12 @@
 
   $(function(){
 
+    function trimDate(postId){
+      return postId.substr(postId.lastIndexOf('/') + 1);
+    }
+
     if($('#post').length){
-      var postId = $('#postId').val();
-      postId = postId.substr(postId.lastIndexOf('/'));
-      mixpanel.track('post_load', {id : postId});
+      mixpanel.track('post_load', {id : trimDate($('#postId').val())});
     }else{
       mixpanel.track('blog_load');
     }
@@ -20,6 +22,14 @@
     $('.details a').on('click', function(){
       mixpanel.track('details_click', {id : $(this).attr('id')});
       return true;
+    });
+
+    $('.other-posts .previous a').on('click', function(){
+      mixpanel.track('post_previous', {id : trimDate($(this).data('postId'))});
+    });
+
+    $('.other-posts .next a').on('click', function(){
+      mixpanel.track('post_next', {id : trimDate($(this).data('postId'))});
     });
 
   });
