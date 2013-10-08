@@ -27,7 +27,7 @@ tags:
 ---
 # Struts 2 &#8211; Hello World Tutorial
 
-Recently I've started learning the Struts 2 framework. Though I've been using Struts 1.3 for quite some time, understanding Struts 2 was little tricky as the '˜Hello World sample application' provided by Struts 2 site is little confusing. So, I was searching for a simple '˜Hello world example for Struts 2'² and after going through many different sites, finally I was able to run my first Struts 2 application. Here are the steps that I did to start with Struts 2. I am using Eclipse IDE and all the steps explained below are in referring to Eclispe 3 IDE.
+Recently I've started learning the Struts 2 framework. Though I've been using Struts 1.3 for quite some time, understanding Struts 2 was little tricky as the 'ËœHello World sample application' provided by Struts 2 site is little confusing. So, I was searching for a simple 'ËœHello world example for Struts 2'Â² and after going through many different sites, finally I was able to run my first Struts 2 application. Here are the steps that I did to start with Struts 2. I am using Eclipse IDE and all the steps explained below are in referring to Eclispe 3 IDE.
 
 ## Struts 2 Hello World Application - Getting started with Struts 2
 

@@ -15,7 +15,7 @@ tags:
 ---
 # How do you use logging in your application?
 
-![How do you use logging in your application?][1]This time, I feel like conducting a poll and hear from you, instead of writing lengthy content. Similar to my other post, [What does it take to make a '˜good' developer resume?][2], this is also going to be a discussion post. Feel free to cast your vote and leave your comment at the end of this post.
+![How do you use logging in your application?][1]This time, I feel like conducting a poll and hear from you, instead of writing lengthy content. Similar to my other post, [What does it take to make a 'Ëœgood' developer resume?][2], this is also going to be a discussion post. Feel free to cast your vote and leave your comment at the end of this post.
 
  [1]: http://i187.photobucket.com/albums/x201/talktoveera/2999130055_8697986e51.jpg "How do you use logging in your application?"
  [2]: http://veerasundar.com/blog/2009/12/what-does-it-take-to-make-a-good-developer-resume/ "How to create a good developer resume"

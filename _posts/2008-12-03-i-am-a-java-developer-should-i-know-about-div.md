@@ -30,7 +30,7 @@ tags:
 
 Recently one of my colleague asked me the question
 
-> 'I am a Java resource. Is it necessary for me to learn and understand the web design?'
+> 'I am a Java resource. Is it necessary for me to learn and understand the web design?'Â
 
 I've seen many newcomers to Java language has been discussing this topic with themselves when they are given training in HTML and web design. For many of those folks, JavaScript is the another name for a nightmare. They just don't understand the necessity for a Java developer to learn HTML. This happens mainly for the people who are switching from a AS400/Mainframe or any other non-web technologies to Java. If these developers are going to design a web site without the proper understanding of web design techniques, they simply fail or got struck even for a simple mistake in the HTML code.
 

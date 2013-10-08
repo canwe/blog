@@ -36,7 +36,7 @@ I wanted to experience a whole different view. So, I decided to walk along the S
 
  []: http://veerasundar.com/img/2012/09/008.jpg
 
-Just after crossing the heavily crowded market area, I reached **Ghirardelli**. If you like chocolates, then you don't wanna miss this place. I have seen few of my friends who specifically came to SFO to buy chocolates from this place.
+Just after crossing the heavily crowded market area, I reachedÂ **Ghirardelli**. If you likeÂ chocolates, then you don't wanna miss this place. I have seen few of my friends who specifically came to SFO to buy chocolates from this place.
 
 But anyway, I'm not a big fan of chocolate, so I continued my walk along the marina bay.
 
@@ -55,7 +55,7 @@ That is one golden rule I follow if I lost in a unknown location - [follow the f
  [4]: http://www.bbc.co.uk/news/magazine-15125287 "6 ways to never lost in a city again"
  [5]: http://veerasundar.com/blog/wp-includes/images/smilies/icon_smile.gif
 
-Jokes aside, I continued to walk and after crossing the steep road, the Golden Gate bridge came into my view along with the distance that I still had to cover. You can also see the **Fort Mason center **in the front.
+Jokes aside, I continued to walk and after crossing theÂ steepÂ road, the Golden Gate bridge came into my view along with the distance that I still had to cover. You can also see theÂ **Fort Mason centerÂ **in the front.
 
 [![][7]][7]
 
@@ -63,24 +63,24 @@ Jokes aside, I continued to walk and after crossing the steep road, the Golden
 
 Now I had few two different possible directions to choose: either go down the hill via Fort mason center or continue walking through the recreation area. I chose the later path as the road was easy to walk.
 
-[![sfo skyline][8]][8]And it was a really good view to see the San Francisco skylines from the park. There was a statue of a man in the park whom I couldn't identify from the distance. Also, there's a weirdest tree in the park which I would name it as the *retarded tree!*. Seriously, the tree looked like a melted and frozen plastic material without using any molds. ![:)][5] [![Retarded tree!][9]][9]
+[![sfo skyline][8]][8]And it was a really good view to see the San Francisco skylines from the park. There was a statue of a man in the park whom I couldn't identify from the distance. Also, there's a weirdest tree in the park which I would name it as theÂ *retarded tree!*. Seriously, the tree looked like a melted and frozen plastic material without using any molds. ![:)][5] [![Retarded tree!][9]][9]
 
  []: http://veerasundar.com/img/2012/09/0231.jpg
  []: http://veerasundar.com/img/2012/09/027.jpg
 
-Anyway, I continued to walk towards the Golden Gate. After sometime, I reached the **San Francisco Exploratorium**. From the outside, the building looked like an ancient Greek palace. Being an techie, I was tempted to go inside the building. But, I didn't have much time to spend there, as my goal was to reach Golden Gate as early as possible. But to explore the Exploratorium, one need at least a one full day. May be another time..
+Anyway, I continued to walk towards the Golden Gate. After sometime, I reached theÂ **San Francisco Exploratorium**. From the outside, the building looked like an ancientÂ GreekÂ palace. Being an techie, I was tempted to go inside the building. But, I didn't have much time to spend there, as my goal was to reach Golden Gate as early as possible. But to explore the Exploratorium, one needÂ at least a one full day. May be another time..
 
 [![San Francisco Exploratorium][10]][10]
 
  []: http://veerasundar.com/img/2012/09/040.jpg
 
-After the exploratorium, the walking trail went very close to the beach. I could see people jogging, walking, riding all the way in the pathway.  Looking back from there, I could see the bay bridge in the distance.
+After the exploratorium, the walking trail went very close to the beach. I could see people jogging, walking, riding all the way in the pathway. Â Looking back from there, I could see the bay bridge in the distance.
 
 [![golden gate walking trail][11]][11]
 
  []: http://veerasundar.com/img/2012/09/053.jpg
 
-From there, the Golden Gate was just a few minutes walk away (well, the '˜*few'* stands for 30, though). I continued to walk on and it was real good view of the bridge which I'd never seen in my previous visits.
+From there, the Golden Gate was just a few minutes walk away (well, the 'Ëœ*few'*Â stands for 30, though). I continued to walk on and it was real good view of the bridge which I'd never seen in my previous visits.
 
 As I (and the others) were nearing the bridge,
 
@@ -88,7 +88,7 @@ As I (and the others) were nearing the bridge,
 
  []: http://veerasundar.com/img/2012/09/065.jpg
 
-And, finally I got the **photo of the day **which totally worth the **One and half hour walk.**
+And, finally I got theÂ **photo of the dayÂ **which totally worth theÂ **One and half hour walk.**
 
 [![The golden gate bridge][13]][13]
 

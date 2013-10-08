@@ -18,7 +18,7 @@ tags:
 ---
 # Git Tutorial &#8211; My Git work flow
 
-As I promised on my previous article on [Getting started with Git][1], here is how I use Git in my day to day activities. Rather than explaining with a real project that I'm working (which I can't share!), I'm taking the '˜Hello World' approach. What I'm going to do is to create a text file that contains the 'hello world' and then going to track it in Git.
+As I promised on my previous article on [Getting started with Git][1], here is how I use Git in my day to day activities. Rather than explaining with a real project that I'm working (which I can't share!), I'm taking the 'ËœHello World' approach. What I'm going to do is to create a text file that contains the 'hello world'Â and then going to track it in Git.
 
  [1]: http://veerasundar.com/blog/2011/06/git-tutorial-getting-started/ "Git Tutorial - Getting Started"
 

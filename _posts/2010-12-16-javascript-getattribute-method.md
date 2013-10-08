@@ -19,20 +19,20 @@ tags:
 ---
 # JavaScript getAttribute method
 
-![ie-wtf][1]Sometimes you might want to read the 'class' attribute value of an HTML tag (for example *div*) from your JavaScript for processing. Almost all major JavaScript frameworks provide method to read attribute values, using which we can easily get the value of 'class' attribute.
+![ie-wtf][1]Sometimes you might want to read the 'class'Â attribute value of an HTML tag (for example *div*) from your JavaScript for processing. Almost all major JavaScript frameworks provide method to read attribute values, using which we can easily get the value of 'class'Â attribute.
 
  [1]: http://veerasundar.com/img/2010/12/ie-wtf.jpg "ie-wtf"
 
 But if you're not allowed to use any such libraries, then you would have to rely on the browser's built-in method ***getAttribute* **to achieve the functionality.
 
-Before you use the JavaScript's *getAttribute *method, do keep in mind that its implementation (especially for 'class' attribute) differs from browser-to-browser. I.e., IE does it differently from what other browsers are doing (as you would have expected!).
+Before you use the JavaScript'sÂ *getAttribute *method, do keep in mind that its implementation (especially for 'class'Â attribute)Â differs from browser-to-browser. I.e., IE does it differently from what other browsers are doing (as you would have expected!).
 
-The below code would alert the *class* value of *'myElem' *in all browser's. But, Internet Explorer would just say 'null'!
+The below code would alert the *class* value of *'myElem'Â *in all browser's. But, Internet Explorer would just say 'null'Â!
 
     var elem = document.getElementById("myElem");
     alert(elem.getAttribute("class"));
 
-To make that work in Internet Explorer, change to 'className' and see what happens!
+To make that work in Internet Explorer, change to 'className'Â and see what happens!
 
     var elem = document.getElementById("myElem");
     alert(elem.getAttribute("className"));

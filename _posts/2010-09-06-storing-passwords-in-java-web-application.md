@@ -30,11 +30,11 @@ Isn't there a better solution to this? It's there and its called as *Password Ha
 
 ## How password hashing works?
 
-In hashing, you take a input string (in our case, a *password*), add a salt to the string, generate the hash value (using SHA-1 algorithm for example), and store the hash value in DB. For matching passwords while login, you do the same hashing process again and match the *hash value* instead of matching *plain passwords *and authenticate users.
+In hashing, you take a input string (in our case, a *password*), add a salt to the string, generate the hash value (using SHA-1 algorithm for example), and store the hash value in DB. For matching passwords while login, you do the same hashing process again and match the *hash value* instead of matchingÂ *plain passwords *and authenticate users.
 
 Hashing is different from encryption. Because, encryption is *two way*, means that you can always decrypt the encrypted text to get the original text. But Hashing is *one way,* you can never get the original text from the hash value. Thus it gives more security than encryption.
 
-To generate hash, you can make use of any [hashing algorithms][2] out there - MD5, SHA-1, etc. Before generating a hash, adding a *salt *to the password will give added security. *Salt *is nothing but a simple text that is known only to you/your application. It can be 'zebra' or 'I'mGod' or anything you wish.
+To generate hash, you can make use of anyÂ [hashing algorithms][2] out there - MD5, SHA-1, etc. Before generating a hash, adding a *salt *to the password will give added security. *Salt *is nothing but a simple text that is known only to you/your application. It can be 'zebra'Â or 'I'mGod'Â or anything you wish.
 
  [2]: http://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms "Hashing algorithms"
 

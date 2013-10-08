@@ -42,4 +42,4 @@ As a blog author, you may want to include ad in some of your blog posts and may 
         
 
 4.  Save the changes.
-5.  After this, when ever you want to insert ad in your blog post, just define a custom field `show_ad` and give it a value 'YES'. Your ad code will be inserted to this post alone. If you don't want to insert ad, just don't define any custom fields. So simple, isn't it?
+5.  After this, when ever you want to insert ad in your blog post, just define a custom field `show_ad` and give it a value 'YES'Â. Your ad code will be inserted to this post alone. If you don't want to insert ad, just don't define any custom fields. So simple, isn't it?

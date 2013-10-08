@@ -19,7 +19,7 @@ Today I found an easy way to check which application is using which port in my s
 
 1.  Open the command prompt - **start >> run >> cmd **or **start >> All Programs >> Accessories >> Command Prompt.**
 2.  Type **netstat -aon | findstr '[port_number]'**. Replace the [port_number] with the actual port number that you want to check and hit enter.
-3.  If the port is being used by any application, then that application's detail will be shown. The number, which is shown at the last column of the list, is the PID  (process ID) of that application. Make note of this.
+3.  If the port is being used by any application, then that application's detail will be shown. The number, which is shown at the last column of the list, is the PIDÂ  (process ID) of that application. Make note of this.
 4.  Type **tasklist | findstr '[PID]'. **Replace the PID with the number from the above step and hit enter.
 5.  You'll be shown the application name that is using your port number.
 

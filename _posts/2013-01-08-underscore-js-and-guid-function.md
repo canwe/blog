@@ -15,7 +15,7 @@ tags:
 ---
 # Underscore.js and guid function
 
-Underscore library comes with the [uniqueId()][1] function that generates globally unique IDs to use in code. But it was not enough for my [Backbone][2] models as I needed the IDs to be unique across  invocations and users, i.e. something like [UUID][3].
+Underscore library comes with the [uniqueId()][1]Â function that generates globally unique IDs to use in code. But it was not enough for my [Backbone][2] models as I needed the IDs to be unique acrossÂ Â invocations and users, i.e. something like [UUID][3].
 
  [1]: http://underscorejs.org/#uniqueId "UniqueId function to generate globally unique IDs"
  [2]: http://veerasundar.com/blog/2012/01/backbone-js-hello-world-tutorial/ "Backbone JS Hello World"
@@ -36,4 +36,4 @@ I have been using [this code snippet][4] to generate pseudo unique IDs for somet
       });
   {% endhighlight %}
 
-Once the above code is in place, then creating a unique ID is as simple as calling *_.guid()*.
+Once the above code is in place, then creating a unique ID is as simple as callingÂ *_.guid()*.

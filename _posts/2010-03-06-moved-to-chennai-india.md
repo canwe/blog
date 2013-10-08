@@ -21,7 +21,7 @@ It has been several days since I posted anything in this blog. Well, there was a
  [2]: http://www.csc.com/ "Computer Science Corporation"
  [3]: http://en.wikipedia.org/wiki/Chennai "Chennai - Wikipedia"
 
-I do not want to elaborate more on quitting Infosys. It was a decision that I had to take because of several reasons and I had moved out of Infosys on February 26, where I spent 3 quality years.  My current position at CSC gives me ample opportunities to grow in the field where I actually want to be in.
+I do not want to elaborate more on quitting Infosys. It was a decision that I had to take because of several reasons and I had moved out of Infosys on February 26, where I spent 3 quality years.Â  My current position at CSC gives me ample opportunities to grow in the field where I actually want to be in.
 
 On moving to Chennai, it gives me a feeling that I am back at my home. Chennai is not a new place to me. I spent 4 years here, doing my studies at a local college. Because of my previous job, I had to stay away from Chennai for the past 3 and half years and now I'm back. The ways that the city has changed in these 3 years were amazed me. But the main problems of the city - traffic, pollution, weather and water - are still here. I hope the city gets better and better in the coming days.
 

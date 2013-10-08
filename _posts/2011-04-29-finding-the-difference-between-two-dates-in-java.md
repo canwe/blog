@@ -22,7 +22,7 @@ But, wait a second. There's an easy way to do this using the[ TimeUnit][1] class
 
  [1]: http://download.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html
 
-Have a look the below code which finds out the difference between two dates and returns them in the form of 'h* hours and m minutes'*.
+Have a look the below code which finds out the difference between two dates and returns them in the form of 'h* hours and m minutes'Â*.
 
     public String getTimeDiff(Date dateOne, Date dateTwo) {
             String diff = "";

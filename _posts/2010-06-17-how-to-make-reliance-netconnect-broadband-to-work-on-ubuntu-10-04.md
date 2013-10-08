@@ -52,7 +52,7 @@ Unfortunately, the above method **did not work **for me. So, I researched (googl
 Since Ubuntu couldn't come to my rescue, I have to make my hands dirty to get the connection working. Followed these steps:
 
 1.  In order to manually connect with Reliance netconnect broadband we need two packages: **wvdial **(tool to make connections from a modem)** **and **gnome-ppp **(front end to the wvdial).
-2.  These two packages have few dependencies too. Means you need to install all of them. Since you do not have an active internet connection yet on your machine, you cant apt-get anything. So,  get a help from your friend who \*might\* be having an internet connection system and download the below packages. 
+2.  These two packages have few dependencies too. Means you need to install all of them. Since you do not have an active internet connection yet on your machine, you cant apt-get anything. So, Â get a help from your friend who \*might\* be having an internet connection system and download the below packages. 
     *   [libwvstreams4.6-base\_4.6.1-1\_i386.deb][6]
     *   [libwvstreams4.6-extras\_4.6.1-1\_i386.deb][7]
     *   [libuniconf4.6\_4.6.1-1\_i386.deb][8]

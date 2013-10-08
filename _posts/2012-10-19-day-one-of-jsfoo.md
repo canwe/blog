@@ -30,18 +30,18 @@ Except the keynote, rest of the sessions simultaneously happened in [two tracks]
 
  [2]: http://jsfoo.in/2012/#schedule
 
-The first session I chose was '**Scaling node at Errorception**' by [Errorception][3] founder, [Rakesh Pai][4]. As I'm exploring node for my own web app, its very obvious for me to go for this. The speaker talked about how he's running Errorception on Node Mongodb stack. The highlights from his speech was:
+The first session I chose was '**Scaling node at Errorception**'Â by [Errorception][3] founder, [Rakesh Pai][4]. As I'm exploring node for my own web app, its very obvious for me to go for this. The speaker talked about how he's running Errorception on Node Mongodb stack. The highlights from his speech was:
 
  [3]: http://errorception.com/ "Errorception"
  [4]: http://blog.rakeshpai.me/ "Rakesh Pai"
 
 1.  Don't write monolithic app. Instead break them into several micro apps (front end, queue processor, etc). This helps you to maintain it without much pain and deploy/take down the apps without affecting each other.
-2.  Build a Queue layer for inter-app communication. That way, even if you take down a app, the messages won't be lost and they'll just be there in the queue until your app pick them up. He seems to be using **redis **for this purpose at Errorception.
+2.  Build a Queue layer for inter-app communication. That way, even if you take down a app, the messages won't be lost and they'll just be there in the queue until your app pick them up. He seems to be usingÂ **redisÂ **for this purpose at Errorception.
 3.  CPU bound app? Run away from node.
 
-Then there was a 30 minutes of Q/A session about '**Web Storage**'. The presenter talked about different options for storing data locally at browser. It was new information to me that developers (ab)used the **window.name **property in order to persist data. This hack is totally an insecure way to preserve data and should never be considered for anything secure.
+Then there was a 30 minutes of Q/A session about '**Web Storage**'. The presenter talked about different options for storing data locally at browser. It was new information to me that developers (ab)used theÂ **window.nameÂ **property in order to persist data. This hack is totally an insecure way to preserve data and should never be considered for anything secure.
 
-After a delicious lunch (I always complain about food in Bangalore, so when I say delicious, it is DELICIOUS!), I sit there in the '**Create JS**' session by [Harish Sivaramakrishnan][5].** **He totally inspired the audience by building a game from scratch in 45 minutes using [CreateJS][6] library. This library lets you to draw objects on Canvas instead of directly manipulating pixels by hand. A totally cool JS lib and if you are into game/visual programming using Canvas, you shouldn't miss this one.
+After a delicious lunch (I always complain about food in Bangalore, so when I say delicious, it is DELICIOUS!), I sit there in the '**Create JS**'Â session byÂ [Harish Sivaramakrishnan][5].**Â **He totally inspired the audience by building a game from scratch in 45 minutes using [CreateJS][6] library. This library lets you to draw objects on Canvas instead of directly manipulating pixels by hand. A totally cool JS lib and if you are into game/visual programming using Canvas, you shouldn't miss this one.
 
  [5]: http://hsivaram.com/
  [6]: http://www.createjs.com/#!/CreateJS

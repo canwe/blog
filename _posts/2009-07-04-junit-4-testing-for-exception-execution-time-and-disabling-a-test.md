@@ -40,7 +40,7 @@ In JUnit 4, it is possible to temperorily disable a test using the annotation **
 
 ## Testing for a specific Exception in JUnit testing method:
 
-Suppose you want to check for a specific exception thrown by your testing method, you can use the ***expected*** option of *@Test* annotation. You can mention the Exception type that you expect the testing method to throw in the '˜expected' option. If the method throws the exception then test is considered as passed, otherwise the test will be considered as failed.
+Suppose you want to check for a specific exception thrown by your testing method, you can use the ***expected*** option of *@Test* annotation. You can mention the Exception type that you expect the testing method to throw in the 'Ëœexpected' option. If the method throws the exception then test is considered as passed, otherwise the test will be considered as failed.
 
     @Test(expected=IllegalArgumentException.class)
     public void testSomeMethod(){

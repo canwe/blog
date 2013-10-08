@@ -24,7 +24,7 @@ One of the important skill that every Java developer must possess is the **appli
 
 
 
-All of us, the java developers, would have used a well-proven testing method, when we started learning Java. It's called as the **'˜Syso testing'**, which is nothing but *System.out.println()* . We usually print the variable values in the console and check them manually to make sure that the function is doing what it has to do. For small projects, this approach is quick and useful. But, for the medium/big sized projects, using '˜Syso testing' isn't that effective. Even for small projects, using Syso testing will turn ineffective as the development continues.
+All of us, the java developers, would have used a well-proven testing method, when we started learning Java. It's called as the **'ËœSyso testing'**, which is nothing but *System.out.println()* . We usually print the variable values in the console and check them manually to make sure that the function is doing what it has to do. For small projects, this approach is quick and useful. But, for the medium/big sized projects, using 'ËœSyso testing' isn't that effective. Even for small projects, using Syso testing will turn ineffective as the development continues.
 
 In order to test the java applications effectivley, we can use **JUnit. framework** Junit is an open source, Java testing framework that helps us to write and run tests for our application. Using JUnit, we can setup your testing objects, write the test methods for our objects, run those test methods and assert the testing outcomes for expected results. Since running the test methods can be automated (either by using Ant/IDEs built-in JUnit support), considerable amount of time can be saved during the testing phase.
 

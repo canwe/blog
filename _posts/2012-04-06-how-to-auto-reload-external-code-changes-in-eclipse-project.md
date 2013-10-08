@@ -26,13 +26,13 @@ I have started using [Sublime text][1] as my preferred code editor (for JS, CSS,
 
  [1]: http://veerasundar.com/blog/2012/03/unix-alias-with-parameters-or-opening-sublime-text-editor-from-command-line/
 
-Working on multiple editors throws in another problem: whenever I make a change in some file outside of Eclipse, the IDE does not silently reload. It shows a blank page saying 'The resource is out of sync. Press F5 to reload'. The message started annoying me soon as I had to switch back and forth often.
+Working on multiple editors throws in another problem: whenever I make a change in some file outside of Eclipse, the IDE does not silently reload. It shows a blank page saying 'The resource is out of sync. Press F5 to reload'Â. The message started annoying me soon as I had to switch back and forth often.
 
-It is not just for the multiple editors. Even when I do a *git pull,* the resources go out of sync.
+It is not just for the multiple editors. Even when I do a *git pull,*Â the resources go out of sync.
 
-Then, I found a workaround for this. Eclipse provides a built-in option that auto reloads a resource if its out f sync. Here's how you  can enable it.
+Then, I found a workaround for this. Eclipse provides a built-in option that auto reloads a resource if its out f sync. Here's how you Â can enable it.
 
-Go to **Window -> Preferences -> General -> Workspace **and check the option **'Refresh using native hooks or polling'**.
+Go to **Window -> Preferences -> General -> Workspace **and check the option **'Refresh using native hooks or polling'Â**.
 
 So, the next time when you try to open a out of sync file, the IDE will sync it for you (thus saving you a keystroke, one at a time ![:)][2] ).
 

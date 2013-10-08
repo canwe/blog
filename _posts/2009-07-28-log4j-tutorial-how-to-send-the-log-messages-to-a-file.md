@@ -47,7 +47,7 @@ In most cases, either *Rolling File Appender* or *Daily Rolling File Appender* c
         log4j.appender.rollingFile.layout = org.apache.log4j.PatternLayout
         log4j.appender.rollingFile.layout.ConversionPattern=%p %t %c - %m%n
 
-3.  As you can see from the above log4j  configuration, we are creating a new log4j appender in the name of *rollingFile* and setting it's options. I guess most of the options are self explanatory. The *MaxBackupIndex* tells the log4j to keep a maximum of 2 backup files for the log mylog.log. If the log file is exceeding the *MaximumFileSize*, then the contents will be copied to a backup file and the logging will be added to a new empty mylog.log file. From the above configuration, there can be a maximum of 2 backup files can be created.
+3.  As you can see from the above log4j Â configuration, we are creating a new log4j appender in the name of *rollingFile* and setting it's options. I guess most of the options are self explanatory. The *MaxBackupIndex* tells the log4j to keep a maximum of 2 backup files for the log mylog.log. If the log file is exceeding the *MaximumFileSize*, then the contents will be copied to a backup file and the logging will be added to a new empty mylog.log file. From the above configuration, there can be a maximum of 2 backup files can be created.
 4.  Next we need to direct our logs to go into this log4j appender. 
 
         log4j.rootLogger = INFO, rollingFile

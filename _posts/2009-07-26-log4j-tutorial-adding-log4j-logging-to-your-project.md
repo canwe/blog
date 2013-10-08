@@ -24,7 +24,7 @@ tags:
 
 If you are new to Log4j, here is a short description on what is it and why should we care about it:
 
-> [Log4j][1] is a flexible logging library, an open source project from Apache. Using Log4j, we can replace the debugging print line statements, like *System.out.println('Value is ' someVariable),* with a configurable logging statement like logger.debug('Value is ' someVariable). The advantage in using Log4j is, if you do not want to print the debugging print lines in production application, you can easily switch them off using Log4j configuration file (which we will see it how, shortly).
+> [Log4j][1] is a flexible logging library, an open source project from Apache. Using Log4j, we can replace the debugging print line statements, like *System.out.println('Value is 'Â someVariable),* with a configurable logging statement like logger.debug('Value is 'Â someVariable). The advantage in using Log4j is, if you do not want to print the debugging print lines in production application, you can easily switch them off using Log4j configuration file (which we will see it how, shortly).
 
  [1]: http://logging.apache.org/log4j/index.html "With log4j it is possible to enable logging at runtime without modifying the application binary. The log4j package is designed so that these statements can remain in shipped code without incurring a heavy performance cost. Logging behavior can be controlled by editing a configuration file, without touching the application binary."
 
@@ -32,7 +32,7 @@ If you are new to Log4j, here is a short description on what is it and why shoul
 
 1.  [Download the latest Log4j distribution][2] from Apache website (at the time of this article is written, the latest version of Log4j is 1.2) and put the *log4j-xxx.jar* in your project class path. For Java web application, you can place the jar file in *WEB-INF/lib* folder. For Java applications, you can place the jar in any folder, but remember to add the folder to your classpath.
 2.  Next we need to configure the Log4j library to our requirements. Log4j reads its configurations from log4j.properties file (or log4j.xml) placed in the CLASSPATH. Every log4j.properties file defines the following three things, mainly:
-    *   an **Log4j Appender** - this is the class file which does the actual logging. It could be a simple Console appender which writes  the log messages to stdout (screen) or a file appender, which sends the log messages to a log file.
+    *   an **Log4jÂ Appender** - this is the class file which does the actual logging. It could be a simple Console appender which writes Â the log messages to stdout (screen) or a file appender, which sends the log messages to a log file.
     *   a **Layout** - is nothing but how the log message is formatted. This format is very simlar to C languages's *printf* function formatting.
     *   and a **Logger** - a logger ties the appender with the log messages that are coming from the Java application. Basically, a **logger** tells that the log messages from these packages should go to some **appender** which will log the message in the defined **layout.**
 4.  Below is a sample log4j.properties for configuring the console appender for your project. 

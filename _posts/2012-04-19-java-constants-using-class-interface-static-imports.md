@@ -28,7 +28,7 @@ Here's a list of patterns that I have seen on using such constants.
 
 ## 1. Define a Constants class
 
-In this approach, you define a class '˜Constants' and put all your constants inside this class. Then reference the constants as '˜Constants.CONST_NAME' wherever needed. Easy as it looks.
+In this approach, you define a class 'ËœConstants' and put all your constants inside this class. Then reference the constants as 'ËœConstants.CONST_NAME' wherever needed. Easy as it looks.
 
     public class Constants {
     	public static final String SITE_NAME="veerasundar.com";
@@ -40,11 +40,11 @@ In this approach, you define a class '˜Constants' and put all your constants in
     	}
     }
 
-But the con of this approach is that you need to prepend the class name '˜Constants' all the time. If you are using constants very frequently, then this will become little ineffective. We can do better.
+But the con of this approach is that you need to prepend the class name 'ËœConstants' all the time. If you are using constants very frequently, then this will become littleÂ ineffective. We can do better.
 
 ## 2. Define a Constants interface and implement it
 
-The second approach is that you define a Interface that contains all your constants and then implement this interface in the class where you want to use the constants. This way, you don't need to prefix '˜Constants', instead you can directly access the constant like CONSTANT_NAME.
+The second approach is that you define a Interface that contains all your constants and then implement this interface in the class where you want to use the constants. This way, you don't need to prefix 'ËœConstants', instead you can directly access the constant like CONSTANT_NAME.
 
     public interface Constants {
     	public static final String SITE_NAME="veerasundar.com";

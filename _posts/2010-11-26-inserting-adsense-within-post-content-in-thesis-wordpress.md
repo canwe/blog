@@ -37,7 +37,7 @@ Follow these steps:
         }
         add_filter("the_content", "insertAdInPost");
 
-3.  Replace the place holder '[Your-Ad]' with your adsense code and save the file.
-4.  Edit any post in which you want to add Adsense, and place the markup '[adsense]' where you want to insert the ad.
+3.  Replace the place holder '[Your-Ad]'Â with your adsense code and save the file.
+4.  Edit any post in which you want to add Adsense, and place the markup '[adsense]'Â where you want to insert the ad.
 
 That's it! Your own smart Adsense, without using any plug-ins stuff!

@@ -31,7 +31,7 @@ If the redesign was just a bunch of HTML CSS changes, I wouldn't be blogging abo
 
 ## 1. Using hResume and Microformats
 
-[Microformats][3] specifies a set of semantic markup to be used in the web pages so that the page can be easily understood by the machine (such as Google, Bing or other engines that eats the web pages). It also specifies a structure for marking up a resume page - the specification is [hResume][4]. I have used it in my [resume markup][5].
+[Microformats][3]Â specifies a set of semantic markup to be used in the web pages so that the page can be easily understood by the machine (such as Google, Bing or other engines that eats the web pages). It also specifies a structure for marking up a resume page - the specification is [hResume][4]. I have used it in my [resume markup][5].
 
  [3]: http://microformats.org/ "microformats are a set of simple, open data formats built upon existing and widely adopted standards."
  [4]: http://microformats.org/wiki/hresume "hResume is a microformat for publishing resumes and CVs"

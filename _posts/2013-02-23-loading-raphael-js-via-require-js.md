@@ -23,7 +23,7 @@ Raphael, the SVG JavaScript library, does not support require JS (yet). When loa
 
 Anyway, in the same thread, people started providing patches that fix this issue (for time being). And in one of the project, I saw the Raphael source code split into different files and converted to CommonJS module pattern.
 
-I took the liberty to extract only the raphael-js modules and put them together in this Github repo: [https://github.com/vraa/raphael-require][2]
+I took the liberty to extract only the raphael-js modules and put them together in this Github repo:Â [https://github.com/vraa/raphael-require][2]
 
  [2]: https://github.com/vraa/raphael-require "raphael-js source split into modules so that it can be loaded via require-js"
 

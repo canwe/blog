@@ -30,16 +30,16 @@ You are welcomed to point out any anti-patterns/mistakes that I made in this tut
 
 ## The need for Backbone.js
 
-Generally, we use JavaScript to handle UI events (*click*, *keypress*, etc), to process the UI data (*innerHTML*, etc) and to render DOM elements (*appendChild*, etc).
+Generally, we use JavaScript to handle UI events (*click*, *keypress*, etc), to process the UI data (*innerHTML*,Â etc) and to render DOM elements (*appendChild*, etc).
 
-Without a framework like Backbone.js, each developer would implement the above logic in his/her own coding style. This might cause some maintenance issues if multiple developers are involved.
+Without a framework like Backbone.js, each developer would implement the above logic in his/her own coding style. This might cause someÂ maintenance issues if multiple developers are involved.
 
 Backbone.js provides a structure to do the above operations so that it is easy to write a maintainable code with less effort.
 
 With Backbone, you get the following constructs:
 
-1.  **Model** - used to represent your application data. For example, an *Employee* model.
-2.  **Collection** - used to hold a list of your model objects. For example, an *Employees* collection which contains a list of *Employee* model.
+1.  **Model** - used to represent your application data. For example, an *Employee*Â model.
+2.  **Collection** - used to hold a list of your model objects. For example, anÂ *Employees* collection which contains a list of *Employee* model.
 3.  **Views** - each model & collection can be associated with a Backbone view. You can also create a view for an existing DOM element so that the view can respond to events generated from that DOM element.
 
 That said, Let's start building our application step by step.
@@ -217,7 +217,7 @@ As you can see, we have two Backbone views:
 1.  *UserInputView* - which listens to the user interface events(*button click*) and update the model object with user input.
 2.  *HelloListView* - which listens to the changes in our model(*add* event) and update the user interface with the model values.
 
-Everything starts when we create a *new UserInputView()* which triggers *initialize* function for each objects and sets up event listeners. When user interacts with the view, the respective event listeners are called and the model gets updated. Then the *HelloListView* which is listening to model changes gets triggered and the user interface is updated.
+Everything starts when we create a *new UserInputView()* which triggers *initialize* function for each objects and sets up event listeners. When user interacts with the view, the respective event listeners are called and the model gets updated. Then the *HelloListView*Â which is listening to model changes gets triggered and the user interface is updated.
 
 Well, that concludes this tutorial. You can see the [completed application in action][2] or [fork the code in GitHub][5].
 

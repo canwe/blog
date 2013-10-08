@@ -120,4 +120,4 @@ Since we created a custom file appender, we need to tell the Log4j to use our cu
     log4j.appender.fileout.layout = org.apache.log4j.PatternLayout
     log4j.appender.fileout.File = D:/temp/dynamiclogger/logs.log
 
-If you look at the property *log4j.appender.fileout*, our customized file appender is associated with this appender. We have also given a log file name 'log.log' in the above configuration file. So, with the above configuration, when you run your application, the log files will be generated in this fashion: logs-1250696128437.log, logs-1250696142828.log.
+If you look at the property *log4j.appender.fileout*, our customized file appender is associated with this appender. We have also given a log file name 'log.log'Â in the above configuration file. So, with the above configuration, when you run your application, the log files will be generated in this fashion: logs-1250696128437.log, logs-1250696142828.log.

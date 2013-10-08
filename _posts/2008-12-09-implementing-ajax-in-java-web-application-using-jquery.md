@@ -157,7 +157,7 @@ Above code snippet defines our WeatherServlet and it's URL pattern so that when 
     
     
 
-Above snippet construct the parameter cityName from the entered value and calls our servlet WeatherServlet by passing this cityName. Also a callback function defined which is called when the Ajax request is complete. In our case what it does is gets the value of the 'report' string in the server-returned xml data and populates this value to the 'weatherReport' HTML DIV section.
+Above snippet construct the parameter cityName from the entered value and calls our servlet WeatherServlet by passing this cityName. Also a callback function defined which is called when the Ajax request is complete. In our case what it does is gets the value of the 'report'Â string in the server-returned xml data and populates this value to the 'weatherReport'Â HTML DIV section.
 
 [Download Source Code][1]
 

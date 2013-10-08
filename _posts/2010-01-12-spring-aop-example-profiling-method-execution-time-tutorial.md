@@ -183,6 +183,6 @@ In the above code we are loading our Business bean from Spring Context and then 
     Method execution completed.
     Method execution time: 2000 milliseconds.
 
- 
+Â 
 
 I hope this tutorial helps you to understand the basics of Spring Aspect Oriented programming. If you have any questions regarding the above example, feel free to leave a comment**.**

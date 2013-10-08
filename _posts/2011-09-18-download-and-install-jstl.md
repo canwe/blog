@@ -24,14 +24,14 @@ To add JSTL to your project;
 
  [1]: http://www.box.net/shared/gzz2nyf9s506d3h3vkzq "download jstl.jar and standard.jar"
 
-1.  Download the *jstl.jar *and *standard.jar* files from the above download link (or you can get these from your local Apache Tomcat installation too!)
-2.  Put them in your project's *WEB-INF/lib* folder.
+1.  Download the *jstl.jar *and *standard.jar*Â files from the above download link (or you can get these from your local Apache Tomcat installation too!)
+2.  Put them in your project's *WEB-INF/lib*Â folder.
 3.  Add them to the CLASSPATH.
 4.  Now you can use JSTL in your pages.
 
 So, why this post about an obvious thing?
 
-Well, I've seen people get confused when they try to install JSTL for the first time. They google for '*download JSTL or install JSTL*' which will end up in the page [JSTL downloads][2] (which is surprisingly still hosted at ***java.sun.com****). *And, god only knows what you can download from *that* page!
+Well, I've seen people get confused when they try to install JSTL for the first time. They google for '*download JSTL or install JSTL*'Â which will end up in the page [JSTL downloads][2]Â (which is surprisingly still hosted at ***java.sun.com****). *And, god only knows what you canÂ download from *that*Â page!
 
  [2]: http://java.sun.com/products/jsp/jstl/downloads/ "JSTL downloads"
 

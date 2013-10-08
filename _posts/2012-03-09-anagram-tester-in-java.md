@@ -17,16 +17,16 @@ tags:
 
 While browsing the net, I found this problem somewhere - to write a code that tests the given two strings are anagrams or not. From Wiki,
 
-> 'An **anagram** is a type of word play, the result of rearranging the letter of a word or phrase to produce a new word or phrase, using all the original letters exactly once; for example *orchestra* can be rearranged into *carthorse*.'
+> 'AnÂ **anagram**Â is a type ofÂ word play, the result of rearranging the letter of a word or phrase to produce a new word or phrase, using all the original letters exactly once; for exampleÂ *orchestra*Â can be rearranged intoÂ *carthorse*.'Â
 
 I tried to solve this problem using Java and below is the result of it. The algorithm I tried is very simple:
 
-1.  Clean the input - remove all the spaces and punctuation marks (because it doesn't affect the compassion).
+1.  Clean the input - remove all the spaces and punctuation marks (because it doesn't affect theÂ compassion).
 2.  Go through character by character from string *one* and check if that character exists in string *two*.
 3.  If exists, then remove it from string *two *and move on to next character. If not exists, then we found a mismatch and the string is not an anagram.
 4.  If all character from string *one *exists in string *two*, then we found it's an anagram.
 
-##  Java code to test two strings are anagrams:
+## Â Java code to test two strings are anagrams:
 
 [gist id="2007044"]
 

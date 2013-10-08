@@ -28,7 +28,7 @@ Let's start with JDK first.
 
 ## Install Sun JDK:
 
-1.  Download the Linux version of latest JDK binary from the [Oracle website][1]. For Java 6, the file name would be: ***jdk-6u22-linux-i586.bin***
+1.  Download the Linux version of latest JDK binary from the [Oracle website][1]. For Java 6, the file name would be:Â ***jdk-6u22-linux-i586.bin***
 2.  Copy the downloaded JDK file to a directory where you want to install the JDK. I use ***/home//java/*jdk-6u22-linux-i586.bin****
 3.  Open terminal window and navigate to the directory where you copied the downloaded file. Then type the command: ***sudo sh jdk-6u22-linux-i586.bin** *and press enter.
 4.  If it asks for root password, give it and JDK installation will begin. The JDK will be installed on the same directory where the binary is placed.
@@ -39,7 +39,7 @@ That's it. JDK installation is done. But we still have one more step to complete
 
 ## Setting up JAVA_HOME environment variable:
 
-1.  Go to Nautilus file browser (*Places -> Home Folder*) and open this file: ***'.bashrc'***. By default this file is hidden. So, press *Ctrl H *which will show all hidden files and then you can see the *.bashrc *file.
+1.  Go to Nautilus file browser (*Places -> Home Folder*) and open this file: ***'.bashrc'Â***. By default this file is hidden. So, press *Ctrl H *which will show all hidden files and then you can see the *.bashrc *file.
 2.  Add the below code snippet at the end of the *.bashrc *file: 
         export JAVA_HOME=/home//java/jdk1.6.0_22
         PATH=.:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH

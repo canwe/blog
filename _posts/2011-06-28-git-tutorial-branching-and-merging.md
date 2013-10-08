@@ -47,7 +47,7 @@ Having said that, lets see how to create new branches in Git. I'm opening my [*h
     # On branch master
     nothing to commit (working directory clean)
 
-So, now I'm on the *master *branch which is the **default **branch in Git. I want to create a new feature to add line of text 'Hello India' to my file. For that, lets create a branch *india*.
+So, now I'm on the *master *branch which is the **default **branch in Git. I want to create a new feature to add line of text 'Hello India'Â to my file. For that, lets create a branch *india*.
 
     ~/work/projects/helloworld$ git branch india
     ~/work/projects/helloworld$ git branch
