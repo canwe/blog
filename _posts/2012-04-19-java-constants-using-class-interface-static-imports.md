@@ -18,7 +18,6 @@ tags:
   - static
   - static-imports
 ---
-# Java Constants &#8211; using Class, Interface, Static Imports
 
 Constants are the constant things in a project. I mean, it is safe to assume that any project would have some kind of constant values used across the code.
 

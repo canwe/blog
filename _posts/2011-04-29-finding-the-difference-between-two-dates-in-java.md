@@ -12,7 +12,6 @@ tags:
   - How To
   - Java
 ---
-# Finding the difference between two dates in Java
 
 Let's say you have two Date objects *DateOne* and *DateTwo*. Now you want to find the difference between these two dates and show that in a human readable format; for example '*the difference is 2 hours and 30 minutes*'. How do you do it in Java?
 

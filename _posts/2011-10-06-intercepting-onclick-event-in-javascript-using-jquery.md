@@ -14,7 +14,6 @@ tags:
   - onclick
   - Web
 ---
-# Intercepting onclick event in JavaScript using JQuery
 
 Let's say you are using some external components in your web page that renders a button as below:
 

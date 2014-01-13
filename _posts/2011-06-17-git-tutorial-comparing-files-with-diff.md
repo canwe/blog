@@ -15,7 +15,6 @@ tags:
   - scm
   - version
 ---
-# Git tutorial &#8211; comparing files with diff
 
 ![compare][1]Continuing from my last post, which explained [my Git workflow][2], in this post I'm sharing how to compare different versions of files. Before that, you might want to read the [Getting started with Git][3] post too if you haven't done already.
 

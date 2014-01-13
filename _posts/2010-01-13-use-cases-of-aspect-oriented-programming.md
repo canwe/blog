@@ -14,7 +14,6 @@ tags:
   - spring
   - use-cases
 ---
-# Use cases of Aspect Oriented Programming
 
 In my last article about **Aspect Oriented Programming** (AOP), I explained [how to use Spring AOP for profiling method execution time][1]. When the article was [posted][2] in DZone, it got a comment from [an user][3] saying that
 

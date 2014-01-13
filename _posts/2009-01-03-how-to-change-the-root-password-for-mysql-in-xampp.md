@@ -14,7 +14,6 @@ tags:
   - tutorial
   - xampp
 ---
-# How to change the root password for MySQL in XAMPP?
 
 By default, when you install XAMPP in your windows machine, the `root` password for the MySQL is set to empty. But this is not recommended, as the MySQL database without a password will be accessible to everyone. To avoid this, a proper/secure password must be set to the user `root`. To do it in XAMPP, there are two ways.
 

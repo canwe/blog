@@ -14,7 +14,6 @@ tags:
   - tip
   - xampp
 ---
-# How to change XAMPP server port?
 
 Follow these steps to change the XAMPP server port number:
 

@@ -18,7 +18,6 @@ tags:
   - review
   - smartphone
 ---
-# Nokia Lumia 800 Review
 
 It's been a week since I bought my Nokia Lumia 800 and I think I've got enough experience to review it. Rather than writing it in the technical perspective, I'm gonna keep this review as **what I like** and **what I don't like** in this windows phone, so that I can write close to the truth.
 

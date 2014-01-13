@@ -21,7 +21,6 @@ tags:
   - scripts
   - windows
 ---
-# Using multiple versions of JDK and Eclipse in single machine
 
 This post will be useful if you are doing Java development in a Windows machine. Others, please feel free to browse [other posts][1].
 

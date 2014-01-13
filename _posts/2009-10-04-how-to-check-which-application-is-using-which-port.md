@@ -11,7 +11,6 @@ tags:
   - tip
   - windows
 ---
-# How to check which application is using which port
 
 Today I found an easy way to check which application is using which port in my system. Here I'm sharing the steps. These steps are applicable for the Windows Operating System.
 

@@ -22,7 +22,6 @@ tags:
   - chrome
   - google
 ---
-# Chrome : Error 104 (net::ERR_CONNECTION_FAILED)
 
 Initially there were no problems with Google Chrome browser. It just worked out of the box. But suddenly one fine day, it stopped loading web pages, showing 'Error 104 (net::ERR\_CONNECTION\_FAILED)'Â message. At first I thought it's a fresh bug coming out of chrome, Since Firefox and IE were just fine, I had to put the blame on Chrome.
 

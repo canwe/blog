@@ -23,7 +23,6 @@ tags:
   - tutorial
   - Web
 ---
-# Hosting Google App Engine application in your own domain
 
 Note: This post is written by/for the Java web developer who is using Google App Engine. Even if you are not an Java developer, but interested, you are welcome to read further.
 

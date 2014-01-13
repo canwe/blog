@@ -17,7 +17,6 @@ tags:
   - quirk
   - Web
 ---
-# JavaScript getAttribute method
 
 ![ie-wtf][1]Sometimes you might want to read the 'class'Â attribute value of an HTML tag (for example *div*) from your JavaScript for processing. Almost all major JavaScript frameworks provide method to read attribute values, using which we can easily get the value of 'class'Â attribute.
 

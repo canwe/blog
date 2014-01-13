@@ -13,7 +13,6 @@ tags:
   - stats
   - wishes
 ---
-# Looking back and forward
 
 ![][1]The time sure flies! Yet another December 31'Â²st and 'ËœHappy New year' wishes everywhere. What else would be the right time to stop and look back?
 

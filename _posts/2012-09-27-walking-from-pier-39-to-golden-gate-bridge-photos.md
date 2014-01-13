@@ -22,7 +22,6 @@ tags:
   - walk
   - walking
 ---
-# Walking from Pier 39 to Golden Gate bridge &#8211; photos
 
 I have visited the Golden Gate bridge a few times before. One time, we rode the open top city tour bus which took us around the golden gate. And then in another time, we drove a car and crossed the bridge to see the city from the other shore. Though the bridge was astonishing every time, it was also getting too-usual.
 

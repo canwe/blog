@@ -18,7 +18,6 @@ dsq_thread_id:
 categories:
   - Personal
 ---
-# What advice will you give for a J2EE fresher?
 
 Recently, I was surprised to get an email from an Java fresher, who asked me to give some suggestions on learning J2EE technologies. Here is what I've replied:
 

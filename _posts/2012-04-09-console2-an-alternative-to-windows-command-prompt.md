@@ -16,7 +16,6 @@ tags:
   - Utility
   - windows
 ---
-# Console2 &#8211; an alternative to Windows command prompt
 
 Recently I happened to use Windows to do some cross browser testing (no prizes for guessing the browser). It's Â been a long time since I used Windows and Ubuntu has become my primary OS then. And, when I was a windows user, I never cared about its command prompt. Mainly because I never had anything to do in the command line.
 

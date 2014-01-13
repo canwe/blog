@@ -11,7 +11,6 @@ tags:
   - html
   - Web
 ---
-# The Evolution of a Web Developer
 
 If you are learning something new , be it a programming language, photography, driving a car - you name it, you get to learn the very basics first. And then you slowly move upwards the learning curve and start learning the best practices and pit falls. Finally you tend to master the art and bring your own ways of doing it.
 

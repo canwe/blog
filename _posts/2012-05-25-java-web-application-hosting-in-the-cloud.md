@@ -26,7 +26,6 @@ tags:
   - service
   - Web
 ---
-# Java web application hosting in the cloud
 
 It's been an year since I wrote the first part of [Hosting Java applications in the web][1]. Since then, the Java hosting arena has become crowded with the so many players, which is a good news to the developers like us.
 

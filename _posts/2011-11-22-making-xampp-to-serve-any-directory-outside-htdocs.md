@@ -20,7 +20,6 @@ tags:
   - windows
   - xampp
 ---
-# Making XAMPP to serve any directory outside htdocs
 
 So, you have installed XAMPP on windows, [changed its server port][1] to a different number other than 80 and [changed the MySQL *root*Â password][2] to a more secure one. Now its the time to create some HTML files that will be served by XAMPP server.
 

@@ -15,7 +15,6 @@ tags:
   - laptop
   - pc
 ---
-# Bought a new Laptop &#8211; Acer Aspire 5738Z
 
 Last weekend, the first item on my TODO list was to [setup][1] a desktop PC. I had decided on the [PC configuration][2] long back ago, but didn't actually set it up. Because that time I was in Trivandrum, where the PC accessories might cost a bit higher. I was holding that plan till I move to Chennai. After I [moved][3] to Chennai, last Saturday I got some free time to get the things ready.
 

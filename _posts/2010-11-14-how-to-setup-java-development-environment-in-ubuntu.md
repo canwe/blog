@@ -20,7 +20,6 @@ tags:
   - tutorial
   - Ubuntu
 ---
-# How to setup Java development environment in Ubuntu?
 
 **In this post, I'm going to explain how you can setup a Java development environment (JDK Eclipse) in Ubuntu. I'm using Ubuntu 10.10, but these steps should be applicable to majority of Ubuntu versions.
 

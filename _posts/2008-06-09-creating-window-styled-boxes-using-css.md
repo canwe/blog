@@ -22,7 +22,6 @@ tags:
   - tutorial
   - Web
 ---
-# Creating window styled boxes using CSS
 
 While I was designing my home page [Veerasundar.com][1], I came up with this style definition which can create window styled boxes in a HTML page. I am sharing the style definitions and HTML snippet here, so that if anybody else wants to create the same, they could re-use the same. Off course, there are multiple advanced scripts are available, but below is very basic one, which if you know little HTML and CSS, you can extend it for your own need.
 

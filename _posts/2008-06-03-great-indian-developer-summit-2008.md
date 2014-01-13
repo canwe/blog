@@ -8,7 +8,6 @@ tags:
   - meet
   - summit
 ---
-# Great Indian Developer Summit &#8211; 2008
 
 Got a chance to attend Java Conference at first Great Indian Developer summit, which was held at Bangalore on May 19-24. I have been nominated from my company, along with others, to attend this conference. The summit was organized at Indian Institute of Science, Bangalore and there were three different tracks of events, namely .Net, Web2 and Java. The focus of the entire conference is on â€œEnterprise productivityâ€ and all the masters and geeks, who spoke at the conference, shared some useful tips on enterprise productivity.
 

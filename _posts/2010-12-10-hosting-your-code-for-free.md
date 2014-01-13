@@ -18,7 +18,6 @@ tags:
   - Tools
   - Web
 ---
-# Hosting your code for free
 
 Sometime back, I wrote about [Java web application hosting][1], in which I listed out the different options available to you to [host your Java web applications][2]. Now, let's look at the different solutions to **host your code**.
 

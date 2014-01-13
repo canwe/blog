@@ -18,7 +18,6 @@ tags:
   - thirukural
   - twikural
 ---
-# Open sourcing Twikural &#8211; an App Engine project
 
 **tldr;Â **
 

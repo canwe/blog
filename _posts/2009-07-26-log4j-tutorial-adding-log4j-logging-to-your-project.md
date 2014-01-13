@@ -20,7 +20,6 @@ tags:
   - log4j-tutorial
   - logging
 ---
-# Log4j Tutorial : Adding Log4j logger to your project
 
 If you are new to Log4j, here is a short description on what is it and why should we care about it:
 

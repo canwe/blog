@@ -15,7 +15,6 @@ tags:
   - tip
   - unix
 ---
-# Executing a UNIX command in background
 
 Here's a small UNIX tip (or how-to) for executing a command in the background. For UNIX gurus, this tip might seem like a basic one. But for guys like me who are coming from a Windows background, even smaller ones makes a big difference.
 

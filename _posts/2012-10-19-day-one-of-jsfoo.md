@@ -20,7 +20,6 @@ tags:
   - tech
   - Web
 ---
-# Day one of JSFoo
 
 Day one of [JSFoo][1] is just got over. Went to the event with lot of expectations and came back with some new ideas/topics to explore. Here's a summary of what I learnt from today's sessions.
 

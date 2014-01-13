@@ -17,7 +17,6 @@ tags:
   - opinion
   - Web
 ---
-# The Rise of the Front End Developers
 
 In any web development company, there exists two different worlds; well there are *more,*Â but we'll just focus onÂ - front end (designers) & back end (developers)
 

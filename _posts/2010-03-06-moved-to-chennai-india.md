@@ -13,7 +13,6 @@ tags:
   - Personal
   - relocation
 ---
-# Moved to Chennai, India
 
 It has been several days since I posted anything in this blog. Well, there was a reason for that - I quit [Infosys][1] and joined [CSC][2]. For that I had to move to [Chennai][3] and it took my last two weekends for the relocation and settling in. Didn't get much time to put something together and write here.
 

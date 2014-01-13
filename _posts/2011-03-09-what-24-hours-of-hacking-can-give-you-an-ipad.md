@@ -19,7 +19,6 @@ tags:
   - winning
   - x
 ---
-# What 24 hours of hacking can give you? an iPad.
 
 Yes. At least that is what we got - an **iPad** - for creating a product within 24 hours during the Hackathon event held @ PayPal.
 

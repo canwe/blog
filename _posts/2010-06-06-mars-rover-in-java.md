@@ -13,7 +13,6 @@ tags:
   - rover
   - thoughtworks
 ---
-# Mars Rover in Java
 
 Sometime back, when Arun [posted][1] a Python version of **Mars Rover problem**, I tried the same in Java. Btw, if you haven't heard about Mars Rover problem before, here's the text for you (Ctrl C & Ctrl V'ed from Arun's [post][1]).
 

@@ -16,7 +16,6 @@ dsq_thread_id:
 categories:
   - Personal
 ---
-# A Very Happy New Year To All the Readers of Dreamz
 
 Another eventful year has passed. I am taking this moment to wish you and your family a **Happy and Prosperous New Year!**
 

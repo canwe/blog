@@ -15,7 +15,6 @@ tags:
   - scratchpad
   - Web
 ---
-# How I scrape web pages
 
 Often I need to pull some content out of web pages. Of course, I can always do a simple *Ctrl C*.Â But many times, I want the scrapped content to be in a different format than it's already in. So,Â I used to write Java code that downloads the content and do some XML parsing and then converts it into the format I want. But, this became a tedious process soon.
 

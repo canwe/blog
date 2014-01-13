@@ -15,7 +15,6 @@ tags:
   - javascript
   - Web
 ---
-# 5 Ways of effectively using Firebug to edit HTML, CSS
 
 Firebug is an inseperable tool in any Web developer's toolbox. It's one of the best things that happened to JavaScript and Web Development. I have been using Firebug for a long time and have been wondering how my web development would be if there is no Firebug. So, in this article, I'm sharing few of my tips and tricks to use Firebug effectively to speed up your web development.
 

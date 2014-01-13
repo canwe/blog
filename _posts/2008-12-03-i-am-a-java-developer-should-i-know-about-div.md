@@ -26,7 +26,6 @@ tags:
   - tips
   - Web
 ---
-# I am a Java developer. Should I know about DIV ?
 
 Recently one of my colleague asked me the question
 

@@ -16,7 +16,6 @@ tags:
   - stats
   - year
 ---
-# Thank you friends! This blog is now 3 years old.
 
 Well, well, well, I completely forgot that I started this blog on this same month, three years ago. Yes! Now this blog completes **3 years **and steps into the fourth year.
 

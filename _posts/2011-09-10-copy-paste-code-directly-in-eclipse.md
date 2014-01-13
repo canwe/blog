@@ -15,7 +15,6 @@ tags:
   - tip
   - trick
 ---
-# Copy paste code directly in Eclipse
 
 Recently learned a really cool trick for copy-pasting code in Eclipse.
 

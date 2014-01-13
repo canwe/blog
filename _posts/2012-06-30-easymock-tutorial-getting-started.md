@@ -18,7 +18,6 @@ tags:
   - test
   - testing
 ---
-# EasyMock tutorial &#8211; Getting Started
 
 In this post, I'm going to show you what EasyMock is and how you can use it for testing your java application. For this purpose, I'm going to create aÂ **simple PortfolioÂ **application and test it usingÂ **JUnit & EasyMock** libraries.
 

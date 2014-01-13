@@ -15,7 +15,6 @@ tags:
   - productivity
   - tip
 ---
-# Organize imports in Eclipse
 
 Today I learned a neat trick to organize imports in Eclipse. Of course, one can useÂ **Ctrl Shift OÂ **to remove the unused imports at file level. But what if you want to remove the unused imports for several files, may be at package level?
 

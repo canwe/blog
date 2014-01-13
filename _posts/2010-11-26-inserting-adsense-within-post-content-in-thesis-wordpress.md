@@ -21,7 +21,6 @@ tags:
   - thesis
   - wordpress
 ---
-# Inserting Adsense within post content in Thesis WordPress
 
 **The usual placement of ads in a blog post is either *before* the post content or *after *it. But, if you want to place the ads *within* your content, then there's a way to do it in WordPress. This same technique works in Thesis theme too!
 

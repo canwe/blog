@@ -21,7 +21,6 @@ tags:
   - vcs
   - version
 ---
-# Git tutorial &#8211; branching and merging
 
 Lets say that you have pushed your code live and now want to code for a new feature. And, suddenly a bug found in your live code (it happens! a LOT!) which needs an immediate fix from you. Now, you have two different coding tasks in your hand.
 

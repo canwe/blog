@@ -24,7 +24,6 @@ tags:
   - tutorial
   - Web
 ---
-# Getting your web identity!
 
 This post is a tutorial on how to start your web site/blog. I am explaining it from the basics, so that it helps everyone.
 

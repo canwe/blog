@@ -17,7 +17,6 @@ tags:
   - j2ee
   - spring-aop
 ---
-# The Aspect Oriented way of Programming
 
 As Java developers, we all knew what is *Object Oriented Programming*. In OOP, a particular functionality (say, payroll calculation) is contained in a single class, thus providing the data encapsulation. So, a OOP system will have more than one objects, each representing a particular functionality, collaborating within themselves. What if, you need a functionality to spread across multiple objects?
 

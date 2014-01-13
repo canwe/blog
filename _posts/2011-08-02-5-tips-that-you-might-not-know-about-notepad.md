@@ -17,7 +17,6 @@ tags:
   - tips
   - windows
 ---
-# 5 tips that you might not know about Notepad++
 
 Notepad is the lightest yet powerful text editor I've ever came across. It's fast, slick and has been my [default text editor][1] for years.
 

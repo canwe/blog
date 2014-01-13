@@ -14,7 +14,6 @@ tags:
   - two-year
   - year
 ---
-# Thank you my readers! This blog turns 2 year old!!
 
 First of all, let me say a BIG THANKS to all my readers who visited, read my posts, commented,Â  sent me emails, joined my network, subscribed to my postsÂ  (and *some times* clicked on the ads ![:)][1] ). Because of all your positive feedback, this blog turns **2 year old** in this month (June 3rd to be exact) . Thank you again, my readers.
 

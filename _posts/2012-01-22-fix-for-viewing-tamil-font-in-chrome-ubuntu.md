@@ -18,7 +18,6 @@ tags:
   - ttf
   - Ubuntu
 ---
-# Fix for viewing Tamil font in Chrome &#8211; Ubuntu
 
 It seems like the Chrome browser in Ubuntu has some issues in displaying Tamil fonts. I guess, other Indian languages also might be having the same issue. The weirdest thing is Firefox was displaying the Tamil content properly.
 

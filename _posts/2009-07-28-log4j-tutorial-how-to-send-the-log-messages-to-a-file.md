@@ -24,7 +24,6 @@ tags:
   - log4j
   - log4j-tutorial
 ---
-# Log4j Tutorial : How to send the log messages to a File using Appender
 
 In the previous post of the Log4j tutorial series, I wrote about the very basics of [adding Log4j logging to your project][1]. In this post, I'll explain how to create a File Appender to log messages into a file, instead of console.
 

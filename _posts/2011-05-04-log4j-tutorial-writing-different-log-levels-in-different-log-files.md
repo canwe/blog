@@ -18,7 +18,6 @@ tags:
   - logging
   - tutorial
 ---
-# Log4j Tutorial &#8211; Writing different log levels in different log files
 
 Recently one of my blog reader *Surisetty *send me a question, asking me if it is possible **to write log messages of different levels (info, debug, etc) into different log files**? To answer his question, **yes, it is possible. **We can do this** **by extending the FileAppender class and writing our own logic.
 

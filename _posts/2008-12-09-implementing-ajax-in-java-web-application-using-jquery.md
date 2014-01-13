@@ -28,7 +28,6 @@ tags:
   - tips
   - tutorial
 ---
-# Implementing Ajax in Java web application using JQuery
 
 Implementing Ajax features in a Java web application is considerably easy if we are using JQuery JavaScript library. JQuery provides built-in methods that we can use to enable Ajax in our Java web application.
 

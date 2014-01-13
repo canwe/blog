@@ -17,7 +17,6 @@ tags:
   - scissor
   - Web
 ---
-# Rock Paper Scissors and Bombs
 
 Last Saturday, I was bored. So, thought of writing a game in JavaScript using HTML5 and CSS3 techniques. And thats howÂ *[Rock Paper Scissors and Bombs][1] *came to life.
 

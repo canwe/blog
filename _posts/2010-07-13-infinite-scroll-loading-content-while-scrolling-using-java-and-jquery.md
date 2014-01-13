@@ -18,7 +18,6 @@ tags:
   - scrolling
   - Web
 ---
-# Infinite scroll : Loading content while scrolling, using Java and JQuery
 
 Have you seen the infinite scrolling of content in some web pages? For example, in [DZone.com][1] when you scroll the page to the bottom, new links will be loaded automatically and it'll give you the illusion that the page scrolls infinitely. Another good example is that Bing's [Image Search][2].
 

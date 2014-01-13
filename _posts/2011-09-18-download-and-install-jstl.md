@@ -16,7 +16,6 @@ tags:
   - jstl
   - share
 ---
-# Download and install JSTL
 
 To add JSTL to your project;
 

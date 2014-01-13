@@ -17,7 +17,6 @@ tags:
   - pc
   - review
 ---
-# Acer Aspire one 722 &#8211; Review
 
 I'd never thought I would buy one Netbook for myself. I already [own a Laptop][1]Â and I'm quite happy with its performance. But, it's 15'Â³ screen made it uncomfortable to carry around. I have been using it more or less like a desktop (it hardly moved an inch from where I kept it few months back!).
 
