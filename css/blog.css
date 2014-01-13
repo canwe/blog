@@ -2,7 +2,7 @@ body.blog{
   font:1em "PT Serif", Georgia, Serif;
   color: :#333;
   background-color: #fce6e3;
-  padding: 70px 0;
+  padding: 70px 0 0 0;
 }
 
 .btn.primary{
@@ -134,4 +134,23 @@ body.blog{
   width: 50%;
   margin: 2rem auto;
   display: block!important;
+}
+body > footer{
+  background-color: #e74c3c;
+  color: #fff;
+  margin-top: 2rem;
+  display: block;
+  padding: 1rem;
+}
+
+footer ul{
+  list-style: none;
+  font-size: 1.2rem;
+}
+footer ul li{
+  display: inline-block;
+  margin: 0 1rem;
+}
+footer li a, footer li a:visited{
+  color: #fff;
 }
