@@ -101,3 +101,7 @@ body.blog{
   margin:0 auto;
   display: block;
 }
+.other-posts{
+  font-size: 1.2rem;
+  margin:2rem 0;
+}
