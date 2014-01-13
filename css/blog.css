@@ -110,6 +110,13 @@ body.blog{
 .page h1{
   margin-bottom: 2rem;
 }
+.page p{
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.page p a{
+  color: #e74c3c;
+}
 
 .page.archive .posts{
   font-size: 1.3rem;
