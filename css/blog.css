@@ -1,0 +1,28 @@
+.blog{
+  font:1em "PT Serif", Georgia, Serif;
+  color: :#333;
+}
+
+.header{
+  border:none;
+  border-radius:0;
+  background-color:#fff;
+  opacity: .7;
+}
+  .header.navbar .nav a, .header .navbar-brand{
+    color: #e74c3c;
+  }
+  .header.navbar .nav a:hover, .header .navbar-brand:hover{
+    color: #c0392b;
+  }
+  .header .navbar-brand{
+    font-weight: bold;
+  }
+  .header .site-links{
+    margin-left: 2rem;
+  }
+  .header .site-links a{
+    text-transform:uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1pt;
+  }
