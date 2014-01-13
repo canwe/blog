@@ -45,9 +45,14 @@ tags:
   </article>
 {% endfor %}
 
-<ol class="posts">
-  {% for post in site.posts limit:5 %}
-    <li><a href="/blog{{ post.url }}">{{ post.title }}</a><small> / {{ post.date | date_to_string }}</small></li>
-  {% endfor %}
-  <li>[<a href="archive.html" title="Archives">See all posts</a>]</li>
-</ol>
+<section class='posts-list recent'>
+  <header>
+    <h2 class="title">Recent posts</h2>
+  </header>
+  <ul class="posts">
+    {% for post in site.posts limit:5 offset:1 %}
+      <li><a href="/blog{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <a class="btn primary archives" href="archive.html" title="Archives">See all posts</a>
+</section>

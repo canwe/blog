@@ -4,6 +4,14 @@ body.blog{
   background-color: #fce6e3;
 }
 
+.btn.primary{
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  border-bottom: 3px solid #c0392b;
+  padding: .5rem 1rem;
+}
+
 .header{
   border:none;
   border-radius:0;
@@ -50,7 +58,6 @@ body.blog{
     height: auto;
   }
   .post footer{
-    background-color: #fafafa;
     border-top:1px dashed #fce6e3;
     border-bottom:1px dashed #fce6e3;
     padding:2rem 0;
@@ -68,3 +75,29 @@ body.blog{
   .post footer .title{
     font:2.3rem "PT Serif", Georgia, Serif;
   }
+.posts-list{
+  font-size: 1.5rem;
+}
+.posts-list ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.posts-list li{
+  
+}
+.posts-list li a{
+  padding: 1rem .5rem;
+  display: block;
+  width: 100%;
+  color: #e74c3c;
+  text-align: center;
+}
+.posts-list header .title{
+  font: 2rem "PT Serif", Georgia, Serif;
+  text-align: center;
+}
+.posts-list .archives{
+  margin:0 auto;
+  display: block;
+}
