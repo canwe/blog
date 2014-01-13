@@ -130,3 +130,8 @@ body.blog{
   .page.archive .posts small{
     color: #aaa;
   }
+.fb-like-box{
+  width: 50%;
+  margin: 2rem auto;
+  display: block!important;
+}
