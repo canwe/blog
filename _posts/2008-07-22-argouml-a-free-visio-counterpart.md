@@ -27,7 +27,6 @@ tags:
   - Tools
   - uml
 ---
-# ArgoUML &#8211; a free Visio counterpart
 
 Recently, I have been asked to evaluate a UML modeling tool, [ArgoUML ][1]and below are my initial impressions on this tool:
 

@@ -22,7 +22,6 @@ tags:
   - tip
   - wordpress
 ---
-# Using wordpress custom fields to control Ads in your blog
 
 Custom fields are the user defined information that are assigned to any blog post in WordPress. They are also called as **meta-data**. Blog authors usually define the custom fields when they write the blog post to give some extra information like mood, whether,etc. Custom fields are **key/value** pairs, that means you can define any key and assign any value to this key. To know more about custom fields check out [WordPress.org][1] site. With this explanation, it is easy to control the ad presence in your blog post easily with custom fields.  
 

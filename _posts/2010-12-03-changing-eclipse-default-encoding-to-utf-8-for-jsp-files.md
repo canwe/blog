@@ -14,7 +14,6 @@ tags:
   - Java
   - utf8
 ---
-# Changing Eclipse default encoding to UTF-8 for JSP files
 
 Try creating a new JSP file in your Eclipse and you'll notice that the JSP page directive will have encoding something like:
 

@@ -17,7 +17,6 @@ tags:
   - travel
   - usa
 ---
-# San Francisco
 
 It's my first trip to United States (or to any foreign country for that matter) and I was kinda excited to be here. Having spent the first three weekends in my hotel room and haven't got a chance to take out my Nikon, I was eagerly waiting for an outing.
 

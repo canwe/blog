@@ -19,7 +19,6 @@ tags:
   - widget
   - wordpress
 ---
-# WordPress plugin to show the posts and comments count in the sidebar
 
 As part of this blog's re-design, I wanted to show the number of posts and comments as a widget in the sidebar. But I couldn't find a plugin that does exactly what I wanted. So, I wrote one on my own.
 

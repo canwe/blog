@@ -15,7 +15,6 @@ tags:
   - svg
   - Web
 ---
-# Loading Raphael JS via require JS
 
 Raphael, the SVG JavaScript library, does not support require JS (yet). When loaded via `require('raphael')`, the code breaks throwing `'eve is not defined'` error in the console. There is a year long [issue thread][1] going on regarding this issue, but still there is no official fix yet.
 

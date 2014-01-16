@@ -21,7 +21,6 @@ tags:
   - table
   - xampp
 ---
-# How to reset Auto Increment back to 1 in XAMPP MySQL using phpMyAdmin
 
 When you delete every records from a table, which has an AUTO Increment ID field, the *delete*Â option will not reset the*Â Auto Increment *number. For example, if the table had 5 rows, and you deleted all the rows (either one by one or through *delete from tablename where 1;*), and then if you insert a new row, it will get a ID value as **6 **not as **1**. Because the auto increment value is not reset.
 

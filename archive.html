@@ -2,12 +2,11 @@
 layout: default
 title: Archive page of Veera Sundar's blog
 ---
-
-<h2>Archive:</h2>
-<ol class="posts">
-  {% for post in site.posts %}
-    <li><a href="/blog{{ post.url }}">{{ post.title }}</a><small>  {{ post.date | date_to_string }}</small></li>
-  {% endfor %}
-</ol>
-<hr/>
-
+<div class='page archive'>
+  <h1>Archive:</h1>
+  <ol class="posts">
+    {% for post in site.posts %}
+      <li><a href="/blog{{ post.url }}">{{ post.title }}</a><small>  {{ post.date | date_to_string }}</small></li>
+    {% endfor %}
+  </ol>
+</div>

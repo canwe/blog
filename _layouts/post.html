@@ -2,92 +2,48 @@
 layout: default
 postpage: yes
 ---
-<div id="post">
+<div id="post" class='stand-alone post'>
 
     <input id="postId" type="hidden" value="{{ page.id }}" />
 
-    <div class="site-nav visible-desktop">
-        <a href="http://veerasundar.com/blog" title="Back to home"><i class='icon-home'></i> Home</a>
-        <a href="javascript:window.scrollTo(0,0);" title="Scroll to top"><i class='icon-circle-arrow-up'></i> Top</a>
-    </div>
+   <h1>
+      {{ page.title }}
+    </h1>
 
-    <h1>{{ page.title }} </h1>
-
-    <time><i class='icon-calendar'></i> {{ page.date | date: "%d %B %Y" }} </time>
-
-    <!-- post content -->
-    <article>
-        {{ content }}
-
-        <img class="postend pulse" src='/blog/img/moustache.png' width="500" height="100" title="End of the post" />
-
-    </article>
-
+    <section class='content'>
+      {{ content }}
+    </section>
+    
+    {% include author.html %}
+   
     <!-- PREVIOUS / NEXT -->
     <section class='other-posts row'>
-        <section class='span3'>
-            {% if page.previous.url %}
-                <section class='previous'>
-                    <h3><i class="icon-hand-left"></i> Previous Post</h3>
-                    <p>
-                        <a id="{{page.previous.id}}" href="/blog{{page.previous.url}}" title="Previous post: {{page.previous.title}}">{{page.previous.title}}</a>
-                    </p>    
-                </section>
-            {% endif %}
-            {% if page.next.url %}
-                <section class='next'>
-                    <h3>Next Post <i class="icon-hand-right"></i></h3>
-                    <p>
-                        <a id="{{page.next.id}}" href="/blog{{page.next.url}}" title="Next post: {{page.next.title}}">{{page.next.title}}</a>
-                    </p>
-                </section>
-            {% endif %}
-        </section>
-        <section class='related span3'>
-            <h3>Related</h3>
-            <ol>
-                {% for post in site.related_posts limit:3 %}
-                  <li><a href="/blog{{ post.url }}" id="{{post.id}}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ol>
-        </section>
+        {% if page.next.url %}
+            <section class='next col-xs-12 col-sm-6'>
+                <h6>Newer Post </h6>
+                <p>
+                    <a id="{{page.next.id}}" href="/blog{{page.next.url}}" title="Newer post: {{page.next.title}}">{{page.next.title}}</a>
+                </p>
+            </section>
+        {% endif %}
+        {% if page.previous.url %}
+            <section class='previous col-xs-12 col-sm-6'>
+                <h6>Older Post</h6>
+                <p>
+                    <a id="{{page.previous.id}}" href="/blog{{page.previous.url}}" title="Older post: {{page.previous.title}}">{{page.previous.title}}</a>
+                </p>    
+            </section>
+        {% endif %}
     </section>
     <!-- end PREVIOUS / NEXT -->
 
-    <!-- RELATED POSTS -->
-    <section class='related row'>
-        <section class='span6'>
-            
-        </section>
+    <!-- FB Like box -->
+    <section class='fb row hidden-xs'>
+        <div class='col-xs-12'>
+            <div class="fb-like-box" data-href="https://www.facebook.com/veera.sundar.blog" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+        </div>
     </section>
-    <!-- END of RELATED POSTS -->
-
-    <!-- SOCIALIZE -->
-    <section class='social row'>
-        <section class="fb span3">
-            <h3>Join us:</h3>
-            <div class="fb-like-box" data-href="https://www.facebook.com/veera.sundar.blog" data-width="292" data-show-faces="true" data-stream="false" data-show-border="false" data-header="false"></div>
-        </section>
-        <!--
-        <section class='gplus span3'>
-            <h3>Let's be in <i class="icon-circle-blank"></i></h3>
-            <a href="//plus.google.com/112623957029861555682?prsrc=3"
-               rel="publisher" target="_top" style="text-decoration:none;">
-            <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>
-            </a>
-        </section>
-        -->
-        <section class='channels span3'>
-            <h3>Share:</h3>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="vraa" data-size="large" data-dnt="true">Tweet</a>
-            <br/>
-            <br/>
-            <div class="g-plusone"></div>
-        </section>
-    </section>
-    <!-- END OF SOCIALIZE -->
-
-    
+    <!-- end FB like box -->
 
 
     <!-- comments section -->

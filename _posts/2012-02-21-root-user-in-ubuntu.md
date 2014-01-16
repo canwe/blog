@@ -17,7 +17,6 @@ tags:
   - tech
   - Ubuntu
 ---
-# root user in Ubuntu
 
 Today I got stuck on what could be a simple problem to long time Ubuntu users - making changes that require *root *access.
 

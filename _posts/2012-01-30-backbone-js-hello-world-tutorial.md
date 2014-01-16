@@ -13,7 +13,6 @@ tags:
   - tutorial
   - Web
 ---
-# Backbone JS &#8211; Hello World tutorial
 
 [Backbone.js][1] is recently getting lots of traction among the web developers because of its ability to organize the JavaScript code. It provides the structure (Model-View) around which we can build our JavaScript heavy web applications.
 

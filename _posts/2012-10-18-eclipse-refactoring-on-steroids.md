@@ -19,7 +19,6 @@ tags:
   - Java
   - refactoring
 ---
-# Eclipse refactoring on steroids
 
 In my last post about [common Java violations][1], I listed a set of mistakes that java developers tend to make. While refactoring a Java project with the objective to resolve those violations, I used the refactoring features of Eclipse extensively to quickly change the code. Below is the compilation of such refactoring techniques.
 

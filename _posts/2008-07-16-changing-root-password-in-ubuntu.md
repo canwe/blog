@@ -24,7 +24,6 @@ tags:
   - tips
   - Ubuntu
 ---
-# Changing root password in Ubuntu
 
 Four months back, I had installed Ubuntu on my laptop and completely forgot about that after the installation. Yesterday, when I tried to install Java and Netbeans IDE on Ubuntu, I had to do some admin works, but I dont remember what password I gave for the 'Ëœroot' user during the installation. So, I thought I forgot the root password and I would have to re-install Ubuntu.
 

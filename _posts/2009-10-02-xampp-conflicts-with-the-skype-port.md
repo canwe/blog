@@ -11,7 +11,6 @@ tags:
   - skype
   - xampp
 ---
-# XAMPP conflicts with the Skype port
 
 If you've installed both [XAMPP][1] and Skype in you system and wondering why the things are not going well when you run these two applications simultaneously, then you are not alone. There are a good number of folks who are complaining about this conflict between XAMPP and Skype. The reason behind this is simple - both Skype and XAMPP by default uses the same port number 80. So, when you start one application first and the other application later, there will be port conflict and the second application will fail to work properly.
 

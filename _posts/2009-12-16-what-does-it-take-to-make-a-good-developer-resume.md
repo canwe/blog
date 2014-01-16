@@ -13,7 +13,6 @@ tags:
   - job
   - resume
 ---
-# What does it take to make a &#8216;good&#8217; developer resume?
 
 Are you a programmer? If yes, then I need to hear from you.
 

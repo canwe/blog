@@ -25,7 +25,6 @@ tags:
   - violation
   - violations
 ---
-# Common code violations in Java
 
 At work, recently I did a code cleanup of an existing Java project. After that exercise, I could see a common set of code violations that occur again and again in the code. So, I came up with a list of such common violations and shared it with my peers so that an awareness would help to improve the code quality and maintainability. I'm sharing the list here to a bigger audience.
 

@@ -26,7 +26,6 @@ tags:
   - spring
   - tutorial
 ---
-# Spring AOP Example: Profiling method execution time tutorial
 
 I have already written about the *Spring Aspect Oriented Programming (AOP)* with the use of simple logging example. But, somehow I felt that the example code was little confusing for the newcomers. So, I decided to write a new Spring AOP example code that explains how to use Spring AOP for profiling method execution time.
 

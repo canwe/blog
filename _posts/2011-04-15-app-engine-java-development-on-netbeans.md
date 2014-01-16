@@ -19,7 +19,6 @@ tags:
   - tutorial
   - Ubuntu
 ---
-# App Engine Java development on Netbeans
 
 ![Google App Engine on Netbeans][1]If you just started with App engine development, you might be having a feeling that Eclipse is the preferred IDE. And, Google also has offered its [official plug-in][2] to Eclipse IDE alone.
 

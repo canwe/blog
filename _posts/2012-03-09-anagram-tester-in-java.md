@@ -13,7 +13,6 @@ tags:
   - code
   - Java
 ---
-# Anagram tester in Java
 
 While browsing the net, I found this problem somewhere - to write a code that tests the given two strings are anagrams or not. From Wiki,
 

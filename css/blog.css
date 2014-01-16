@@ -1,331 +1,156 @@
-.site{
-  color: #333;
-  font-family: 'PT Serif', serif;
+body.blog{
+  font:1em "PT Serif", Georgia, Serif;
+  color: :#333;
+  background-color: #fce6e3;
+  padding: 70px 0 0 0;
 }
 
-.card{
+.btn.primary{
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  border-bottom: 3px solid #c0392b;
+  padding: .5rem 1rem;
 }
 
-aside{
-  position: fixed;
-  left: 0;
-  top: 0; 
-  width: 300px;
-  height: 100%;
-  background-color: #C6F0F2;
-  border-right: 5px solid #B2DCDE;
-  color: #333;
-  padding: 10px;
-  text-align: center;
+.header{
+  border:none;
+  border-radius:0;
+  background-color:#fff;
+  opacity: .7;
 }
-
-header{
+  .header.navbar .nav a, .header .navbar-brand{
+    color: #e74c3c;
+  }
+  .header.navbar .nav a:hover, .header .navbar-brand:hover{
+    color: #c0392b;
+  }
+  .header .navbar-brand{
+    font-weight: bold;
+  }
+  .header .site-links{
+    margin-left: 2rem;
+  }
+  .header .site-links a{
+    text-transform:uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1pt;
+  }
+.post, .page{
+  background-color: #FEF7F6;
+  color: :#333;
+  padding: 2rem;
+  border-radius: 3rem 0 3rem 0;
+}
+  .post h1, .page h1{
+    font:3rem "PT Serif", Georgia, Serif;
+    color: #e74c3c;
+  }
+  .post .content{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+  }
+  .post a{
+    color: #e74c3c;
+  }
+  .post .content img{
+    width: 100%;
+    height: auto;
+  }
+  .post footer{
+    border-top:1px dashed #fce6e3;
+    border-bottom:1px dashed #fce6e3;
+    padding:2rem 0;
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+  .post footer img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border:2px solid #fff;
+    margin-top: 2rem;
+    border-radius: 3rem 0 3rem 0;
+  }
+  .post footer .title{
+    font:2.3rem "PT Serif", Georgia, Serif;
+  }
+.posts-list{
+  font-size: 1.5rem;
+}
+.posts-list ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.posts-list li{
   
 }
-  header > div{
-    padding:1em 0;
-  }
-  header h1 a{
-    color: #333;
-  }
-    header h1 a:hover{
-      text-decoration: none;
-    }
-
-  .photo{
-    text-align: center;
-  }
-    .photo .location{
-      margin-top:1em;
-    }
-    .photo img{
-      border-radius: 10px;
-    }
-    .ad{
-      margin-top: 20px;
-    }
-  .elsewhere{
-    list-style: none;
-    font-size: 1.2em;
-    margin-top: 2em;
-    text-align: left;
-  }
-    .elsewhere li{
-      margin: 2em 0;
-    }
-    .elsewhere a{
-      padding: .5em 1em;
-      border:3px solid #34495E;
-      transition-property:border-radius, background-color, border, color;
-      transition-duration:.5s;   
-      border-radius: 1em;  
-      color: #34495E; 
-    }
-      .elsewhere a:hover{
-        background-color: #34495E;
-        color: #fff;
-        border-radius: 0;
-        text-decoration: none;
-      }
-
-/** styles for the details section / common from home page **/
-.details h2{
-  font-size: 2em;
-  color: #000;
+.posts-list li a{
+  padding: 1rem .5rem;
+  display: block;
+  width: 100%;
+  color: #e74c3c;
+  text-align: center;
 }
-  .details a{
-    color: #333;
-    border-bottom: 1px dotted;
-  }
-    .details a:hover{
-      text-decoration: none;
-      border-bottom-style: solid;
-      color: #00f;
-    }
-  .details ol{
-    margin-top: 2em;
-    list-style: none;
-  }
-    .details ol li{
-      margin:1em 0;
-    }
-  .details p{
-    line-height: 1.5em;
-  }
-  .details > div{
-    margin-left: 0;
-    padding-left: 30px;
-  }
-.about{
-  border-top: 5px solid #2ecc71;
+.posts-list header .title{
+  font: 2rem "PT Serif", Georgia, Serif;
+  text-align: center;
 }
-  .about li a i{
-    margin-right: 5px;
-    display: inline-block;
-  }
-  .about .icon-edit{
-    color: #000;
-  }
-  .about .icon-thumbs-up{
-    color: #3B5998;
-  }
-  .about .icon-linkedin{
-    color: #4875B4;
-  }
-.projects{
-  border-top: 5px solid #3498db;
+.posts-list .archives{
+  margin:0 auto;
+  display: block;
 }
-  .projects li a i{
-    margin-right: 5px;
-    display: inline-block;
-  }
-.contact{
-  border-top: 5px solid #9b59b6;
-}
-  .contact a{
-    background-repeat: no-repeat;
-    background-position: center left;
-    padding-left: 30px;
-  }
-  .contact a.email{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=gmail.com);
-  }
-  .contact a.twitter{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=twitter.com); 
-  }
-  .contact a.bitbucket{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=bitbucket.org);
-  }
-  .contact a.github{
-    background-image:url(http://www.google.com/s2/u/0/favicons?domain=github.com);
-  }
-/** end of details section style **/
-
-footer{
-  font-size: .8em;
-  margin-top:2em;
+.other-posts{
+  font-size: 1.2rem;
+  margin:2rem 0;
 }
 
-
-/* posts page */
-ol.posts{
-  margin: 1em;
-  padding:0;
+.page h1{
+  margin-bottom: 2rem;
 }
-  ol.posts li{
-    padding:1em;
-    font-size: 1.1em;
-    letter-spacing: .1em;
-  }
-
-  /* posts in aside */
-  aside ol.posts{
-    list-style: none;
-    margin-top: .2em;
-    font-size: .9em;
-  }
-    aside ol.posts li{
-      padding: .2em;
-    }
-
-#post{
-  color: #333;
-  line-height: 2em;
-  font-size: 1.2em;
+.page p{
+  font-size: 1.5rem;
+  line-height: 3rem;
 }
-  #post pre{
-    margin: 0;
+.page p a{
+  color: #e74c3c;
+}
+
+.page.archive .posts{
+  font-size: 1.3rem;
+}
+  .page.archive .posts li{
+    margin:1rem 0;
   }
-  #post h1, #post h2, #post h3, #post h4{
-    margin-top: 1em;
+  .page.archive .posts a{
+    color: #e74c3c;
   }
-    #post article > h1:nth-child(1){
-      display: none;
-    }
-  #post time{
+  .page.archive .posts small{
     color: #aaa;
-    font-size: .8em;
   }
-  #post ol li, #post ul li{
-    line-height: 2em;
-  }
-  #post blockquote p{
-    line-height: 1.5em;
-  }
-  #post article a{
-    text-decoration: none;
-    border-bottom: 1px solid;
-    transition-property:text-shadow;
-    transition-duration:.5s;
-  }
-    #post article a:hover{
-      text-shadow:0 0 2px #ffffaf;
-    }
-#post > article, #post > section{
-  margin-top:2em;
+.fb-like-box{
+  width: 50%;
+  margin: 2rem auto;
+  display: block!important;
+}
+body > footer{
+  background-color: #e74c3c;
+  color: #fff;
+  margin-top: 2rem;
+  display: block;
+  padding: 1rem;
 }
 
-#post .site-nav{
-  position: fixed;
-  background-color: #fafafa;
-  bottom: 0;
-  right: 0;
-  padding: 1em;
-}
-  #post .site-nav a{
-    padding: .5em 1em;
-  }
-  #post img.postend{
-    display: block;
-    margin:1em auto;
-  }
-
-.pulse{
-  animation-name: pulse;
-  -webkit-animation-name: pulse;  
-
-  animation-duration: 1.5s; 
-  -webkit-animation-duration: 1.5s;
-
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.7;   
-  }
-  50% {
-    ransform: scale(1);
-    opacity: 1; 
-  } 
-  100% {
-    transform: scale(0.9);
-    opacity: 0.7; 
-  }     
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(0.95);
-    opacity: 0.7;   
-  }
-  50% {
-    -webkit-transform: scale(1);
-    opacity: 1; 
-  } 
-  100% {
-    -webkit-transform: scale(0.95);
-    opacity: 0.7; 
-  }     
-}
-
-.search{
-}
-  .search > div{
-    margin-left: 0;
-  }
-.other-posts .previous h3{
-  color: #2ECC71;
-}
-.other-posts .next h3{
-  color: #3498DB;
-}
-.other-posts .related h3{
-  color: #9B59B6;
-}
-.social{
-  margin-top: 2em;
-  padding-bottom: 1em;
-  background-color: #fafafa;
-  transition-property:background-color, box-shadow;
-  transition-duration:.5s;
-}
-  .social:hover{
-    background-color: #ffffaf;
-    box-shadow: 0 0 3px orange;
-  }
-  .social .icon-facebook{
-    color: #3b5999;
-  }
-  .social .icon-share{
-    color: #f00;
-  }
-  .social .channels{
-    text-align: right;
-  }
-  .social .channels h3{
-    margin-right: 2em;
-  }
-.joinus{
-  font-size: 1.2em;
+footer ul{
   list-style: none;
-  text-align: left;
+  font-size: 1.2rem;
 }
-  .joinus li{
-    display: inline-block;
-    cursor: pointer;
-    margin: 0 .5em;
-  }
-  .joinus .icon-google-plus-sign{
-    color: #D34836;
-  }
-  .joinus .icon-facebook-sign{
-    color: #3b5999;
-  }
-  .joinus a{
-    transition-property:font-size;
-    transition-duration:.3s;
-  }
-  .joinus a:hover{
-    text-decoration: none;
-    font-size: 1.4em;
-  }
-
-@media (max-width: 1200px) {
-    aside{
-      position: static;
-      border-right: none;
-    }
-  }
+footer ul li{
+  display: inline-block;
+  margin: 0 1rem;
+}
+footer li a, footer li a:visited{
+  color: #fff;
+}

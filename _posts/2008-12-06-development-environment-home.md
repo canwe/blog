@@ -23,7 +23,6 @@ tags:
   - open-source
   - Tools
 ---
-# Development environment @ home
 
 Recently I was reading a blog post [Personal development environment][1], in which the author was asking the readers to share what are the software they use for their personal projects. We all use advanced,enterprise development applications at office, because the company pays for it. But when it comes to home/personal projects, we can not afford for a commercial IDE just to develop Hello World application. So, most of us would go for a open source / free development applications. I am too not an exception for this rule. So, here goes my list of applications that I use for my personal projects.  
 

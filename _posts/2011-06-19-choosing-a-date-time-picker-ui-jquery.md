@@ -20,7 +20,6 @@ tags:
   - ui
   - Web
 ---
-# Choosing a date time picker UI &#8211; jQuery
 
 I had a requirement to add an input control for users to select date time range. User will be selecting two values - start time and end time. For both the values, the date is same. Only the time differs. For example, the values could be 6/19/2011 10:30 to 6/19/2011 11:30.
 

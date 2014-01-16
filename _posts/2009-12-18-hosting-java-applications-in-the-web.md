@@ -21,7 +21,6 @@ tags:
   - Java
   - Web
 ---
-# Hosting Java applications in the web
 
 As a Java developer, I always choose Java as my first programming language to develop any of my ideas into a real application. If I want this application to be available for the world, then I have to put it on the web. But, when you compare with the options available for hosting a PHP application, with the Java's options, you can see a whole lot of difference. Usually, the Java hosting providers charge too much which you can not afford if your app is going to be a FREE service.
 

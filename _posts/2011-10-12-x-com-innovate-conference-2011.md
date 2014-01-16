@@ -14,7 +14,6 @@ tags:
   - paypal
   - x.com
 ---
-# x.com innovate conference 2011 &#8211; Live
 
 Just now reached the x.com conference that is happening @ San Francisco. eBay is going to announce its new commerce platform. Will try to update the news as soon as it happens (kinda live blogging!).. wait for the updates.
 

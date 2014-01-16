@@ -11,7 +11,6 @@ tags:
   - logging
   - mdc
 ---
-# Log4j MDC (Mapped Diagnostic Context) : What and Why
 
 I hope that Log4j does not need any introduction and I assume that you already have basic understanding of Log4j. If not, I'll recommend you to first read this [Log4j Tutorial][1], to get started.
 

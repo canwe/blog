@@ -18,7 +18,6 @@ tags:
   - Ubuntu
   - version
 ---
-# Git Tutorial &#8211; Getting Started
 
 ![git logo][1]I was a long time Subversion user then. So, when I got introduced to Git few months back, I was *\*really\** confused. First of all, I couldn't visualize some of the concepts that Git talked about.
 

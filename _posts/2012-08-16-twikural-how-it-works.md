@@ -18,7 +18,6 @@ tags:
   - twitter
   - Web
 ---
-# Twikural - How it works?
 
 It's been few months since I started the [twikural][1] service. For the people who didn't know about Twikural;
 

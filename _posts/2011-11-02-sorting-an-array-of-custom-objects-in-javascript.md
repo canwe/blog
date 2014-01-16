@@ -15,7 +15,6 @@ tags:
   - sort
   - Web
 ---
-# Sorting an array of custom objects in JavaScript
 
 Currently I'm rewriting my [Timelinr][1] application entirely using JavaScript, thus replacing PHP which is now generating the timeline. In my code, Â I have an *Event *object which looks like this:
 

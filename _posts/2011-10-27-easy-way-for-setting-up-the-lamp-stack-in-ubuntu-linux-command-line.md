@@ -19,7 +19,6 @@ tags:
   - Ubuntu
   - Web
 ---
-# Easy way for setting up the LAMP stack in Ubuntu Linux command line
 
 Recently I got hold of an empty Rackspace server in which we have installed Ubuntu 11.04 NattyÂ Narwhal version. My next step was to setup the LAMP stack in that server to run our PHP site.
 

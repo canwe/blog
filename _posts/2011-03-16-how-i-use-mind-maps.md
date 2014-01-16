@@ -24,7 +24,6 @@ tags:
   - tree
   - work
 ---
-# How I use Mind Maps
 
 Mind Maps are **great**! Repeat, Mind Maps are **very, very great**! Let me show you why.
 

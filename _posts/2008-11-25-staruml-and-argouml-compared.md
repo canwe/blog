@@ -33,7 +33,6 @@ tags:
   - Tools
   - uml
 ---
-# starUML and argoUML &#8211; compared
 
 ** 
 I have been using few UML modeling tools like argoUML and starUML for quite some time. I have [already blogged][1] about my first impressions on argoUML.In that blog post, one user replied that I should have a look at starUML which is also free/open source and is lot better than the argoUML modeling tool. So, I tried starUML also. After using both UML modeling tools, here are my observations on them.

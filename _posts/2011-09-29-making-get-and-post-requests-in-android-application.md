@@ -19,7 +19,6 @@ tags:
   - tutorial
   - Web
 ---
-# Making GET and POST requests in android application
 
 It is often a requirement that you need to connect to a server through [HTTP][1] from your android application. When you use servlets/html, making such requests are a [no-brainer][2]. But, in Android it needs some searching before implementing such functions.
 

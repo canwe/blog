@@ -12,7 +12,6 @@ tags:
   - log4j
   - mdc
 ---
-# Log4j MDC (Mapped Diagnostic Context) : Example code
 
 As a continuation of my previous post about [Log4j MDC (Mapped Diagnostic Context)][1], here's a fully working code sample explaining the concept. This is a simple example where we have a one servlet and one filter. The filter intercepts each and every request and put the user name in the MDC.
 

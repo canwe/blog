@@ -18,7 +18,6 @@ tags:
   - testing
   - unit-testing
 ---
-# Getting started with JUnit 4 &#8211; Java testing framework'
 
 One of the important skill that every Java developer must possess is the **application testing**. A developer may follow software standards, religiously use all the available design patterns or do hundreds of code reviews on his code, but testing is the one which confirms his code quality and reliability. This is proved by the growing popularity of **Test Driven Development (TDD)** methodology, where the developer write tests first and the build the application to pass those tests. The objective of this post is not to explain TDD or the bigger things. Instead I'll focus on the basic things first. This is a very basic introduction to JUnit, so if you already knew about JUnit, you can safely skip reading this blog post.
 

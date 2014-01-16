@@ -13,7 +13,6 @@ tags:
   - uuid
   - Web
 ---
-# Underscore.js and guid function
 
 Underscore library comes with the [uniqueId()][1]Â function that generates globally unique IDs to use in code. But it was not enough for my [Backbone][2] models as I needed the IDs to be unique acrossÂ Â invocations and users, i.e. something like [UUID][3].
 

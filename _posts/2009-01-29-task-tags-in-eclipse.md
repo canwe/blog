@@ -16,7 +16,6 @@ dsq_thread_id:
 categories:
   - Java
 ---
-# Task tags in Eclipse
 
 I hope that you must be aware of the **Tasks view** in Eclipse. If not, Tasks view is nothing but a small TODO list manager inside the eclipse IDE itself. In the Tasks view window, you can add a* new TODO task* and you can also set the *priority* (high, normal, low) for that task.
 

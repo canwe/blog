@@ -16,7 +16,6 @@ tags:
   - script
   - tech
 ---
-# Regional font support in Opera Mini
 
 If you are using your Opera Mini mobile browser to access regional websites, you might have faced this issue. Instead of seeing the proper regional content (in my case, its Tamil), you might have seen boxes all over there in that tiny mobile screen. This is because, by default, Opera Mini browser couldn't be able to render the complex scripts, i.e. regional fonts. 
 

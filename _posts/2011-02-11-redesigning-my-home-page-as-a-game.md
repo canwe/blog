@@ -16,7 +16,6 @@ tags:
   - Personal
   - Web
 ---
-# Redesigning my home page as a game
 
 All these days, I was using [my home page][1] to tell my visitors about myself. My previous home page designs were all similar to magazine style with all the information spread across the page and the visitor can go and read.
 

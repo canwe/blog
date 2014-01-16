@@ -16,7 +16,6 @@ tags:
   - test-case
   - testing
 ---
-# JUnit 4 &#8211; testing for exception, execution time and disabling a test
 
 In my last post about [Getting Started with JUnit 4][1], I talked about the basic concepts of JUnit testing framework and how to write a test case using JUnit 4. In this post, I'll write about some tips and strategies for using JUnit effectively. We will start with JUnit annotation @Ignore.
 

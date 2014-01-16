@@ -21,7 +21,6 @@ tags:
   - Web
   - wvdial
 ---
-# How to make Reliance Netconnect broadband to work on Ubuntu 10.04
 
 If you are [following me][1] in this blog, you might be aware of that I [switched to Ubuntu][2] 10.04 last week. On changing, I had to give some effort to make sure my Reliance Netconnect broadband connection working in Ubuntu. Here's how I did it, based on referring several sources and forums in the internet.
 

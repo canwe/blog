@@ -13,7 +13,6 @@ tags:
   - logging
   - Web
 ---
-# Shortcut to console.log
 
 Sometimes, I'm just lazy to type 'Ëœ*console.log*'Ëœ to print some data on the Firebug console. I often wanted to have a simple *echo() *function that spits whatever it gets to the console.
 

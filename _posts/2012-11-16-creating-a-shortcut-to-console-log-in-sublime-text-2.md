@@ -19,7 +19,6 @@ tags:
   - tip
   - Web
 ---
-# Creating a shortcut to console.log in Sublime Text 2
 
 While writing JavaScript code, I often write debug messages to console usingÂ *console.log.* Though it is shorter thanÂ *System.out.println()* (hey, you Java!), which I am used to a lot, I still find it ineffective to type it every time.
 

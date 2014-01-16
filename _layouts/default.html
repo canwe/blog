@@ -8,7 +8,7 @@
   <meta name="author" content="Veerasundar" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if page.description %}
-  <meta name="description" content="{{ page.description }}" />
+    <meta name="description" content="{{ page.description }}" />
   {% endif %}
   <meta name="keywords" content="{{ page.tags | join: ', ' }}" />
 
@@ -20,115 +20,65 @@
 
   <!-- twitter bootstrap -->
   <link rel="stylesheet" href="/blog/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/blog/css/bootstrap-responsive.min.css" />
-
-  <!-- font awesomeness -->
-  <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 
   <!-- Homepage CSS -->
   <link rel="stylesheet" href="/blog/css/blog.css" media="screen, projection" />
 
-  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-mixpanel.init("f628c171364ac8f884716ad50ad1d83f");</script><!-- end Mixpanel -->
-
 </head>
 
-<body class='site'>
-  <div class='card container'>
+<body class='blog'>
 
-    <!-- Navigation bar, visible only on phones -->
-    <div class='navbar visible-phone'>
-      <div class="navbar-inner">
-        <a class="brand" href="http://veerasundar.com/blog" title="home">Veerasundar / Blog</a>
-        <ul class="nav">
-          <li>
-            <a href="http://veerasundar.com/blog"><i class="icon-home"></i></a>
-          </li>
-          <li>
-            <a href="mailto:veera.k.sundar@gmail.com" title="contact"><i class="icon-envelope"></i></a>
-          </li>
-        </ul>
+  <nav class="navbar navbar-default navbar-fixed-top header" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#blog-header">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/blog">Veera Sundar / Blog </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="blog-header">
+      <ul class="nav navbar-nav site-links pull-right">
+        <li>
+            <a href="/blog/about-me.html" title="About Veera Sundar">About me</a>
+        </li>
+        <li>
+            <a href="/blog/portfolio.html" title="Portfolio of Veera Sundar">Portfolio</a>
+        </li>
+        <li>
+          <a href="/blog/contact.html" title="Contact Veera Sundar">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        {{ content }}
       </div>
     </div>
-    <!-- End of Navigation bar -->
+  </div>
 
-    <div class='row'>
-        <!-- create a wrapper that has a width of 5 columns -->
-        <div class='wrapper offset3 span6'>
+  <footer>
+    <ul>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="http://twitter.com/vraa">Twitter</a>
+      </li>
+       <li>
+        <a href="http://github.com/vraa">Github</a>
+      </li>
+       <li>
+        <a href="http://in.linkedin.com/in/veerasundar">LinkedIn</a>
+      </li>
+    </ul>
+  </footer>
 
-            <article class='row'>
-              <div class='span6'>
-                {{ content }}
-              </div>
-            </article>
-
-            <!-- THE STICKY SIDEBAR -->
-            <aside>
-              
-
-              <!-- HERO -->
-              <header>
-                <!-- photo -->
-                <div class='photo hidden-phone'>
-                    <a href='http://veerasundar.com/blog'><img src='http://veerasundar.com/img/veera.jpg' alt='Veera' title='Veera Sundar' width="175" /></a>
-                </div>
-                <!-- name and job title -->
-                <div class='name'>
-                    <p>Hello, I am </p>
-                    <h1><a href='http://veerasundar.com/blog'>Veera Sundar</a>.</h1>
-                    <p>I create web apps with <em>JavaScript</em> & <em>Java</em>.</p>
-                </div>
-              </header>
-              <!-- END OF HERO -->
-
-              <!-- ELSEWHERE -->
-              <ul class="elsewhere">
-                <li>
-                  <a id='sidebar_about' href="/blog/about.html" title="About me"><i class="icon-user"></i> About me</a>
-                </li>
-                <li>
-                  <a id='sidebar_twitter' href="http://twitter.com/vraa"><i class="icon-twitter"></i> twitter.com/vraa</a>
-                </li>
-                <li>
-                  <a id='sidebar_github' href="http://github.com/vraa"><i class="icon-github"></i> github.com/vraa</a>
-                </li>
-                <li>
-                  <a id='sidebar_email' href="mailto:veera.k.sundar@gmail.com" title="Send me an email"><i class="icon-envelope"></i> Say hello</a>
-                </li>
-              </ul>
-              <!-- END ELSEWHERE -->
-
-              <!-- FB & G+ -->
-              <ul class="joinus">
-                <li>
-                  <a href="https://plus.google.com/112623957029861555682" rel="publisher"><i class="icon-google-plus-sign"> Google+</i></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/veera.sundar.blog" rel="publisher"><i class="icon-facebook-sign"> Facebook</i></a>
-                </li>
-              </ul>
-              <!-- END FB & G+ -->
-
-
-            </aside>
-
-            <!-- END OF MAIN CONTENT -->
-
-            <footer class='row'>
-                <div class='span6'>
-                    <p>Designed by Veera. Fork @ <a href='https://bitbucket.org/vraa/blog'>Bitbucket</a> / <a href='https://github.com/vraa/blog'>Github</a>.</p>
-                </div>
-            </footer>
-        </div>
-    <div>
-</div>
-
-  <!-- SCRIPTS -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-  <!-- FACEBOOK -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -137,25 +87,8 @@ mixpanel.init("f628c171364ac8f884716ad50ad1d83f");</script><!-- end Mixpanel -->
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-  <!-- END FACEBOOK -->
   
-  <!-- TWITTER -->
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  <!-- END TWITTER -->
-
-  <!-- GPLUS -->
-  <script type="text/javascript">
-    (function() {
-      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-  <!-- END GPLUS -->
-
-  <!-- END SOCIALIZE SCRIPTS -->
-
-  <script src="/blog/js/blog.js"></script>
-
+  <script src="/blog/js/jquery-2.0.3.min.js"></script>
+  <script src="/blog/js/bootstrap.min.js"></script>
 </body>
 </html>

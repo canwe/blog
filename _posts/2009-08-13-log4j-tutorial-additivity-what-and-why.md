@@ -13,7 +13,6 @@ tags:
   - log4j-tutorial
   - logging
 ---
-# Log4j Tutorial: Additivity &#8211; what and why?
 
 In my last post about [how to send log messages to different log files][1],Â  I'd promised to write about *additivity*. And, here is a post for keeping my promise. I hope that after reading my previous article, now you know how to [configure Log4j][2] for logging into multiple files using file appenders. But, there is a catch in that technique. To explain this clearly, consider this scenario:
 

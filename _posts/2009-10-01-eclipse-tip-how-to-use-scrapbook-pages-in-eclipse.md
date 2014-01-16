@@ -12,7 +12,6 @@ tags:
   - scrapbook
   - tip
 ---
-# [Eclipse Tip] How to use Scrapbook pages in Eclipse?
 
 When ever I code a complex logic in Java, I often wants to test a part of that complex code to check my logic correctness or to evaluate a code snippet. I usually do this, by creating a sample class named SandBox with a main method and placing whatever code that I wanted to test inside the main method. Then run the SandBox class. This solved my problem most of the times. But recently, I came to know that Eclipse has a elegant way of doing this in the name of Scrapbook Page.
 

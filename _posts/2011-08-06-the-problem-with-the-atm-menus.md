@@ -18,7 +18,6 @@ tags:
   - ui
   - usability
 ---
-# The problem with the ATM Menus
 
 Now, lets do a small exercise. Have a look at the below photo and tell me which button will you press to see the balance in your account? second one'Â¦or the third one?
 

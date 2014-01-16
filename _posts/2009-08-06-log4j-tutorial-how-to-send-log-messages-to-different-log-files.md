@@ -14,7 +14,6 @@ tags:
   - logging
   - tutorial
 ---
-# Log4j Tutorial : How to send log messages to different log files?
 
 One of the common requirement in Java projects, that are [using Log4j logging][1], is to have different log files for each module (or layer) in the project. For example, if you have a web application, you may want to log the debug/info messages from the service layer to a *service.log* file and the log messages from the presentation layer to the *web-app.log* file and so on. This is very simple to achieve in Log4j.
 

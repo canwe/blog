@@ -14,7 +14,6 @@ tags:
   - Java
   - log4j
 ---
-# How to create a new log file for each time the application runs?
 
 Recently I got a question from my blog reader *Kuruba*, regarding log4j logging. Kuruba is having a batch program with Log4j logging and he wants to send the log messages to a **new log file each time his batch runs**. This can be achieved by extending Log4j's FileAppender, which is used for [logging to a file][1], and adding our own customization to the file appender. Below I'm explaining how to do it.
 

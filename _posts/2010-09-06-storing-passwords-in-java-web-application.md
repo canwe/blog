@@ -18,7 +18,6 @@ tags:
   - security
   - sha1
 ---
-# Storing passwords in Java web application by Hashing it
 
 First of all, you should never store passwords. *Then why the heck am I writing this post?** *Okay*, *Let me rephrase the first sentence - You should never store passwords **as plain text** anywhere in your application. of course, for the obvious reasons. If you store passwords as plain text, in database or in a log file, then even [Rajinikanth][1] couldn't save your application getting hacked. (Edit: btw, Rajinikanth is the Chuck Norris of India, if you are not aware of him)
 

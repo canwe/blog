@@ -13,7 +13,6 @@ tags:
   - resolution
   - retrospection
 ---
-# Looking back and forward (2012)
 
 Ever since I started blogging, during end of the year I used to write a [retrospection of things][1] I did in that year. It has kinda become a traditionÂ to meÂ and an excuse for a new post. As the yearÂ **2012Â **has only a day of fuel left in it, let me stop and look back.
 

@@ -17,7 +17,6 @@ tags:
   - toolbar
   - top
 ---
-# Scroll to top &#8211; JavaScript bookmarklet
 
 So, tell me, how many times have you annoyed with very long pages (such as this blog) and wished for a single click way to jump to top of the page!? If your answer is *many, *then this tip might give you some relief - **add a bookmarklet to your bookmarks toolbar that jumps to the top of the page for you.**
 

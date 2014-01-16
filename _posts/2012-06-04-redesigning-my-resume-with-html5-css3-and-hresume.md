@@ -20,7 +20,6 @@ tags:
   - resume
   - Web
 ---
-# Redesigning my resume with HTML5, CSS3 and hResume
 
 Recently I decided to redesign my online resume. Though the [old design][1] was quite satisfactory to me, I thought I could give it a makeover. So, here's the [new resume][2].
 

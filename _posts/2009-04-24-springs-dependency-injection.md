@@ -18,7 +18,6 @@ tags:
   - spring
   - tutorial
 ---
-# Spring's Dependency Injection
 
 If you are into Java enterprise application development, then get yourself ready to hear the terms 'Ëœ*Spring*'Ëœ, 'Ëœ*Dependency Injection*'Ëœ or 'Ëœ*IoC*'Ëœ a lot. Because, without these terms (and technologies) enterprise development wouldn't be this much simpler. Spring, the framework which became very popular because of it's capability to inject the dependencies to our Java objects in a very efficient manner. Spring's lightweight dependency injection container manages all the defined beans and their dependencies.
 

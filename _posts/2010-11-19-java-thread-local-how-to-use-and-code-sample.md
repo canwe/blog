@@ -16,7 +16,6 @@ tags:
   - threading
   - threadlocal
 ---
-# Java Thread Local &#8211; How to use and code sample
 
 Thread Local is an interesting and useful concept, yet most of the Java developers are not aware of how to use that. In this post, I'll explain what is Thread Local and when to use it, with an example code.
 

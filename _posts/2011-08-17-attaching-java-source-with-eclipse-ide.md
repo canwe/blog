@@ -13,7 +13,6 @@ tags:
   - Java
   - source
 ---
-# Attaching Java source with Eclipse IDE
 
 In Eclipse, when you press *Ctrl *button and click on any Class names, the IDE will take you to the source file for that class. This is the normal behavior for the classes you have in your project.
 

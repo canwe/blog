@@ -20,7 +20,6 @@ tags:
   - sync
   - synchronize
 ---
-# How to auto reload external code changes in Eclipse project
 
 I have started using [Sublime text][1] as my preferred code editor (for JS, CSS, Coffee). But, I still rely on Eclipse for writing Java code because it auto-imports Java packages and auto suggests variables and method names from my custom class files.
 
