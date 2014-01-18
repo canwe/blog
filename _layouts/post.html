@@ -13,9 +13,11 @@ postpage: yes
     <section class='content'>
       {{ content }}
     </section>
-    
+</div>
+
+<div class='extra'> 
     {% include author.html %}
-   
+
     <!-- PREVIOUS / NEXT -->
     <section class='other-posts row'>
         {% if page.next.url %}
@@ -37,14 +39,6 @@ postpage: yes
     </section>
     <!-- end PREVIOUS / NEXT -->
 
-    <!-- FB Like box -->
-    <section class='fb row hidden-xs'>
-        <div class='col-xs-12'>
-            <div class="fb-like-box" data-href="https://www.facebook.com/veera.sundar.blog" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-        </div>
-    </section>
-    <!-- end FB like box -->
-
 
     <!-- comments section -->
     <section id="disqus_thread"></section>
@@ -59,5 +53,4 @@ postpage: yes
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-
 </div>
