@@ -12,8 +12,9 @@
   {% endif %}
   <meta name="keywords" content="{{ page.tags | join: ', ' }}" />
 
-  <!--Google font -->
-  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+  <!--
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+  -->
 
   <!-- syntax highlighting CSS -->
   <link rel="stylesheet" href="/blog/css/syntax.css" />
@@ -27,42 +28,41 @@
 </head>
 
 <body class='blog'>
-  <div class='nav visible-xs'>
-    <a href="/blog/index.html">Veera Sundar / blog </a>
-  </div>
   <div class='container'>
     <div class='row'>
-      <div class='col-xs-12 col-md-8 paper'>
-        {{ content }}
-      </div>
-      <div class='col-xs-12 col-md-4'>
-        <div class='intro'>
-          <a href="/blog/index.html"><img src="/blog/img/vlogo.png" height="150" /></a>
-          <h1>Veera Sundar</h1>
-          <p>Web application developer</p>
-          <ul class="menu horizontal">
-            <li>
-              <a href="/blog/about-me.html">About</a>
-            </li>
-            <li>
-              <a href="/blog/projects.html">Projects</a>
-            </li>
-            <li>
-              <a href="/blog/projects.html">Resume</a>
-            </li>
-            <li>
-              <a href="/blog/contact.html">Contact</a>
-            </li>
-          </ul>
+      <div class='page-wrapper col-xs-10'>
+        
+        <div class='row'>
+          <div class='main col-md-8'>
+            
+            <div class='row'>
+              <div class='col-xs-12'>
+                <nav>
+                  <a href="/blog/index.html">
+                    Veera Sundar - Blog
+                  </a>
+                </nav>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='col-xs-12'>
+                <div class='content'>
+                  {{ content }}
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class='side col-md-4'>
+            Side
+          </div>
         </div>
+
       </div>
     </div>
   </div>
-
-  <div class='footer'>
-    <a href="#">Back to top</a>
-  </div>
-
 
   <script src="/blog/js/jquery-2.0.3.min.js"></script>
   <script src="/blog/js/bootstrap.min.js"></script>
