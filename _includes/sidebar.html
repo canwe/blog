@@ -3,3 +3,33 @@
   {% include author.html %}
 </div>
 
+<div class='recent-post widget'>
+  <div class='row'>
+    <div class='col-xs-12'>
+      <h3>Recent 5 posts</h3>
+      <div class='matter'>
+        <ul>
+          {% for post in site.posts limit:5 %}
+            <li>
+              <a href="/blog{{post.url}}">
+                {{ post.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='all-posts widget'>
+  <div class='row'>
+    <div class='col-xs-12'>
+      <h3>Archive</h3>
+      <div class='matter'>
+        <a href='/blog/archive.html' title='See all posts from Veera Sundar blog'>View all {{ site.posts | size }} posts</a>
+      </div>
+    </div>
+  </div>
+</div>
+

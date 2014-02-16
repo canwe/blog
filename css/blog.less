@@ -7,6 +7,8 @@
 @brand-font: "Source Sans Pro", Sans-serif;
 @text-color: #3D4950;
 @heading-color: @text-color;
+@widget-color : #FCF9F7;
+@widget-alt-color : #DAEDFB;
 
 .blog{
   background-color: @bg;
@@ -132,7 +134,7 @@
 }
 
 .author{
-  background-color: #FCF9F7;
+  background-color: @widget-color;
   padding:2 * @pad;
   img{
     width: 120px;
@@ -150,7 +152,7 @@
   }
 }
 .other-posts{
-  background-color: #DAEDFB;
+  background-color: @widget-alt-color;
   font-size: 1.5rem;
   padding: (4 * @pad) (2 * @pad);
   .next{
@@ -166,10 +168,42 @@
 }
 .side{
   .widget{
-    margin-bottom: 2rem;
+    padding: 20px;
+    background-color: @widget-color;
+    &:nth-child(even){
+      background-color: @widget-alt-color;
+    }
+    &.short-bio{
+      padding: 0;
+    }
+    h3{
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 1rem 0 2rem 0;
+    }
+    .matter{
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+
+      ul, ol{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+          padding:10px 0 10px 5px;
+          border-bottom: 1px solid @widget-color;
+          &:first-child{
+            padding-top: 0;
+          }
+          &:last-child{
+            padding-bottom: 0;
+            border-bottom: none;
+          }
+        }
+      }
+    }
   }
-}
-.short-bio{
 }
 .fb-like-box{
   background-color: #FCF9F7;
