@@ -10,6 +10,17 @@
 @widget-color : #FCF9F7;
 @widget-alt-color : #DAEDFB;
 
+.firebackground{
+  background: rgb(255,168,76); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%, rgba(243,108,61,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,168,76,1)), color-stop(100%,rgba(243,108,61,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#f36c3d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 .blog{
   background-color: @bg;
   color: contrast(@bg);
@@ -19,16 +30,25 @@
     color: @link-color;
   }
   p{
-    line-height: 2.5rem;
+    line-height: 3.2rem;
+    margin-bottom: 20px;
   }
 }
 
 .main nav{
-  background-color: @base-color;
   color: contrast(@base-color);
   padding: (2 * @pad);
   font:2rem @brand-font;
-  a{
+  background: rgb(255,168,76); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%, rgba(243,108,61,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,168,76,1)), color-stop(100%,rgba(243,108,61,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(255,168,76,1) 0%,rgba(243,108,61,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#f36c3d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  a.brand{
     color: #fff;
     text-decoration: none;
     background:transparent url('/blog/img/logo-32.png') no-repeat center left;
@@ -37,10 +57,32 @@
   .search-box-xs{
     margin:20px 0;
   }
+  ul.meta-menu{
+    list-style: none;
+    li{
+      display: inline-block;
+      margin: 0 10px;
+      a{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        &:link, &:hover, &:active, &:visited{
+          color: #fff;
+        }
+        &:hover{
+          text-decoration: none;
+          border-bottom: 1px dashed;
+        }
+      }
+    }
+  }
 }
 
 .main .main-content{
   background-color: #fff;
+  .all-posts{
+    font-size: 3rem;
+    padding: 30px 0 60px 0;
+  }
 }
 .main{
   .posts-list{
@@ -91,20 +133,21 @@
     color: @heading-color;
     font-size: 3.5rem;
     line-height: 4.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    font-weight: 300;
   }
   h2{
     color: @heading-color;
     font-size: 3rem;
     line-height: 4rem;
-    margin:2rem 0;
+    margin:4rem 0;
     font-weight: 300;
   }
   h3{
     color: @heading-color;
     font-size: 2.5rem;
     line-height: 3.5rem;
-    margin:1.5rem 0;
+    margin:2.5rem 0;
     font-weight: 300;
   }
   h4, h5, h6{
@@ -117,14 +160,17 @@
   .date{
     color: #A2B1B9;
     font:1.5rem @brand-font;
+    margin-bottom: 2rem;
   }
   .post-content{
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     img{
       max-width: 90%;
       height: auto;
-      margin: 0 auto;
+      margin: 50px auto;
+      display: block;
+      border-radius: 10px 0 10px 0;
     }
     pre{
       font-size: 1.2rem;
@@ -142,7 +188,15 @@
 }
 
 .author{
-  background-color: @widget-color;
+  background: rgb(234,243,249); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(234,243,249,1) 0%, rgba(218,237,251,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(234,243,249,1)), color-stop(100%,rgba(218,237,251,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(234,243,249,1) 0%,rgba(218,237,251,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(234,243,249,1) 0%,rgba(218,237,251,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(234,243,249,1) 0%,rgba(218,237,251,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(234,243,249,1) 0%,rgba(218,237,251,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf3f9', endColorstr='#daedfb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
   padding:2 * @pad;
   img{
     width: 120px;
@@ -211,6 +265,9 @@
         }
       }
     }
+    &.ad-sky-scraper{
+      text-align: center;
+    }
   }
 }
 .blog{
@@ -228,11 +285,11 @@
   }
 }
 .fb-like-box{
-  background-color: #FCF9F7;
   text-align: center;
   width: 100%;
   margin:20px 0;
   padding: 20px 0;
+  .firebackground;
 }
 
 .page{
@@ -242,6 +299,27 @@
 }
 .gad{
   margin: 20px 0;
+}
+
+.all-posts{
+  .matter{
+    text-align: center;
+    a{
+      background-color: @base-color;
+      color: #fff;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      border-radius: 20px;
+      transition:background-color .5s;
+      &:hover, &:link, &:active, &:visited{
+        color: #fff;
+      }
+      &:hover{
+        background-color: #f00;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .promo{

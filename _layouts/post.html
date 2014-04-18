@@ -6,11 +6,10 @@ postpage: yes
 
     <input id="postId" type="hidden" value="{{ page.id }}" />
 
-
+    <p class='date'>{{ page.date | date: "%B" }}, {{ page.date | date : "%d"}}, {{ page.date | date : "%Y"}}</p>
    <h1>
       {{ page.title }}
     </h1>
-    <p class='date'>{{ page.date | date: "%B" }}, {{ page.date | date : "%d"}}, {{ page.date | date : "%Y"}}</p>
 
     <div class='gad'>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -37,7 +36,7 @@ postpage: yes
 
     <div class='row'>
         <div class='col-xs-12'>
-            <div class="fb-like-box widget" data-href="https://www.facebook.com/veera.sundar.blog" data-width="292" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+            <div class="fb-like-box widget" data-href="https://www.facebook.com/veera.sundar.blog" data-width="292" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
         </div>
     </div>
 
