@@ -1,0 +1,348 @@
+.firebackground {
+  background: #ffa84c;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffa84c), color-stop(100%, #f36c3d));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ffa84c 0%, #f36c3d 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa84c', endColorstr='#f36c3d', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.blog {
+  background-color: #f5f0eb;
+  color: #000000;
+  font: 1em "Source Sans Pro", Sans-serif;
+}
+.blog a {
+  color: #f36c3d;
+}
+.blog p {
+  line-height: 3.2rem;
+  margin-bottom: 20px;
+}
+.main nav {
+  color: #ffffff;
+  padding: 20px;
+  font: 2rem "Source Sans Pro", Sans-serif;
+  background: #ffa84c;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffa84c), color-stop(100%, #f36c3d));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ffa84c 0%, #f36c3d 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ffa84c 0%, #f36c3d 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa84c', endColorstr='#f36c3d', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.main nav a.brand {
+  color: #fff;
+  text-decoration: none;
+  background: transparent url('/blog/img/logo-32.png') no-repeat center left;
+  padding-left: 40px;
+}
+.main nav .search-box-xs {
+  margin: 20px 0;
+}
+.main nav ul.meta-menu {
+  list-style: none;
+}
+.main nav ul.meta-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.main nav ul.meta-menu li a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.main nav ul.meta-menu li a:link,
+.main nav ul.meta-menu li a:hover,
+.main nav ul.meta-menu li a:active,
+.main nav ul.meta-menu li a:visited {
+  color: #fff;
+}
+.main nav ul.meta-menu li a:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+.main .main-content {
+  background-color: #fff;
+}
+.main .main-content .all-posts {
+  font-size: 3rem;
+  padding: 30px 0 60px 0;
+}
+.main .posts-list {
+  padding: 20px;
+}
+.posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.posts-list li {
+  border-bottom: 1px solid #fdebe5;
+  padding: 20px 0;
+}
+.posts-list li:first-child {
+  padding-top: 0;
+}
+.posts-list li:last-child {
+  padding-bottom: 0;
+}
+.posts-list.recent h2 {
+  font: 2.5rem "Source Sans Pro", Sans-serif;
+}
+.posts-list.recent h2 a {
+  color: #f36c3d;
+}
+.posts-list.recent .date {
+  color: #A2B1B9;
+  font: 1.5rem "Source Sans Pro", Sans-serif;
+}
+.posts-list.recent .excerpt {
+  color: #3d4950;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.post {
+  background-color: #fff;
+  padding: 20px;
+}
+.post h1 {
+  color: #3d4950;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  margin-bottom: 5rem;
+  font-weight: 300;
+}
+.post h2 {
+  color: #3d4950;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin: 4rem 0;
+  font-weight: 300;
+}
+.post h3 {
+  color: #3d4950;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin: 2.5rem 0;
+  font-weight: 300;
+}
+.post h4,
+.post h5,
+.post h6 {
+  color: #3d4950;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+.post .date {
+  color: #A2B1B9;
+  font: 1.5rem "Source Sans Pro", Sans-serif;
+  margin-bottom: 2rem;
+}
+.post .post-content {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.post .post-content img {
+  max-width: 90%;
+  height: auto;
+  margin: 50px auto;
+  display: block;
+  border-radius: 10px 0 10px 0;
+}
+.post .post-content pre {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  border-radius: 0;
+  border: none;
+  margin: 20px 0;
+}
+.post .post-content blockquote {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+.author {
+  background: #eaf3f9;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #eaf3f9), color-stop(100%, #daedfb));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #eaf3f9 0%, #daedfb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaf3f9', endColorstr='#daedfb', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  padding: 20px;
+}
+.author img {
+  width: 120px;
+  height: auto;
+}
+.author h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 1rem 0 2rem 0;
+}
+.author p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.other-posts {
+  background-color: #daedfb;
+  font-size: 1.5rem;
+  padding: 40px 20px;
+}
+.other-posts .next {
+  text-align: left;
+}
+.other-posts .previous {
+  text-align: right;
+}
+.comments {
+  background-color: #fff;
+  padding: 20px;
+}
+.side .widget {
+  padding: 20px;
+  background-color: #fcf9f7;
+}
+.side .widget:nth-child(even) {
+  background-color: #daedfb;
+}
+.side .widget.short-bio {
+  padding: 0;
+}
+.side .widget h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 1rem 0 2rem 0;
+}
+.side .widget .matter {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.side .widget .matter ul,
+.side .widget .matter ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.side .widget .matter ul li,
+.side .widget .matter ol li {
+  padding: 10px 0 10px 5px;
+  border-bottom: 1px solid #fcf9f7;
+}
+.side .widget .matter ul li:first-child,
+.side .widget .matter ol li:first-child {
+  padding-top: 0;
+}
+.side .widget .matter ul li:last-child,
+.side .widget .matter ol li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.side .widget.ad-sky-scraper {
+  text-align: center;
+}
+.blog footer {
+  margin-top: 20px;
+  background-color: #f36c3d;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 20px 0;
+}
+.blog footer a {
+  color: #fff;
+  margin: 0 10px;
+}
+.fb-like-box {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
+  background: #eaf3f9;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #eaf3f9), color-stop(100%, #daedfb));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #eaf3f9 0%, #daedfb 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #eaf3f9 0%, #daedfb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaf3f9', endColorstr='#daedfb', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.page {
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+.gad {
+  margin: 20px 0;
+}
+.all-posts .matter {
+  text-align: center;
+}
+.all-posts .matter a {
+  background-color: #f36c3d;
+  color: #fff;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+.all-posts .matter a:hover,
+.all-posts .matter a:link,
+.all-posts .matter a:active,
+.all-posts .matter a:visited {
+  color: #fff;
+}
+.all-posts .matter a:hover {
+  background-color: #f00;
+  text-decoration: none;
+}
+.promo {
+  font-size: 1.5rem;
+  background-color: #ffffaf;
+  color: #777;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.promo a {
+  color: #f36c3d;
+  text-decoration: underline;
+}
