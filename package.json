@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "7.0.0",
+  "description": "A blog about web application development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vraa/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vraa/blog/issues"
+  },
+  "homepage": "https://github.com/vraa/blog",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0"
+  }
+}
