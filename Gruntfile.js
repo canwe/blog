@@ -4,7 +4,7 @@ module.exports = function(grunt){
 		cssmin : {
 			css : {
 				src : '_site/css/blog.css',
-				dest : '_site/css/blog.min.css'
+				dest : '_site/css/blog.css'
 			}
 		}
 	});
