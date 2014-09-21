@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Veerasundar - web app developer
 description: Veera Sundar is a Web application developer with 8 years experience. He is currently working as a Technical Lead at Altimetrik.
 tags:
@@ -18,53 +18,15 @@ tags:
 ---
 <div class='main-content'>
   <ul class='posts-list recent'>
-    {% for post in site.posts limit:2 %}
-      <li class='row'>
-        <div class='col-xs-12'>
-          <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-          <p class='excerpt'>
-            {{ post.content | strip_html | truncatewords:60 }} <p class="readmore"><a href="/blog{{post.url}}">Read more</a></p>
-          </p>
-        </div>
+    {% for post in site.posts limit:12 %}
+      <li>
+        <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
+        <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
+        <div class='category'><span class="logo-{{post.categories}}"></span>{{ post.categories }}</div>
       </li>
     {% endfor %}
   </ul>
-  <div class='row'>
-    <div class='posts-list recent'>
-      {% for post in site.posts limit:2 offset:2 %}
-        {% include post-lists-post-template.html %}
-      {% endfor %}
-    </div>
-  </div>
-  <div class='row'>
-    <div class='posts-list recent'>
-      {% for post in site.posts limit:2 offset:4 %}
-        {% include post-lists-post-template.html %}
-      {% endfor %}
-    </div>
-  </div>
-  <div class='row'>
-    <div class='posts-list recent'>
-      {% for post in site.posts limit:2 offset:6 %}
-        {% include post-lists-post-template.html %}
-      {% endfor %}
-    </div>
-  </div>
-  <div class='row'>
-    <div class='posts-list recent'>
-      {% for post in site.posts limit:2 offset:8 %}
-        {% include post-lists-post-template.html %}
-      {% endfor %}
-    </div>
-  </div>
   <div class='all-posts'>
-    <div class='row'>
-      <div class='col-xs-12'>
-        <div class='matter'>
-          <a href='/blog/archive.html' title='See all posts from Veera Sundar blog'>View all {{ site.posts | size }} posts</a>
-        </div>
-      </div>
-    </div>
+    <a href='/blog/archive.html' title='See all posts from Veera Sundar blog'>View all {{ site.posts | size }} posts</a>
   </div>
 </div>
