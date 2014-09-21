@@ -10,5 +10,5 @@ module.exports = function(grunt){
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.registerTask('minify-css', ['cssmin:css']);
+	grunt.registerTask('default', ['cssmin:css']);
 }
