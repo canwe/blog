@@ -4,11 +4,11 @@ module.exports = function(grunt){
 		cssmin : {
 			css : {
 				src : '_site/css/blog.css',
-				dest : '_site/css/blog.min.css'
+				dest : '_site/css/blog.css'
 			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.registerTask('minify-css', ['cssmin:css']);
+	grunt.registerTask('default', ['cssmin:css']);
 }

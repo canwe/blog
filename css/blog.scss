@@ -16,6 +16,10 @@ $heading-color: $text-color;
 $widget-color : #FCF9F7;
 $widget-alt-color : #EAF3F9;
 
+*{
+  box-sizing:border-box;
+}
+
 
 .blog{
   background-color: $bg;
@@ -51,12 +55,6 @@ $widget-alt-color : #EAF3F9;
     font-style:italic;
   }
   ul.meta-menu{
-    position:absolute;
-    top:50%;
-    right:0;
-    -webkit-transform:translateY(-50%);
-    -moz-transform:translateY(-50%);
-    transform:translateY(-50%);
     list-style: none;
     padding:0;
     margin:0;
@@ -358,13 +356,6 @@ $widget-alt-color : #EAF3F9;
   .container{
     margin:0 -15px;
   }
-  .main nav{
-    text-align: center;
-    ul.meta-menu{
-      position:relative;
-      margin-top: 2 * $pad;
-    }
-  }
 
   .post{
     h1{
@@ -378,4 +369,115 @@ $widget-alt-color : #EAF3F9;
     text-align: center;
   }
 
+}
+
+.home{
+  nav{
+    background-color:$base-color;
+    color:$base-contrast-color;
+    font-size:2rem;
+    text-align: center;
+    width: 100%;
+    padding-top:3*$pad;
+    a{
+      color: $base-contrast-color;
+    }
+    .tagline{
+      font-size: 1.5rem;
+      margin:0;
+      padding-bottom:3*$pad;
+    }
+    ul{
+      padding:$pad 0;
+      margin:0;
+      background-color:$lighter-base-color;
+      list-style: none;
+      li{
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-right:2*$pad;
+        &:last-child{
+          margin-right:0;
+        }
+        a{
+          color: $link-color;
+        }
+      }
+    }
+  }
+  .posts-list{
+    padding:$pad;
+    li{
+
+    }
+  }
+  .all-posts{
+    text-align: center;
+    margin:2*$pad 0;
+    a{
+      font-size: 1.3rem;
+      background-color:$base-color;
+      color: $base-contrast-color;
+      padding:$pad 2*$pad;
+      border-radius:5px;
+    }
+  }
+}
+
+@media(min-width:768px){
+  .home{
+    .posts-list{
+      width: 760px;
+      margin:0 auto; 
+      overflow: hidden;
+      li{
+        float: left;
+        width: 175px;
+        height: 190px;
+        background-color:#fff;
+        padding:$pad;
+        margin:$pad/2;
+        box-shadow:0 0 5px #eee;
+        border-radius:5px;
+        position: relative;
+      }
+      h2{
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+      }
+      .date{
+        font-size: 1rem;
+      }
+      .category{
+        font-size: 1.2rem;
+        color: #aaa;
+        position:absolute;
+        bottom:$pad;
+        left:$pad;
+        [class*='logo-']{
+          display: none;
+          width: 16px;
+          height: 16px;
+          background-image:url(/blog/img/logos.png);
+          background-repeat:no-repeat;
+          margin-right: $pad;
+        }
+        .logo-javascript{
+          display: inline-block;
+        }
+        .logo-web, .logo-html{
+          display: inline-block;
+          background-position:-17px 0;
+        }
+        .logo-css{
+          display: inline-block;
+          background-position:-35px 0;
+        }
+        .logo-java{
+          display: inline-block;
+          background-position:-50px 0;
+        }
+      }
+    }
+  }
 }
