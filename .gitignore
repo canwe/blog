@@ -1,3 +1,5 @@
 _drafts/
 _site/
 _vendor/**
+.sass-cache/**
+node_modules/**

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Veerasundar - web app developer
-description: Veera Sundar is a Web developer who loves to program with JavaScript and design using HTML5 and CSS3. He is also an experienced Java developer. He is currently working at ThoughtWorks.
+description: Veera Sundar is a Web application developer with 8 years experience. He is currently working as a Technical Lead at Altimetrik.
 tags:
   - veerasundar
   - veera
@@ -21,11 +21,22 @@ tags:
     {% for post in site.posts limit:2 %}
       <li class='row'>
         <div class='col-xs-12'>
-          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
           <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
+          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
           <p class='excerpt'>
-            {{ post.content | strip_html | truncatewords:30 }} <a href="/blog{{post.url}}">Read more</a>
+            {{ post.content | strip_html | truncatewords:60 }} <p class="readmore"><a href="/blog{{post.url}}">Read more</a></p>
           </p>
+        </div>
+        <div class="gad">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- blog-home-between-posts-medium-rectangle -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:300px;height:250px"
+               data-ad-client="ca-pub-4601926589924919"
+               data-ad-slot="5142730268"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
         </div>
       </li>
     {% endfor %}
@@ -33,52 +44,28 @@ tags:
   <div class='row'>
     <div class='posts-list recent'>
       {% for post in site.posts limit:2 offset:2 %}
-        <div class='col-xs-12 col-sm-6'>
-          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-          <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-          <p class='excerpt'>
-            {{ post.content | strip_html | truncatewords:30 }} <a href="/blog{{post.url}}">Read more</a>
-          </p>
-        </div>
+        {% include post-lists-post-template.html %}
       {% endfor %}
     </div>
   </div>
   <div class='row'>
     <div class='posts-list recent'>
       {% for post in site.posts limit:2 offset:4 %}
-        <div class='col-xs-12 col-sm-6'>
-          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-          <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-          <p class='excerpt'>
-            {{ post.content | strip_html | truncatewords:30 }} <a href="/blog{{post.url}}">Read more</a>
-          </p>
-        </div>
+        {% include post-lists-post-template.html %}
       {% endfor %}
     </div>
   </div>
   <div class='row'>
     <div class='posts-list recent'>
       {% for post in site.posts limit:2 offset:6 %}
-        <div class='col-xs-12 col-sm-6'>
-          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-          <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-          <p class='excerpt'>
-            {{ post.content | strip_html | truncatewords:30 }} <a href="/blog{{post.url}}">Read more</a>
-          </p>
-        </div>
+        {% include post-lists-post-template.html %}
       {% endfor %}
     </div>
   </div>
   <div class='row'>
     <div class='posts-list recent'>
       {% for post in site.posts limit:2 offset:8 %}
-        <div class='col-xs-12 col-sm-6'>
-          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-          <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-          <p class='excerpt'>
-            {{ post.content | strip_html | truncatewords:30 }} <a href="/blog{{post.url}}">Read more</a>
-          </p>
-        </div>
+        {% include post-lists-post-template.html %}
       {% endfor %}
     </div>
   </div>
