@@ -3,3 +3,4 @@ _site/
 _vendor/**
 .sass-cache/**
 node_modules/**
+*.iml
