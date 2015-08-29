@@ -1,0 +1,48 @@
+---
+---
+@import "normalize";
+
+$dark-orange:#D9381E;
+$light-orange:#FFDAB9;
+$light-grey:#f5f0eb;
+$light-blue:#eaf3f9;
+$light-black:#333333;
+$white:#ffffff;
+
+$site-bg-color:$dark-orange;
+$site-fg-color:$white;
+$line-color:$light-grey;
+
+$pad:10px;
+
+body{
+  background-color: $site-bg-color;
+  color: $site-fg-color;
+  font: 1em "Source Sans Pro", Consolas, Sans;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  margin: 0px;
+  padding: $pad;
+
+  .v {
+    display: inline-block;
+    color: $dark-orange;
+    font-weight: 200;
+    background-color: $light-orange;
+    padding: $pad 2*$pad;
+  }
+
+  .blog {
+    font-weight: 200;
+    color: $light-orange;
+    display: inline-block;
+    margin-left: 5px;
+    padding: $pad 2*$pad;
+    border: $pad/2 solid $light-orange;
+
+  }
+}

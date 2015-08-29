@@ -1,7 +1,7 @@
 ---
-layout: home
-title: Blog of Veerasundar - web app developer
-description: Veera Sundar is a Web application developer with 8 years experience. He is currently working as a Technical Lead at Altimetrik.
+layout: modern-home
+title: Blog of Veera Sundar
+description: Veera Sundar is a Web application developer with 8 years experience. He is currently working as Staff Software Engineer at Altimetrik.
 tags:
   - veerasundar
   - veera
@@ -11,22 +11,18 @@ tags:
   - developer
   - html5
   - javascript
+  - React
   - css3
   - jquery
   - backbone
   - nodejs
 ---
-<div class='main-content'>
-  <ul class='posts-list recent'>
-    {% for post in site.posts limit:12 %}
-      <li>
-        <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-        <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-        <div class='category'><span class="logo-{{post.categories}}"></span>{{ post.categories }}</div>
-      </li>
-    {% endfor %}
-  </ul>
-  <div class='all-posts'>
-    <a href='/blog/archive.html' title='See all posts from Veera Sundar blog'>View all {{ site.posts | size }} posts</a>
-  </div>
+<div class="paper home">
+  <header>
+      <h2 class="logo">
+        <a href="#">
+          <span class="v">V</span><span class="blog">blog</span>
+        </a>
+      </h2>
+  </header>
 </div>
