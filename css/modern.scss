@@ -21,28 +21,44 @@ body{
   font: 1em "Source Sans Pro", Consolas, Sans;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: $pad;
 }
 
 .logo {
   margin: 0px;
   padding: $pad;
+  font-weight: 200;
 
-  .v {
-    display: inline-block;
+  @mixin filled {
     color: $dark-orange;
-    font-weight: 200;
     background-color: $light-orange;
     padding: $pad 2*$pad;
+    border: 1px solid $dark-orange;
+  }
+
+  @mixin shallow {
+    color: $light-orange;
+    background-color: $dark-orange;
+    padding: $pad 2*$pad;
+    border: 1px solid $light-orange;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .v {
+    @include filled;
+    transition:all 1s;
+
+    &:hover{
+      @include shallow;
+    }
   }
 
   .blog {
-    font-weight: 200;
-    color: $light-orange;
-    display: inline-block;
-    margin-left: 5px;
-    padding: $pad 2*$pad;
-    border: $pad/2 solid $light-orange;
-
+    @include shallow;
+    margin-left: $pad/2;
   }
+
 }
