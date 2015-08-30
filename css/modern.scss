@@ -1,64 +1,9 @@
 ---
 ---
+
 @import "normalize";
+@import "variables";
+@import "base";
+@import "home";
 
-$dark-orange:#D9381E;
-$light-orange:#FFDAB9;
-$light-grey:#f5f0eb;
-$light-blue:#eaf3f9;
-$light-black:#333333;
-$white:#ffffff;
 
-$site-bg-color:$dark-orange;
-$site-fg-color:$white;
-$line-color:$light-grey;
-
-$pad:10px;
-
-body{
-  background-color: $site-bg-color;
-  color: $site-fg-color;
-  font: 1em "Source Sans Pro", Consolas, Sans;
-  text-align: center;
-  padding: 0;
-  margin: $pad;
-}
-
-.logo {
-  margin: 0px;
-  padding: $pad;
-  font-weight: 200;
-
-  @mixin filled {
-    color: $dark-orange;
-    background-color: $light-orange;
-    padding: $pad 2*$pad;
-    border: 1px solid $dark-orange;
-  }
-
-  @mixin shallow {
-    color: $light-orange;
-    background-color: $dark-orange;
-    padding: $pad 2*$pad;
-    border: 1px solid $light-orange;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .v {
-    @include filled;
-    transition:all 1s;
-
-    &:hover{
-      @include shallow;
-    }
-  }
-
-  .blog {
-    @include shallow;
-    margin-left: $pad/2;
-  }
-
-}

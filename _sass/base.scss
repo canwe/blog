@@ -1,0 +1,136 @@
+* {
+  box-sizing:border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  background-color: $site-bg-color;
+  color: $site-fg-color;
+  font: 1em "Source Sans Pro", Consolas, Sans;
+  text-align: center;
+  padding: 0;
+}
+
+header {
+  background-color:$dark-orange;
+  padding:$big-pad/2 0;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 100;
+}
+
+.logo {
+  margin: 0px;
+  padding: $pad;
+  font-weight: 200;
+
+  @mixin filled {
+    color: $dark-orange;
+    background-color: $light-orange;
+    padding: $pad 2*$pad;
+    border: 1px solid $dark-orange;
+  }
+
+  @mixin shallow {
+    color: $light-orange;
+    background-color: $dark-orange;
+    padding: $pad 2*$pad;
+    border: 1px solid $light-orange;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .v {
+    @include filled;
+    transition:all 1s;
+
+    &:hover{
+      @include shallow;
+    }
+  }
+
+  .blog {
+    @include shallow;
+    margin-left: $pad/2;
+  }
+
+}
+
+.content {
+  padding-top:100px;
+}
+
+.me {
+  height: 100px;
+  width: 100%;
+  text-align: left;
+  font-weight: 200;
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  .photo {
+    float: left;
+  }
+
+  .short-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $pad/2 $pad;
+
+    ul {
+      margin: $pad 0 0 0;
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        border-bottom: 1px dashed;
+        color: $light-black;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 $pad/2;
+
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .name {
+    color: $dark-black;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .job{
+    font-size: 1.2rem;
+    color:$light-black;
+    font-weight: 300;
+  }
+
+}
+
+.box {
+  background-color:$white;
+  color: $dark-black;
+}
+

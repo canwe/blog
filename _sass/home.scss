@@ -1,0 +1,94 @@
+.home .me {
+  margin: $big-pad 0 0 0;
+  background-color:$white;
+}
+
+.posts {
+  background-color:$light-orange;
+  color: $dark-black;
+}
+
+.posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color:$dark-black;
+  }
+
+  h2, p {
+    margin: 0;
+  }
+
+  li {
+    text-align: left;
+    padding: $medium-pad;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .date {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: $pad;
+    color: $light-black;
+  }
+}
+
+.projects {
+
+  margin:$big-pad 0 0 0;
+
+  ol {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position:relative;
+    margin-bottom: $medium-pad;
+  }
+
+  h2 {
+    margin:0 0 $big-pad 0;
+    padding:0;
+  }
+
+  h3 {
+    position:absolute;
+    z-index: 3;
+    opacity: .9;
+    left:50%;
+    top:50%;
+    font-size: 2rem;
+    font-weight: 200;
+    background-color:$dark-orange;
+    color: $white;
+    padding:$pad 2*$pad;
+    margin:0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  img {
+    width: 100%;
+    z-index: 1;
+    border:2px solid $dark-orange;
+  }
+
+  p {
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
