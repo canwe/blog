@@ -1,13 +1,3 @@
-.home .me {
-  margin: $big-pad 0 0 0;
-  background-color:$white;
-}
-
-.posts {
-  background-color:$light-orange;
-  color: $dark-black;
-}
-
 .posts-list {
   list-style: none;
   margin: 0;
@@ -17,7 +7,7 @@
     color:$dark-black;
   }
 
-  h2, p {
+  h3, p {
     margin: 0;
   }
 
@@ -30,7 +20,7 @@
     }
   }
 
-  h2 {
+  h3 {
     font-size: 1.4rem;
     font-weight: 400;
   }
@@ -45,8 +35,6 @@
 
 .projects {
 
-  margin:$big-pad 0 0 0;
-
   ol {
     list-style:none;
     padding: 0;
@@ -56,11 +44,6 @@
   li {
     position:relative;
     margin-bottom: $medium-pad;
-  }
-
-  h2 {
-    margin:0 0 $big-pad 0;
-    padding:0;
   }
 
   h3 {
@@ -81,7 +64,12 @@
   img {
     width: 100%;
     z-index: 1;
-    border:2px solid $dark-orange;
+    opacity: .5;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
 
   p {
@@ -91,4 +79,8 @@
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
+}
+
+@media screen and (min-width: 960px){
+
 }

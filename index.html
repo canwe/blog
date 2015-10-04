@@ -24,15 +24,17 @@ tags:
           <span class="v">V</span><span class="blog">blog</span>
         </a>
       </h2>
+      <h3 class="tagline">let's talk JavaScript</h3>
   </header>
 
   <section class="content">
 
     <section class="posts box">
+      <h2>Recent posts</h2>
       <ul class='posts-list recent'>
         {% for post in site.posts limit:5 %}
         <li>
-          <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
+          <h3><a href="/blog{{ post.url }}">{{ post.title }}</a></h3>
           <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
         </li>
         {% endfor %}
@@ -44,22 +46,23 @@ tags:
         <a href="/blog/about-me.html"><img src='/blog/img/vraa.jpeg'/></a>
       </div>
       <div class="short-bio">
-        <p class="name">Veera</p>
-        <p class="job">JavaScript programmer</p>
-        <ul class="elsewhere">
-          <li>
-            <a href="#">Github</a>
-          </li>
-          <li>
-            <a href="#">Twitter</a>
-          </li>
-          <li>
-            <a href="#">LinkedIn</a>
-          </li>
-          <li>
-            <a href="#">Email</a>
-          </li>
-        </ul>
+        <div class="short-bio-wrapper">
+          <p class="name-job"><span class='name'>Veera</span> - <span class='job'>JavaScript programmer</span></p>
+          <ul class="elsewhere">
+            <li>
+              <a href="#">Github</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+            <li>
+              <a href="#">LinkedIn</a>
+            </li>
+            <li>
+              <a href="#">Email</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -77,8 +80,8 @@ tags:
         </li>
         <li>
           <h3>Countrack.me</h3>
-          <a href="http://countrack.me/"><img src="http://veerasundar.com/img/projects/countrack.png" title="Countrack.me"
-                                              alt="http://countrack.me"></a>
+          <a href="http://veerasundar.com/app/countrack//"><img src="http://veerasundar.com/img/projects/countrack.png" title="Countrack.me"
+                                              alt="http://veerasundar.com/app/countrack/"></a>
 
           <p>Countrack.me is a offline enabled web application, targeted to mobile devices, to help the user track
             activities.</p>
@@ -129,4 +132,8 @@ tags:
     </section>
 
   </section>
+
+  <footer>
+    &copy; Veera 
+  </footer>
 </div>
