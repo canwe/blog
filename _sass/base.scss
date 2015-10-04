@@ -143,8 +143,18 @@ header {
   background-color:$white;
   color: $dark-black;
   margin: 2*$pad;
-  box-shadow:0 0 3px $lighter-black;
+  box-shadow:0 0 5px #ccc;
   border-radius:3px;
+
+  /* clearfix */
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
 
   h2 {
     padding:$big-pad 0 $big-pad 0;

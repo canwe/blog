@@ -81,6 +81,38 @@
   }
 }
 
-@media screen and (min-width: 960px){
+@media screen and (min-width: 600px){
+
+  .posts-list.recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      width:50%;
+      &:first-child {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .projects ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      width:50%;
+      overflow: hidden;
+      padding: 2*$pad;
+      
+      img {
+        height: 300px;
+        width: auto;
+      }
+    }
+  }
 
 }
