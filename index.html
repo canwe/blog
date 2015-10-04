@@ -30,105 +30,110 @@ tags:
   <section class="content">
 
     <section class="posts box">
-      <h2>Recent posts</h2>
       <ul class='posts-list recent'>
         {% for post in site.posts limit:5 %}
         <li>
           <h3><a href="/blog{{ post.url }}">{{ post.title }}</a></h3>
           <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
+          <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
         </li>
         {% endfor %}
       </ul>
     </section>
 
-    <section class="me box">
-      <div class="photo">
-        <a href="/blog/about-me.html"><img src='/blog/img/vraa.jpeg'/></a>
-      </div>
-      <div class="short-bio">
-        <div class="short-bio-wrapper">
-          <p class="name-job"><span class='name'>Veera</span> - <span class='job'>JavaScript programmer</span></p>
-          <ul class="elsewhere">
-            <li>
-              <a href="#">Github</a>
-            </li>
-            <li>
-              <a href="#">Twitter</a>
-            </li>
-            <li>
-              <a href="#">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#">Email</a>
-            </li>
-          </ul>
+    <section class="left-column">
+
+      <section class="me box">
+        <div class="photo">
+          <a href="/blog/about-me.html"><img src='/blog/img/vraa.jpeg'/></a>
         </div>
-      </div>
+        <div class="short-bio">
+          <div class="short-bio-wrapper">
+            <p class="name-job"><span class='name'>Veera</span> <em>-</em> <span class='job'>JavaScript programmer</span></p>
+            <ul class="elsewhere">
+              <li>
+                <a href="#">Github : <em>vraa</em></a>
+              </li>
+              <li>
+                <a href="#">Twitter : <em>@vraa</em></a>
+              </li>
+              <li>
+                <a href="#">LinkedIn : <em>veera.sundar</em></a>
+              </li>
+              <li>
+                <a href="mailto:veera.k.sundar@gmail.com">Email : <em>veera.k.sundar@gmail</em></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
     </section>
 
-    <section class="projects box">
-      <h2>Projects</h2>
-      <ol>
-        <li class="featured">
-          <h3>Route Planner</h3>
-          <a href="http://veerasundar.com/route-planner" title="Route Planner using Google Maps"><img
-                  src="http://veerasundar.com/img/projects/routeplanner.png" title="Feedmerang - Send and Receive feedback"
-                  alt="http://veerasundar.com/route-planner"></a>
+    <section class="right-column">
 
-          <p>Route Planner helps you to plan your travel routes. Create up to 10 routes. See distance and time details for
-            each way points and whole route.</p>
-        </li>
-        <li>
-          <h3>Countrack.me</h3>
-          <a href="http://veerasundar.com/app/countrack//"><img src="http://veerasundar.com/img/projects/countrack.png" title="Countrack.me"
-                                              alt="http://veerasundar.com/app/countrack/"></a>
+      <section class="projects box">
+        <h2>Web Apps</h2>
+        <ol>
+          <li class="featured">
+            <a href="http://veerasundar.com/route-planner" title="Route Planner using Google Maps"><img
+                    src="http://veerasundar.com/img/projects/routeplanner.png" title="Feedmerang - Send and Receive feedback"
+                    alt="http://veerasundar.com/route-planner"></a>
+            <h3>Route Planner</h3>
+            <p>Route Planner helps you to plan your travel routes. Create up to 10 routes. See distance and time details for
+              each way points and whole route.</p>
+          </li>
+          <li>
+            
+            <a href="http://veerasundar.com/app/countrack//"><img src="http://veerasundar.com/img/projects/countrack.png" title="Countrack.me"
+                                                alt="http://veerasundar.com/app/countrack/"></a>
+            <h3>Countrack</h3>
+            <p>Countrack is a offline enabled web application, targeted to mobile devices, to help the user track
+              activities.</p>
+          </li>
+          <li>
+            <a href="http://timethetask.appspot.com/"><img src="http://veerasundar.com/img/projects/timethetask.png"
+                                                           title="Time the task - task management in Agile style"
+                                                           alt="http://timethetask.appspot.com"></a>
+            <h3>Time the task</h3>
+            <p>Time the task is a web application for managing and time tracking tasks. It has a agile style dashboard where
+              user can move around tasks to different statuses.</p>
+          </li>
+          <li>
+            <a href="http://timelinebuilder.appspot.com/"><img src="http://veerasundar.com/img/projects/timelinr.png" title="Timelinr"
+                                                               align="http://timelinebuilder.appspot.com"></a>
+            <h3>Timelinr</h3>
+            <p>Timelinr or timeline builder helps you to make visual timelines and generate HTML for it so that the timeline
+              can be embedded in any web page.</p>
+          </li>
+        </ol>
+      </section>
 
-          <p>Countrack.me is a offline enabled web application, targeted to mobile devices, to help the user track
-            activities.</p>
-        </li>
-        <li>
-          <h3>Time the task</h3>
-          <a href="http://timethetask.appspot.com/"><img src="http://veerasundar.com/img/projects/timethetask.png"
-                                                         title="Time the task - task management in Agile style"
-                                                         alt="http://timethetask.appspot.com"></a>
+      <section class="projects games box">
+        <h2>Games</h2>
+        <ol>
+          <li class="featured">
+            <h3>Suzhi</h3>
+            <a href="http://veerasundar.com/suzhi/"><img src="http://veerasundar.com/img/projects/suzhi.png" alt="Suzhi" title="Suzhi"></a>
+          </li>
+          <li>
+            <h3>2048</h3>
+            <a href="http://veerasundar.com/2048/"><img src="http://veerasundar.com/img/projects/2048.png" alt="2048" title="2048"></a>
+          </li>
+          <li>
+            <h3>Brainvita</h3>
+            <a href="http://veerasundar.com/33holepegsolitaire/"><img src="http://veerasundar.com/img/projects/brainvita.png" alt="Brainvita"
+                                                                      title="Brainvita"></a>
+          </li>
+          <li>
+            <h3>Rock Paper Scissor Lizard Spoc</h3>
+            <a href="http://veerasundar.com/rock-paper-scissor-lizard-spoc/"><img src="http://veerasundar.com/img/projects/rpsls.png"
+                                                                                  alt="Rock Paper Scissor Lizard Spoc"
+                                                                                  title="Rock Paper Scissor Lizard Spoc"></a>
+          </li>
+        </ol>
+      </section>
 
-          <p>Time the task is a web application for managing and time tracking tasks. It has a agile style dashboard where
-            user can move around tasks to different statuses.</p>
-        </li>
-        <li>
-          <h3>Timelinr</h3>
-          <a href="http://timelinebuilder.appspot.com/"><img src="http://veerasundar.com/img/projects/timelinr.png" title="Timelinr"
-                                                             align="http://timelinebuilder.appspot.com"></a>
-
-          <p>Timelinr or timeline builder helps you to make visual timelines and generate HTML for it so that the timeline
-            can be embedded in any web page.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="projects games box">
-      <h2>Games</h2>
-      <ol>
-      <li class="featured">
-        <h3>Suzhi</h3>
-        <a href="http://veerasundar.com/suzhi/"><img src="http://veerasundar.com/img/projects/suzhi.png" alt="Suzhi" title="Suzhi"></a>
-      </li>
-      <li>
-        <h3>2048</h3>
-        <a href="http://veerasundar.com/2048/"><img src="http://veerasundar.com/img/projects/2048.png" alt="2048" title="2048"></a>
-      </li>
-      <li>
-        <h3>Brainvita</h3>
-        <a href="http://veerasundar.com/33holepegsolitaire/"><img src="http://veerasundar.com/img/projects/brainvita.png" alt="Brainvita"
-                                                                  title="Brainvita"></a>
-      </li>
-      <li>
-        <h3>Rock Paper Scissor Lizard Spoc</h3>
-        <a href="http://veerasundar.com/rock-paper-scissor-lizard-spoc/"><img src="http://veerasundar.com/img/projects/rpsls.png"
-                                                                              alt="Rock Paper Scissor Lizard Spoc"
-                                                                              title="Rock Paper Scissor Lizard Spoc"></a>
-      </li>
-    </ol>
     </section>
 
   </section>
