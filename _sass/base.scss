@@ -25,6 +25,21 @@ header {
   z-index: 100;
 }
 
+.cta-button {
+  padding: $pad 2*$pad;
+  border: 1px solid $dark-orange;
+  border-radius:50px;
+  color: $dark-orange;
+  text-decoration: none;
+  transition: all .3s;
+
+  &:hover,
+  &:focus {
+    background-color:$dark-orange;
+    color: $white;
+  }
+}
+
 .logo {
   margin: 0px;
   padding: $pad;
@@ -101,9 +116,18 @@ header {
       transform: translateY(-50%);
     }
 
+    .name-job {
+      font-size: 1.1rem;
+    }
+
+    .resume-link {
+      display: none;
+    }
+
     ul {
       margin: $pad 0 0 0;
       padding: 0;
+      font-size: .9rem;
 
       a {
         text-decoration: none;
@@ -120,6 +144,10 @@ header {
         }
         &:last-child {
           margin-right: 0;
+        }
+
+        em {
+          display: none;
         }
       }
     }
@@ -169,6 +197,290 @@ footer {
   color: $light-black;
 }
 
-@media screen and (min-width:960px) {
+.posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color:$dark-black;
+  }
+
+  h3, p {
+    margin: 0;
+  }
+
+  li {
+    text-align: left;
+    padding: $medium-pad;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .date {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: $pad;
+    color: $light-black;
+  }
+
+  .excerpt {
+    display: none;
+  }
+}
+
+.projects {
+
+  ol {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position:relative;
+    margin-bottom: $medium-pad;
+  }
+
+  h3 {
+    position:absolute;
+    z-index: 3;
+    opacity: .9;
+    left:50%;
+    top:50%;
+    font-size: 2rem;
+    font-weight: 200;
+    background-color:$dark-orange;
+    color: $white;
+    padding:$pad 2*$pad;
+    margin:0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  img {
+    width: 100%;
+    z-index: 1;
+    opacity: .5;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  p {
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
+@media screen and (min-width: 600px){
+
+  .posts-list.recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      width:50%;
+      &:first-child {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+
+        .excerpt {
+          width:70%;
+          margin: 0 auto;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .posts-list .excerpt {
+    display: block;
+    padding: 2*$pad 0;
+    color: $light-black;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    a {
+      color: $link-color;
+    }
+  }
+
+  .projects ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      width:50%;
+      overflow: hidden;
+      padding: 2*$pad;
+
+      img {
+        height: 300px;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:900px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+
+    .left-column {
+      order: 1;
+      width: 20%;
+      
+      .me.box {
+        height: auto;
+        margin-left: 2*$pad;
+        margin-right: 0;
+        padding:2*$pad;
+        text-align: center;
+
+        .name-job {
+          border-bottom:1px solid $line-color;
+        }
+
+        .name-job em {
+          display: none;
+        }
+
+        .name {
+          display: block;
+          color: $dark-black;
+          padding: $pad 0;
+          font-size: 1.3rem;
+        }
+
+        .job {
+          display: block;
+          font-size: 1rem;
+          margin-bottom: 2*$pad;
+        }
+
+        .photo {
+          float: none;
+          margin:0 0 2*$pad 0;
+          
+          img {
+            border-radius:50%;
+          }
+        }
+
+        .short-bio {
+          height: auto;
+        }
+
+        .short-bio-wrapper {
+          top: 0;
+          transform: none;
+          margin: -2*$pad;
+        }
+
+        .elsewhere {
+          text-align: left;
+          font-size: .9rem;
+          padding: 0 2 *$pad;
+          border-bottom:1px solid $line-color;
+
+          li {
+            display: block;
+            margin: $pad 0;
+
+            a {
+              border-bottom: none;
+            }
+
+            em {
+              display: inline-block;
+              font-style: normal;
+              font-size: .8rem;
+
+              &:before {
+                content: ':';
+                margin: 0 $pad/2;
+              }
+            }
+          }
+        }
+
+        .resume-link {
+          display: block;
+          padding: 2*$pad;
+          font-size: .9rem;
+        }
+
+      }
+
+    }
+
+    .posts.box {
+      order: 2;
+      width: 60%;
+    }
+
+    .right-column {
+      order: 3;
+      width: 20%;
+      margin:2*$pad 2*$pad 0 0;
+      text-align: left;
+
+      .box {
+        margin: 0;
+        background:none;
+        box-shadow:none;
+      }
+
+      .box.projects {
+        margin-bottom: 4*$pad;
+        h2 {
+          padding-top:0;
+          padding-bottom:$pad;
+          font-size: 1.2rem;
+        }
+
+        li {
+          width:100%;
+          padding:$pad 0;
+          margin:0;
+
+          h3 {
+            opacity: 1;
+            background:none;
+            color: $dark-black;
+            font-size: 1.2rem;
+            padding: 0;
+            margin: 0;
+            left:60px;
+            transform: translateY(-50%);
+
+          }
+
+          img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            float: left;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
 
