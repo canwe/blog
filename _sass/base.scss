@@ -4,6 +4,7 @@
 
 a {
   text-decoration: none;
+  color: $link-color;
 }
 
 body{
@@ -288,6 +289,143 @@ footer {
   }
 }
 
+.extra {
+  padding: 2*$pad;
+}
+
+.other-posts{
+  display: none;
+}
+
+
+.post {
+
+  padding: 0 2*$pad;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 3rem;
+    margin:0;
+    padding: 2*$pad 0;
+    text-transform: none;
+  }
+
+  .date {
+    margin: 0;
+    padding:2*$pad 0;
+    font-weight: 100;
+    position: relative;
+    border-top:1px solid $line-color;
+    border-bottom: 1px solid $line-color;
+
+    .prev,
+    .next {
+      position:absolute;
+      width: 30px;
+      height: 30px;
+      color: $dark-black;
+      border: 1px solid $dark-black;
+      border-radius:50%;
+      top:50%;
+      transform: translateY(-50%);
+    }
+
+    .prev {
+      left: 2*$pad;
+
+      &:after {
+        position:absolute;
+        content: '◁';
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        font-size: .8rem;
+        font-weight: 100;
+      }
+    }
+
+    .next {
+      right: 2*$pad;
+
+      &:after {
+        position:absolute;
+        content: '◁';
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%) rotate(180deg);
+        font-size: .8rem;
+        font-weight: 100;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    margin: 0;
+    padding: $pad 0;
+    text-transform: none;
+    font-weight: 100;
+  }
+
+  h3, h4, h5 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 0;
+    padding: $pad 0;
+    text-transform: none;
+    font-weight: 100;
+  }
+
+  p
+   {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin:$pad 0;
+    padding-bottom:$pad;
+
+    code {
+      background-color: #fafafa;
+      font-family: Consolas, monospace ;
+      font-size: 1.3rem;
+      line-height: 2.3rem;
+      word-break: break-all;
+      padding: 2px $pad/2;
+    }
+  }
+
+  ol li,
+  ul li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  a {
+    color: $link-color;
+
+    &:hover {
+      border-bottom:1px dashed;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    margin:$pad -$pad;
+  }
+
+  .post-content {
+    text-align: left;
+
+    pre {
+      background-color: #fafafa;
+      padding: $pad/2;
+      font-family: Consolas, monospace ;
+      font-size: .9rem;
+    }
+  }
+}
+
 @media screen and (min-width: 600px){
 
   .posts-list.recent {
@@ -358,92 +496,6 @@ footer {
       }
     }
   }
-}
-
-.post {
-
-  padding: 0 2*$pad;
-
-  h1 {
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 3rem;
-    margin:0;
-    padding: 2*$pad 0;
-    text-transform: none;
-  }
-
-  .date {
-    margin: 0;
-    padding-bottom:2*$pad;
-    font-weight: 100;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-    line-height: 2.7rem;
-    margin: 0;
-    padding: $pad 0;
-    text-transform: none;
-    font-weight: 100;
-  }
-
-  h3, h4, h5 {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    margin: 0;
-    padding: $pad 0;
-    text-transform: none;
-    font-weight: 100;
-  }
-
-  p
-   {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    margin:$pad 0;
-    padding-bottom:$pad;
-
-    code {
-      background-color: #fafafa;
-      font-family: Consolas, monospace ;
-      font-size: 1.3rem;
-      line-height: 2.3rem;
-      word-break: break-all;
-      padding: 2px $pad/2;
-    }
-  }
-
-  ol li,
-  ul li {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-
-  a {
-    color: $link-color;
-
-    &:hover {
-      border-bottom:1px dashed;
-    }
-  }
-
-  img {
-    width: 100%;
-    margin:$pad -$pad;
-  }
-
-  .post-content {
-    text-align: left;
-
-    pre {
-      background-color: #fafafa;
-      padding: $pad/2;
-      font-family: Consolas, monospace ;
-      font-size: .9rem;
-    }
-  }
-
 }
 
 @media screen and (min-width:900px) {
@@ -626,6 +678,17 @@ footer {
   }
 
   .post-content {
+    .date {
+      .prev,
+      .next {
+        height: 75px;
+        width: 75px;
+
+        &:after {
+          font-size: 1.5rem;
+        }
+      }
+    }
     p {
       font-size: 1.3rem;
       line-height: 2.3rem;

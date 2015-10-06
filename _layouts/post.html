@@ -8,7 +8,18 @@ postpage: yes
    <h1>
       {{ page.title }}
     </h1>
-    <p class='date'>{{ page.date | date: "%B" }}, {{ page.date | date : "%d"}}, {{ page.date | date : "%Y"}}</p>
+    <div class="date-navigator">
+        
+        <p class='date'>
+            {% if page.previous.url %}
+                <a class="prev" id="{{page.previous.id}}" href="/blog{{page.previous.url}}" title="Older: {{page.previous.title}}"></a>
+            {% endif %}
+            {{ page.date | date: "%B" }}, {{ page.date | date : "%d"}}, {{ page.date | date : "%Y"}}
+            {% if page.next.url %}
+                <a class="next" id="{{page.next.id}}" href="/blog{{page.next.url}}" title="Newer: {{page.next.title}}"></a>
+            {% endif %}
+        </p>
+    </div>
 
     <div class='gad'>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
