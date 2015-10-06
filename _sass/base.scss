@@ -26,7 +26,7 @@ header {
 }
 
 .cta-button {
-  padding: $pad 2*$pad;
+  padding: $pad/2 $pad;
   border: 1px solid $dark-orange;
   border-radius:50px;
   color: $dark-orange;
@@ -262,6 +262,10 @@ footer {
     padding:$pad 2*$pad;
     margin:0;
     transform: translateX(-50%) translateY(-50%);
+
+    a {
+      color: $white;
+    }
   }
 
   img {
@@ -293,16 +297,36 @@ footer {
 
     li {
       width:50%;
+      
+
+
       &:first-child {
         width: 100%;
         text-align: center;
         font-size: 3rem;
+        border-bottom: 1px solid $line-color;
 
         .excerpt {
-          width:70%;
+          width:80%;
           margin: 0 auto;
           text-align: justify;
         }
+      }
+
+      &:nth-child(2) {
+        border-bottom: 1px solid $line-color;
+        border-right: 1px solid $line-color;
+      }
+
+      &:nth-child(3) {
+        border-bottom: 1px solid $line-color;
+      }
+
+      &:nth-child(4) {
+        border-right: 1px solid $line-color;
+      }
+
+      &:nth-child(5) {
       }
     }
   }
@@ -334,6 +358,92 @@ footer {
       }
     }
   }
+}
+
+.post {
+
+  padding: 0 2*$pad;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 3rem;
+    margin:0;
+    padding: 2*$pad 0;
+    text-transform: none;
+  }
+
+  .date {
+    margin: 0;
+    padding-bottom:2*$pad;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    margin: 0;
+    padding: $pad 0;
+    text-transform: none;
+    font-weight: 100;
+  }
+
+  h3, h4, h5 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 0;
+    padding: $pad 0;
+    text-transform: none;
+    font-weight: 100;
+  }
+
+  p
+   {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin:$pad 0;
+    padding-bottom:$pad;
+
+    code {
+      background-color: #fafafa;
+      font-family: Consolas, monospace ;
+      font-size: 1.3rem;
+      line-height: 2.3rem;
+      word-break: break-all;
+      padding: 2px $pad/2;
+    }
+  }
+
+  ol li,
+  ul li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  a {
+    color: $link-color;
+
+    &:hover {
+      border-bottom:1px dashed;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin:$pad -$pad;
+  }
+
+  .post-content {
+    text-align: left;
+
+    pre {
+      background-color: #fafafa;
+      padding: $pad/2;
+      font-family: Consolas, monospace ;
+      font-size: .9rem;
+    }
+  }
+
 }
 
 @media screen and (min-width:900px) {
@@ -434,6 +544,21 @@ footer {
       width: 60%;
     }
 
+    .posts-list.recent {
+      li:first-child {
+        h3 {
+          font-size: 2rem;
+        }
+        .date {
+          font-size: 1.5rem;
+        }
+        .excerpt {
+          font-size: 1.3rem;
+          line-height: 2rem;
+        }
+      }
+    }
+
     .right-column {
       order: 3;
       width: 20%;
@@ -469,6 +594,10 @@ footer {
             left:60px;
             transform: translateY(-50%);
 
+            a {
+              color: $dark-black;
+              transition: color .1s;
+            }
           }
 
           img {
@@ -477,9 +606,41 @@ footer {
             border-radius: 50%;
             float: left;
             opacity: 1;
+            transition: border-radius .2s, height .2s, width .2s;
+          }
+
+          &:hover {
+            img {
+              border-radius: 0;
+              height:52px;
+              width:52px;
+            }
+
+            a {
+              color: $darker-black;
+            }
           }
         }
       }
+    }
+  }
+
+  .post-content {
+    p {
+      font-size: 1.3rem;
+      line-height: 2.3rem;
+      padding-bottom: 2*$pad;
+
+      code {
+        font-size: 1.1rem;
+        line-height: 2.1rem;
+      }
+    }
+
+    ol li,
+    ul li {
+      font-size: 1.3rem;
+      line-height: 2.3rem;
     }
   }
 }

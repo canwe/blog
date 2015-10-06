@@ -1,15 +1,14 @@
 ---
-layout: default
+layout: modern
 postpage: yes
 ---
 <div id="post" class='stand-alone post'>
 
-    <input id="postId" type="hidden" value="{{ page.id }}" />
-
-    <p class='date'>{{ page.date | date: "%B" }}, {{ page.date | date : "%d"}}, {{ page.date | date : "%Y"}}</p>
+   <input id="postId" type="hidden" value="{{ page.id }}" />
    <h1>
       {{ page.title }}
     </h1>
+    <p class='date'>{{ page.date | date: "%B" }}, {{ page.date | date : "%d"}}, {{ page.date | date : "%Y"}}</p>
 
     <div class='gad'>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -44,56 +43,46 @@ postpage: yes
 
 <div class='extra'>
 
-    {% include author.html %}
-
-    <div class='row'>
-        <div class='col-xs-12'>
+    <div class='fb-like-box-widget'>
             <div class="fb-like-box widget" data-href="https://www.facebook.com/veera.sundar.blog" data-width="292" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-        </div>
     </div>
 
     <!-- PREVIOUS / NEXT -->
     <section class='other-posts'>
-        <div class='row'>
-            {% if page.next.url %}
-                <section class='next col-xs-12 col-sm-6'>
-                    <h6>Newer Post </h6>
-                    <p>
-                        <a id="{{page.next.id}}" href="/blog{{page.next.url}}" title="Newer post: {{page.next.title}}">{{page.next.title}}</a>
-                    </p>
-                </section>
-            {% endif %}
-            {% if page.previous.url %}
-                <section class='previous col-xs-12 col-sm-6'>
-                    <h6>Older Post</h6>
-                    <p>
-                        <a id="{{page.previous.id}}" href="/blog{{page.previous.url}}" title="Older post: {{page.previous.title}}">{{page.previous.title}}</a>
-                    </p>    
-                </section>
-            {% endif %}
-        </div>
+        {% if page.next.url %}
+            <section>
+                <h6>Newer Post </h6>
+                <p>
+                    <a id="{{page.next.id}}" href="/blog{{page.next.url}}" title="Newer post: {{page.next.title}}">{{page.next.title}}</a>
+                </p>
+            </section>
+        {% endif %}
+        {% if page.previous.url %}
+            <section>
+                <h6>Older Post</h6>
+                <p>
+                    <a id="{{page.previous.id}}" href="/blog{{page.previous.url}}" title="Older post: {{page.previous.title}}">{{page.previous.title}}</a>
+                </p>    
+            </section>
+        {% endif %}
     </section>
     <!-- end PREVIOUS / NEXT -->
 
 
     <!-- comments section -->
     <div class='comments'>
-        <div class='row'>
-            <div class='col-xs-12'>
-                <section id="disqus_thread"></section>
-                <script type="text/javascript">
-                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                    var disqus_shortname = 'vraa'; // required: replace example with your forum shortname
+        <section id="disqus_thread"></section>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'vraa'; // required: replace example with your forum shortname
 
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
-            </div>
-        </div>
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
     </div>
     <!-- end comments section -->
 

@@ -19,7 +19,29 @@
 </head>
 <body>
 
-{{ content }}
+  <div class="site">
+    
+    {% include header.html %}
+
+    <section class="content">
+
+      <section class="posts box">
+        {{ content }}
+      </section>
+
+      <section class="left-column">
+        {% include aside-1.html %}
+      </section>
+
+      <section class="right-column">
+      {% include aside-2.html %}
+      </section>
+
+    </section>
+
+    {% include footer.html %}
+    
+  </div>
 
 </body>
 </html>
