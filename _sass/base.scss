@@ -18,12 +18,8 @@ body{
 header {
   background-color:$dark-orange;
   padding:$big-pad/2 0;
-  position: fixed;
-  top:0;
-  left:0;
   height: 150px;
   width:100%;
-  z-index: 100;
 }
 
 .cta-button {
@@ -87,7 +83,6 @@ header {
 }
 
 .content {
-  padding-top:150px;
 }
 
 .me {
@@ -294,6 +289,10 @@ footer {
 }
 
 .other-posts{
+  display: none;
+}
+
+.ad.sidebar {
   display: none;
 }
 
@@ -506,6 +505,7 @@ footer {
     .left-column {
       order: 1;
       width: 20%;
+      min-width: 160px;
       
       .me.box {
         height: auto;
@@ -587,6 +587,12 @@ footer {
           font-size: .9rem;
         }
 
+      }
+
+      .ad.sidebar {
+        display: inline-block;
+        margin:2*$pad;
+        margin-right: 0;
       }
 
     }
