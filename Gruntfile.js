@@ -3,8 +3,8 @@ module.exports = function(grunt){
 		pkg : grunt.file.readJSON('package.json'),
 		cssmin : {
 			css : {
-				src : '_site/css/blog.css',
-				dest : '_site/css/blog.css'
+				src : '_site/css/modern.css',
+				dest : '_site/css/modern.css'
 			}
 		}
 	});
