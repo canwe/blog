@@ -73,7 +73,7 @@ ES6 defines two new protocols `iterator` and `iterable`, which in layman terms m
 For example, you can say,
 {% highlight javascript %}
 var myObj = {};
-myObj[Symbols.iterator] = function () {
+myObj[Symbol.iterator] = function () {
 	return {
 		next: function() {
 			return {
