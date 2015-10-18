@@ -125,6 +125,7 @@ Basket.prototype[Symbol.iterator] = function() {
 				result = {
 					done: true
 				}
+				this._index = 0;
 			}
 
 			return result;
