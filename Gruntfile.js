@@ -6,9 +6,24 @@ module.exports = function(grunt){
 				src : '_site/css/modern.css',
 				dest : '_site/css/modern.css'
 			}
+		},
+		htmlmin : {
+			dist : {
+				options : {
+					removeComments : true,
+					collapseWhitespace: true
+				},
+				files: [{
+			        expand: true,
+			        cwd: './',
+			        src: ['_site/**/*.html'],
+			        dest: './'
+			    }]
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.registerTask('default', ['cssmin:css']);
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.registerTask('default', ['cssmin:css', 'htmlmin:dist']);
 }
