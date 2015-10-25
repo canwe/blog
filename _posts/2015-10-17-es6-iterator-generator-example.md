@@ -1,12 +1,16 @@
 ---
 layout: post
 title: 'ES6 - Iterator, Generator Example'
+description: 'Learn how to write ES6 code that uses Iterator and Generator with a simple example.'
 categories:
   - javascript
 tags:
   - web
   - code
   - javascript
+  - es6
+  - iterator
+  - generator
 ---
 
 ES6 comes with lots of [new *cool* features](https://github.com/lukehoban/es6features). Out of which, **Iterators** and **Generators** took some time to get used to. Here's an example that shows how to use ES6 Iterators and Generators.
