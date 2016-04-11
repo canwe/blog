@@ -3,8 +3,6 @@ title: 'ArgoUML &#8211; a free Visio counterpart'
 author: Veera
 layout: post
 permalink: /2008/07/argouml-a-free-visio-counterpart/
-related_posts:
-  - 's:553:"a:2:{s:4:"time";i:1220822436;s:13:"related_posts";s:493:"<ul class="related_post"><li><a href="http://veerasundar.com/blog/2008/08/19/how-to-create-a-horizontal-navigation-website-using-jquery/" title="How to create a horizontal navigation website using JQuery.">How to create a horizontal navigation website using JQuery.</a></li><li><a href="http://veerasundar.com/blog/2008/08/01/tools-that-are-replaced-my-windows-counterparts/" title="Tools that are replaced my Windows counterparts">Tools that are replaced my Windows counterparts</a></li></ul>";}";'
 show_ad:
   - yes
 views:

@@ -1,4 +1,5 @@
-markdown: redcarpet
+markdown: kramdown
 permalink: /:year/:month/:title/
 baseurl: /blog
-highlighter : pygments
+highlighter : rouge
+exclude: ["node_modules"]

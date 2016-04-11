@@ -3,8 +3,6 @@ title: Getting your web identity!
 author: Veera
 layout: post
 permalink: /2008/06/getting-your-web-identity/
-related_posts:
-  - 's:1071:"a:2:{s:4:"time";i:1220604353;s:13:"related_posts";s:1010:"<ul class="related_post"><li><a href="http://veerasundar.com/blog/2008/06/09/creating-window-styled-boxes-using-css/" title="Creating window styled boxes using CSS">Creating window styled boxes using CSS</a></li><li><a href="http://veerasundar.com/blog/2008/08/19/how-to-create-a-horizontal-navigation-website-using-jquery/" title="How to create a horizontal navigation website using JQuery.">How to create a horizontal navigation website using JQuery.</a></li><li><a href="http://veerasundar.com/blog/2008/08/10/mozilla-concept-series-future-of-web-browser/" title="Mozilla concept series : Future of Web browser">Mozilla concept series : Future of Web browser</a></li><li><a href="http://veerasundar.com/blog/2008/07/24/is-firefox-3-a-buggy-browser/" title="Is Firefox 3 a buggy browser?">Is Firefox 3 a buggy browser?</a></li><li><a href="http://veerasundar.com/blog/2008/07/04/tiobe-programming-community-index/" title="TIOBE - Programming Community Index">TIOBE - Programming Community Index</a></li></ul>";}";'
 views:
   - 56
 ratings_users:

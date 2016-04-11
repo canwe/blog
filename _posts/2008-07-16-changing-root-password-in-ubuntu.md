@@ -3,8 +3,6 @@ title: Changing root password in Ubuntu
 author: Veera
 layout: post
 permalink: /2008/07/changing-root-password-in-ubuntu/
-related_posts:
-  - 's:254:"a:2:{s:4:"time";i:1220829306;s:13:"related_posts";s:194:"<ul class="related_post"><li><a href="http://veerasundar.com/blog/2008/06/27/sharepoint-story-installation/" title="SharePoint story - installation">SharePoint story - installation</a></li></ul>";}";'
 views:
   - 304
 ratings_users:

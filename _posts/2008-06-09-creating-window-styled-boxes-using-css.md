@@ -3,8 +3,6 @@ title: Creating window styled boxes using CSS
 author: Veera
 layout: post
 permalink: /2008/06/creating-window-styled-boxes-using-css/
-related_posts:
-  - 's:1205:"a:2:{s:4:"time";i:1220588429;s:13:"related_posts";s:1144:"<ul class="related_post"><li><a href="http://veerasundar.com/blog/2008/08/19/how-to-create-a-horizontal-navigation-website-using-jquery/" title="How to create a horizontal navigation website using JQuery.">How to create a horizontal navigation website using JQuery.</a></li><li><a href="http://veerasundar.com/blog/2008/06/12/getting-your-web-identity/" title="Getting your web identity!">Getting your web identity!</a></li><li><a href="http://veerasundar.com/blog/2008/08/11/code-snippet-for-including-content-based-on-post-length-in-wordpress/" title="Code snippet for including content based on post length in Wordpress">Code snippet for including content based on post length in Wordpress</a></li><li><a href="http://veerasundar.com/blog/2008/08/10/mozilla-concept-series-future-of-web-browser/" title="Mozilla concept series : Future of Web browser">Mozilla concept series : Future of Web browser</a></li><li><a href="http://veerasundar.com/blog/2008/08/05/tip-to-avoid-typing-password-every-time-you-open-vss/" title="Tip to avoid typing password every time you open VSS">Tip to avoid typing password every time you open VSS</a></li></ul>";}";'
 ratings_users:
   - 0
 ratings_score:
