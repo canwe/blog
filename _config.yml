@@ -2,4 +2,4 @@ markdown: kramdown
 permalink: /:year/:month/:title/
 baseurl: /blog
 highlighter : rouge
-exclude: ["node_modules"]
+exclude: ["node_modules", "sandbox"]
