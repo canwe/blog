@@ -5,3 +5,5 @@ _vendor/**
 node_modules/**
 *.iml
 .idea/**
+sandbox/node_modules/**
+sandbox/bundle.js
