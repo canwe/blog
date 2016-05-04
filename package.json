@@ -4,7 +4,8 @@
   "description": "A blog about web application development.",
   "main": "index.js",
   "scripts": {
-    "dev": "bundle exec jekyll server --watch"
+    "dev": "bundle exec jekyll server --watch",
+    "sandbox" : "cd sandbox && webpack-dev-server --progress --colors"
   },
   "repository": {
     "type": "git",
