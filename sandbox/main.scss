@@ -1,8 +1,14 @@
+$white: #ffffff;
+$grey: #dddddd;
+
 body {
   background-color: #ffffff;
+  font: 1em Arial;
 }
 
 .me {
+
+  border:1px solid $grey;
 
   .avatar {
     width: 100px;
