@@ -1,6 +1,7 @@
 @import "_variables";
 @import "_reset";
 @import "_icons";
+@import "_animations";
 
 .group:after {
   content: "";
@@ -70,8 +71,14 @@ a {
     }
 
     i[class^="icon-"] {
+      visibility: hidden;
       display: inline-block;
       font-size: 1.7rem;
+      text-decoration: none;
+
+      &.animated {
+        visibility: visible;
+      }
     }
 
     em {
