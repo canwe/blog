@@ -31,21 +31,26 @@ a {
 }
 
 .me {
-
+  position: relative;
   padding: 2 * $pad;
   border-bottom: 1px solid $light-blue;
 
   .avatar {
     float: left;
     width: 50px;
-    border-radius:50%;
+    border-radius: 50%;
   }
 
   .name {
-    margin-left:2 * $pad;
-    font-size:2rem;
-    font-weight:600;
-    display: none;
+    float: left;
+    margin-left: 2 * $pad;
+    font-size: 2rem;
+    font-weight: 600;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
   }
 
   .punch-line {
@@ -53,10 +58,11 @@ a {
   }
 
   .social-links {
-
-    float:right;
-    margin: $pad $pad 0 0;
+    position: absolute;
+    top: 50%;
+    right: 2 * $pad;
     padding: 0;
+    transform: translate(0, -50%);
 
     li {
       display: inline-block;
@@ -65,7 +71,7 @@ a {
 
     i[class^="icon-"] {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
 
     em {
