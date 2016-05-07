@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "bundle exec jekyll server --watch",
-    "sandbox" : "cd sandbox && webpack-dev-server --progress --colors"
+    "sandbox" : "cd sandbox && npm run dev"
   },
   "repository": {
     "type": "git",
