@@ -98,7 +98,7 @@ a {
     display: none;
 
     &.animated {
-      display: inline-block;
+      display: block;
     }
   }
 
@@ -107,7 +107,6 @@ a {
     font-weight: 100;
     background-color: $lighter-blue;
     color: $dark-blue;
-    display: inline-block;
     padding: $pad /2 $pad;
     letter-spacing: 1pt;
   }
