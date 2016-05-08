@@ -22,31 +22,8 @@ postpage: yes
 
 <div class='extra'>
 
-    <!-- PREVIOUS / NEXT -->
-    <section class='other-posts'>
-        {% if page.next.url %}
-        <section>
-            <h6>Newer Post </h6>
-            <p>
-                <a id="{{page.next.id}}" href="/blog{{page.next.url}}" title="Newer post: {{page.next.title}}">{{page.next.title}}</a>
-            </p>
-        </section>
-        {% endif %}
-        {% if page.previous.url %}
-        <section>
-            <h6>Older Post</h6>
-            <p>
-                <a id="{{page.previous.id}}" href="/blog{{page.previous.url}}"
-                   title="Older post: {{page.previous.title}}">{{page.previous.title}}</a>
-            </p>
-        </section>
-        {% endif %}
-    </section>
-    <!-- end PREVIOUS / NEXT -->
-
-
     <!-- comments section -->
-    {% if false %}
+    {% if true %}
     <div class='comments'>
         <section id="disqus_thread"></section>
         <script type="text/javascript">
