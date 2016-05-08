@@ -116,8 +116,6 @@ a {
   padding: 0 2 * $pad;
 
   .posts-list {
-    font-size: 1.3rem;
-    font-weight: 300;
 
     li {
       border-bottom: 1px dashed $lighter-blue;
@@ -125,6 +123,8 @@ a {
     }
     h3 {
       margin-top: $pad;
+      font-size: 1.3rem;
+      font-weight: 600;
     }
 
     h3 a {
@@ -134,7 +134,6 @@ a {
 
     .date {
       display: none;
-      font-size: 1rem;
       color: $lighter-blue;
     }
   }
