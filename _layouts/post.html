@@ -20,33 +20,30 @@ postpage: yes
 
 </div>
 
-<div class='extra'>
 
-    <!-- comments section -->
-    {% if true %}
-    <div class='comments'>
-        <section id="disqus_thread"></section>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'vraa'; // required: replace example with your forum shortname
+<!-- comments section -->
+{% if true %}
+<div class='comments'>
+    <section id="disqus_thread"></section>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'vraa'; // required: replace example with your forum shortname
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function () {
-                var dsq = document.createElement('script');
-                dsq.type = 'text/javascript';
-                dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-    </div>
-    {% endif %}
-    <!-- end comments section -->
-
-    {% if page.tags contains '500px' %}
-    <!-- 500px Script -->
-    <script type="text/javascript" src="https://500px.com/embed.js"></script>
-    <!-- end 500px script -->
-    {% endif %}
-
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
 </div>
+{% endif %}
+<!-- end comments section -->
+
+{% if page.tags contains '500px' %}
+<!-- 500px Script -->
+<script type="text/javascript" src="https://500px.com/embed.js"></script>
+<!-- end 500px script -->
+{% endif %}

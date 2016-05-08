@@ -18,7 +18,7 @@ tags:
 ---
 <section class="posts">
     <ul class='posts-list recent'>
-        {% for post in site.posts limit:10 %}
+        {% for post in site.posts limit:5 %}
         <li>
             <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
             <h3><a href="/blog{{ post.url }}">{{ post.title }}</a></h3>
