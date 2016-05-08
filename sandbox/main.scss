@@ -129,9 +129,11 @@ a {
 
     h3 a {
       text-decoration: none;
+      color: $dark-blue;
     }
 
     .date {
+      display: none;
       font-size: 1rem;
       color: $lighter-blue;
     }
