@@ -11,6 +11,7 @@ require('./main.scss');
 
     function init() {
         animateSocialIcons();
+        activateOneLiner();
     }
 
     function animateSocialIcons() {
@@ -26,5 +27,11 @@ require('./main.scss');
         }
     }
 
+    function activateOneLiner() {
+        var oneLiners = document.querySelectorAll('.one-liner li'),
+            numOfOneLiners = oneLiners.length,
+            randomLine = Math.floor(Math.random() * ( (numOfOneLiners) - 1 + 1) + 1);
+        oneLiners[(randomLine - 1)].classList.add('animated', 'slideInDown');
+    }
 
 }());

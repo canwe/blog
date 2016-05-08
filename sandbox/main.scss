@@ -35,6 +35,8 @@ a {
   position: relative;
   padding: 2 * $pad;
   border-bottom: 1px solid $light-blue;
+  background-color: $white;
+  z-index: 10;
 
   .avatar {
     float: left;
@@ -86,5 +88,27 @@ a {
     }
 
   }
+}
 
+.one-liner {
+  text-align: center;
+  z-index: 5;
+
+  li {
+    display: none;
+
+    &.animated {
+      display: inline-block;
+    }
+  }
+
+  p {
+    font-size: .9rem;
+    font-weight: 100;
+    background-color: $lighter-blue;
+    color: $dark-blue;
+    display: inline-block;
+    padding: $pad /2 $pad;
+    letter-spacing: 1pt;
+  }
 }
