@@ -3,3 +3,6 @@ permalink: /:year/:month/:title/
 baseurl: /blog
 highlighter : rouge
 exclude: ["node_modules", "sandbox"]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
