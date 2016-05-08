@@ -11,6 +11,11 @@ body {
   font: 1em 'Open Sans', sans-serif;;
 }
 
+.site {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 a {
 
   &:link {
@@ -66,7 +71,12 @@ a {
 
     li {
       display: inline-block;
-      margin-left: 2 * $pad;;
+      margin-left: 2 * $pad;
+
+      a {
+        text-decoration: none;
+        border: none;
+      }
     }
 
     i[class^="icon-"] {
@@ -135,3 +145,5 @@ a {
     }
   }
 }
+
+@import "_responsive";
