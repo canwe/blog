@@ -1,7 +1,0 @@
-<div class='col-xs-12 col-sm-6'>
-  <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-  <h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-  <p class='excerpt'>
-    {{ post.content | strip_html | truncatewords:30 }} <p class="readmore"><a href="/blog{{post.url}}">Read more</a></p>
-  </p>
-</div>
