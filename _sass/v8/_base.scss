@@ -11,6 +11,20 @@ body {
   font: 1em 'Open Sans', sans-serif;;
 }
 
+img {
+  max-width: 100%;
+}
+
+h2,
+h3 {
+  color: $dark-blue;
+  margin-top: $pad;
+}
+
+strong {
+  font-weight: 600;
+}
+
 .site {
   max-width: 700px;
   margin: 0 auto;
@@ -119,8 +133,36 @@ a {
   }
 }
 
+.author {
+  position: relative;
+  text-align: center;
+
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .photo {
+    width: 50%;
+    border-radius: 50%;
+    margin: 2 * $pad;
+  }
+
+  p {
+    color: $dark-grey;
+    line-height: 1.75rem;
+  }
+}
+
 .posts {
+  margin-top: 4 * $pad;
   padding: 0 2 * $pad;
+
+  h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: $darker-blue;
+  }
 
   .posts-list {
 
@@ -128,10 +170,12 @@ a {
       border-bottom: 1px dashed $lighter-blue;
       padding: 2 * $pad 0;
     }
+
     h3 {
       margin-top: $pad;
-      font-size: 1.3rem;
-      font-weight: 600;
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-align: center;
     }
 
     h3 a {
@@ -143,6 +187,47 @@ a {
       display: none;
       color: $lighter-blue;
     }
+  }
+}
+
+.projects {
+  text-align: center;
+  margin-top: 4 * $pad;
+
+  li {
+    position: relative;
+    margin-top: 4 * $pad;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    color: $darker-blue;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: $pad $pad 0 0;
+    border: 2px solid $dark-grey;
+    border-bottom: none;
+  }
+
+  &.games img {
+    border-bottom: 2px solid $dark-grey;
+  }
+
+  p {
+    margin-top: -7px;
+    background-color: $lighter-grey;
+    border-top: 2px solid $dark-grey;
+    color: $darker-grey;
+    padding: 2 * $pad;
+    font-size: 1rem;
+    font-weight: 300;
   }
 }
 
