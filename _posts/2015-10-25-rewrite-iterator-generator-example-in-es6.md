@@ -14,7 +14,7 @@ tags:
 ---
 In my previous post, I showed you a simple [example of ES6 Iterator and Generator](http://veerasundar.com/blog/2015/10/es6-iterator-generator-example/). In that example, I used simple JavaScript constructor functions to illustrate Iterator and Generator concepts, because I did not want to confuse the readers with ES6 classes. Let's fix that in this post.
 
-##Rewrite `Basket` class in ES6.
+## Rewrite `Basket` class in ES6.
 
 {% highlight javascript %}
 'use strict';
