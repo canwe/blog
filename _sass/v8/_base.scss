@@ -1,0 +1,135 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background-color: #ffffff;
+  font: 1em 'Open Sans', sans-serif;;
+}
+
+a {
+
+  &:link {
+    color: $blue;
+  }
+
+  &:hover,
+  &:active {
+    color: $darker-blue;
+  }
+
+  &:visited {
+    color: $light-blue;
+  }
+
+}
+
+.me {
+  position: relative;
+  padding: 2 * $pad;
+  border-bottom: 1px solid $light-blue;
+  background-color: $white;
+  z-index: 10;
+
+  .avatar {
+    float: left;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .name {
+    float: left;
+    margin-left: 2 * $pad;
+    font-size: 2rem;
+    font-weight: 600;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  .punch-line {
+    display: none;
+  }
+
+  .social-links {
+    position: absolute;
+    top: 50%;
+    right: 2 * $pad;
+    padding: 0;
+    transform: translate(0, -50%);
+
+    li {
+      display: inline-block;
+      margin-left: 2 * $pad;;
+    }
+
+    i[class^="icon-"] {
+      visibility: hidden;
+      display: inline-block;
+      font-size: 1.7rem;
+      text-decoration: none;
+
+      &.animated {
+        visibility: visible;
+      }
+    }
+
+    em {
+      display: none;
+    }
+
+  }
+}
+
+.one-liner {
+  text-align: center;
+  z-index: 5;
+
+  li {
+    display: none;
+
+    &.animated {
+      display: block;
+    }
+  }
+
+  p {
+    font-size: .9rem;
+    font-weight: 100;
+    background-color: $lighter-blue;
+    color: $dark-blue;
+    padding: $pad /2 $pad;
+    letter-spacing: 1pt;
+  }
+}
+
+.posts {
+  padding: 0 2 * $pad;
+
+  .posts-list {
+
+    li {
+      border-bottom: 1px dashed $lighter-blue;
+      padding: 2 * $pad 0;
+    }
+    h3 {
+      margin-top: $pad;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    h3 a {
+      text-decoration: none;
+      color: $dark-blue;
+    }
+
+    .date {
+      display: none;
+      color: $lighter-blue;
+    }
+  }
+}

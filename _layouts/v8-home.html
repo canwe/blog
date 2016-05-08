@@ -16,14 +16,17 @@
     <meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
     {% endif %}
 
-    <link rel="stylesheet" href="/blog/css/v8/main.css" media="screen, projection"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/blog/css/v8-main.css" media="screen, projection"/>
 
 </head>
 <body>
 
 <div class="site">
 
-    {% include header.html %}
+    {% include v8-me.html %}
+
+    {% include v8-one-liner.html %}
 
     <section class="content">
 
@@ -31,18 +34,7 @@
             {{ content }}
         </section>
 
-        <section class="left-column">
-            {% include aside-1.html %}
-        </section>
-
-        <section class="right-column">
-            {% include aside-2.html %}
-        </section>
-
     </section>
-
-    {% include footer.html %}
-    {% include social-scripts.html %}
 </div>
 
 </body>
