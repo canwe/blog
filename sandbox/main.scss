@@ -111,3 +111,29 @@ a {
     letter-spacing: 1pt;
   }
 }
+
+.posts {
+  padding: 0 2 * $pad;
+
+  .posts-list {
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    li {
+      border-bottom: 1px dashed $lighter-blue;
+      padding: 2 * $pad 0;
+    }
+    h3 {
+      margin-top: $pad;
+    }
+
+    h3 a {
+      text-decoration: none;
+    }
+
+    .date {
+      font-size: 1rem;
+      color: $lighter-blue;
+    }
+  }
+}
