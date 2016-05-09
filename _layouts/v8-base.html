@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+
+    <meta name="author" content="Veera"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}"/>
+    {% endif %}
+
+    {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
+    {% endif %}
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/blog/css/v8-main.css" media="screen, projection"/>
+
+</head>
+<body>
+
+<div class="site">
+
+    {% include v8-me.html %}
+
+    {% include v8-one-liner.html %}
+
+    <section class="content">
+
+        {{ content }}
+
+    </section>
+
+</div>
+
+<script type="text/javascript">
+    (function () {
+        "use strict";
+
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                init()
+            }
+        }
+
+        function init() {
+            animateSocialIcons();
+            activateOneLiner();
+        }
+
+        function animateSocialIcons() {
+            var icons = document.querySelectorAll('.social-links li a i'),
+                    numOfIcons = icons.length,
+                    i;
+            for (i = 0; i < numOfIcons; i++) {
+                (function (i) {
+                    setTimeout(function () {
+                        icons[i].classList.add('animated', 'bounceIn');
+                    }, i * 100);
+                }(i));
+            }
+        }
+
+        function activateOneLiner() {
+            var oneLiners = document.querySelectorAll('.one-liner li'),
+                    numOfOneLiners = oneLiners.length,
+                    randomLine = Math.floor(Math.random() * ( (numOfOneLiners) - 1 + 1) + 1);
+            oneLiners[(randomLine - 1)].classList.add('animated', 'slideInDown');
+        }
+
+    }());
+</script>
+    {% include social-scripts.html %}
+
+</body>
+</html>

@@ -1,28 +1,33 @@
 ---
-layout: modern
-title: Blog of Veera Sundar
-description: Veera Sundar is a Web application developer with 8 years experience. He is currently working as Staff Software Engineer at Altimetrik.
+layout: v8-base
+title: Blog of Veera
+description: Veerasundar is a Web application developer with 8 years experience. He is currently working as Staff Software Engineer at Altimetrik.
 tags:
-  - veerasundar
-  - veera
-  - sundar
-  - java
-  - web
-  - developer
-  - html5
-  - javascript
-  - React
-  - css3
-  - jquery
-  - backbone
-  - nodejs
+- veerasundar
+- veera
+- java
+- web
+- developer
+- html5
+- javascript
+- React
+- css3
+- jquery
+- backbone
+- nodejs
 ---
-<ul class='posts-list recent'>
-  {% for post in site.posts limit:5 %}
-  <li>
-    <h3><a href="/blog{{ post.url }}">{{ post.title }}</a></h3>
-    <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
-    <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-  </li>
-  {% endfor %}
-</ul>
+{% include author.html %}
+
+<section class="posts">
+    <h2>Recently I wrote,</h2>
+    <ul class='posts-list recent'>
+        {% for post in site.posts limit:5 %}
+        <li>
+            <p class='date'>{{ post.date | date: "%B" }}, {{ post.date | date : "%d"}}, {{ post.date | date : "%Y"}}</p>
+            <h3><a href="/blog{{ post.url }}">{{ post.title }}</a></h3>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+{% include projects.html %}

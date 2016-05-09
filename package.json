@@ -1,16 +1,17 @@
 {
   "name": "blog",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "A blog about web application development.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "bundle exec jekyll server --watch",
+    "sandbox" : "cd sandbox && npm run dev"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/vraa/blog.git"
   },
-  "author": "",
+  "author": "Veera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vraa/blog/issues"

@@ -1,0 +1,79 @@
+@import "_variables";
+
+.post {
+
+  padding: 2 * $pad;
+
+  .title {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $dark-blue;
+  }
+
+  .date {
+    margin-top: $pad;
+    font-size: .8rem;
+    color: $grey;
+  }
+
+  .post-content {
+    margin-top: $pad;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: $darker-grey;
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $dark-blue;
+      margin-top: 3 * $pad;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 300;
+      color: $dark-blue;
+      margin-top: 2 * $pad;
+    }
+
+    p {
+      margin-top: 2 * $pad;
+    }
+
+    ol,
+    ul {
+      margin-top: 2 * $pad;
+      margin-left: 2 *  $pad;
+
+      li {
+        margin-top: $pad;
+      }
+    }
+
+    ol {
+      list-style: circle;
+    }
+
+    .highlight {
+      margin-top: $pad;
+      margin-left: -(2 * $pad);
+      margin-right: -(2 * $pad);
+      padding: 2 * $pad;
+
+      code {
+        font: 1rem Consolas;
+        overflow: auto;
+      }
+    }
+
+    .highlighter-rouge {
+      font: .9rem Consolas;
+      background-color: $lighter-grey;
+      padding: 3px;
+    }
+  }
+
+  .comments {
+    margin-top: 3 * $pad;
+  }
+}

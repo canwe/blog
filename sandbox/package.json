@@ -1,0 +1,17 @@
+{
+  "name": "sandbox",
+  "version": "0.0.1",
+  "description": "sandbox for working on Jekyll blog layouts quickly.",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "webpack-dev-server --progress --colors"
+  },
+  "author": "Veera",
+  "license": "ISC",
+  "devDependencies": {
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.6.0",
+    "sass-loader": "^3.2.0",
+    "webpack": "^1.13.0"
+  }
+}
