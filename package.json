@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "bundle exec jekyll server --watch",
+    "build" : "bundle exec jekyll build && grunt",
     "sandbox" : "cd sandbox && npm run dev"
   },
   "repository": {
