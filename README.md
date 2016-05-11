@@ -1,7 +1,7 @@
 Hello
 ---
 
-I am Veera. I am a JavaScript application developer, currently working at Visa as a Staff Software Engineer.
+I am Veera. I am a JavaScript application developer, currently working at <strong>Visa</strong> as a Staff Software Engineer.
 I share my ideas, tips and programming articles in [my blog](http://veerasundar.com/blog).
 
 ## Running it locally
