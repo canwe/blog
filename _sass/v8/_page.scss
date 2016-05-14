@@ -48,7 +48,8 @@
     }
 
     img {
-      margin-top: 2 * $pad;
+      margin: 2 * $pad auto 0 auto;
+      text-align: center;
     }
   }
 }

@@ -49,7 +49,7 @@ a {
 
 .me {
   position: relative;
-  padding: 2 * $pad;
+  padding: 2 * $pad 4 * $pad;
   border-bottom: 1px solid $light-blue;
   background-color: $white;
   z-index: 10;
@@ -63,7 +63,6 @@ a {
   .name {
     float: left;
     margin-top: 0;
-    margin-left: 2 * $pad;
     font-size: 2rem;
     font-weight: 600;
 
@@ -80,13 +79,13 @@ a {
   .social-links {
     position: absolute;
     top: 50%;
-    right: 2 * $pad;
+    right: 4 * $pad;
     padding: 0;
     transform: translate(0, -50%);
 
     li {
       display: inline-block;
-      margin-left: 2 * $pad;
+      margin-left: 4 * $pad;
 
       a {
         text-decoration: none;
