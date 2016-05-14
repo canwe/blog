@@ -7,7 +7,6 @@ $darker-grey: darken($grey, 20%);
 $light-grey: lighten($grey, 10%);
 $lighter-grey: lighten($grey, 20%);
 
-
 $blue: #2980b9;
 $dark-blue: darken($blue, 10%);
 $darker-blue: darken($blue, 20%);
@@ -15,3 +14,27 @@ $light-blue: lighten($blue, 10%);
 $lighter-blue: lighten($blue, 20%);
 
 $pad: 10px;
+
+@mixin h1Title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: $blue;
+}
+
+@mixin h2Title {
+  font-size: 1.1rem;
+  color: $blue;
+  margin-top: 3 * $pad;
+}
+
+@mixin h3Title {
+  font-size: 1rem;
+  color: $blue;
+  margin-top: 2 * $pad;
+}
+
+@mixin text {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: $darker-grey;
+}
