@@ -19,10 +19,10 @@
   .author {
     position: relative;
     height: 200px;
-    margin-top: 6 * $pad;
     margin-bottom: 6 * $pad;
     text-align: left;
     padding-left: 250px;
+    border-bottom: 1px solid $light-blue;
 
     .photo {
       border-radius: 0;
@@ -32,6 +32,12 @@
       margin: 0;
       height: 200px;
       width: auto;
+    }
+
+    .intro {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
