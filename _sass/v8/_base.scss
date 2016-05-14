@@ -8,7 +8,7 @@
 
 body {
   background-color: #ffffff;
-  font: 1em 'Open Sans', sans-serif;;
+  font: 1em 'Open Sans', sans-serif;
 }
 
 img {
@@ -42,7 +42,7 @@ a {
   }
 
   &:visited {
-    color: $light-blue;
+    color: $light-grey;
   }
 
 }
@@ -163,7 +163,7 @@ a {
   h2 {
     text-align: center;
     font-size: 1.3rem;
-    color: $darker-blue;
+    color: $blue;
   }
 
   .posts-list {
@@ -182,7 +182,6 @@ a {
 
     h3 a {
       text-decoration: none;
-      color: $dark-blue;
     }
 
     .date {
@@ -203,7 +202,7 @@ a {
 
   h2 {
     font-size: 1.3rem;
-    color: $darker-blue;
+    color: $blue;
   }
 
   h3 {

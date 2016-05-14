@@ -1,16 +1,17 @@
 $white: #ffffff;
 $black: #3d3d3d;
 
-$darker-grey: #6A6A6A;
-$dark-grey: #737373;
-$grey: #949494;
-$light-grey: #A6A6A6;
-$lighter-grey: #eaeaea;
+$grey: #7f8c8d;
+$dark-grey: darken($grey, 10%);
+$darker-grey: darken($grey, 20%);
+$light-grey: lighten($grey, 10%);
+$lighter-grey: lighten($grey, 20%);
 
-$darker-blue: #537BC3;
-$dark-blue: #5E88BF;
-$blue: #73B2D9;
-$light-blue: #8BCAD9;
-$lighter-blue: #C4EEF2;
+
+$blue: #2980b9;
+$dark-blue: darken($blue, 10%);
+$darker-blue: darken($blue, 20%);
+$light-blue: lighten($blue, 10%);
+$lighter-blue: lighten($blue, 20%);
 
 $pad: 10px;
