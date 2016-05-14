@@ -5,9 +5,7 @@
   padding: 2 * $pad;
 
   .title {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: $blue;
+    @include h1Title;
   }
 
   .date {
@@ -18,22 +16,14 @@
 
   .post-content {
     margin-top: $pad;
-    font-size: 1rem;
-    line-height: 1.75rem;
-    color: $darker-grey;
+    @include text;
 
     h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: $dark-blue;
-      margin-top: 3 * $pad;
+      @include h2Title;
     }
 
     h3 {
-      font-size: 1rem;
-      font-weight: 300;
-      color: $blue;
-      margin-top: 2 * $pad;
+      @include h3Title;
     }
 
     p {

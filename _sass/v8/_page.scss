@@ -1,0 +1,55 @@
+@import "_variables";
+
+.page {
+
+  padding: 2 * $pad;
+
+  .title {
+    @include h1Title;
+  }
+
+  .content {
+    margin-top: 2 * $pad;
+    @include text;
+
+    p {
+      margin-top: 2 * $pad;
+    }
+
+    > p:first-child {
+      margin-top: 0;
+    }
+
+    h2 {
+      @include h2Title;
+    }
+
+    h3 {
+      @include h3Title;
+    }
+  }
+
+  &.projects {
+
+    ol {
+      margin-top: 2 * $pad;
+
+      li {
+        margin-top: 3 * $pad;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    h3 a {
+      text-decoration: none;
+    }
+
+    img {
+      margin: 2 * $pad auto 0 auto;
+      text-align: center;
+    }
+  }
+}
