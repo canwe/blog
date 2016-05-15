@@ -26,7 +26,7 @@ But for a better I18N and L10N support, it is recommended to follow UTF-8 encodi
 
  [1]: http://veerasundar.com/img/2010/12/eclipse.png "eclipse-encoding-utf8"
 
-That's it! And if you wonder how this change works, you can very well see that. In the same *Preferences window*, go to this location: **Preferences -> Web -> JSP Files -> Editor -> Templates**. Then in the right hand side, you'll see a list of templates defined for JSP files. Â And in a new JSP file template, you can see this code:
+That's it! And if you wonder how this change works, you can very well see that. In the same *Preferences window*, go to this location: **Preferences -> Web -> JSP Files -> Editor -> Templates**. Then in the right hand side, you'll see a list of templates defined for JSP files.  And in a new JSP file template, you can see this code:
 
     
 

@@ -14,7 +14,7 @@ tags:
   - stats
 ---
 
-It was June 2008, when I decided to go for my own website. Before that, I was having my blogÂ  at [Blogger.com][1]. But, I was always looking forward to a own a domain, mainly for building a identity for myself in web. So, I started this website  and the blog,Â during the month of June 2008. From then, this website has grown from zero to what it is now. In this month, this blog has **completed one year** of existence. So, it's time to look back and analyze how this blog has been performing.
+It was June 2008, when I decided to go for my own website. Before that, I was having my blog  at [Blogger.com][1]. But, I was always looking forward to a own a domain, mainly for building a identity for myself in web. So, I started this website  and the blog, during the month of June 2008. From then, this website has grown from zero to what it is now. In this month, this blog has **completed one year** of existence. So, it's time to look back and analyze how this blog has been performing.
 
  [1]: http://blogger.com
 

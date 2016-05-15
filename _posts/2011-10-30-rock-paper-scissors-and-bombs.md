@@ -18,7 +18,7 @@ tags:
   - Web
 ---
 
-Last Saturday, I was bored. So, thought of writing a game in JavaScript using HTML5 and CSS3 techniques. And thats howÂ *[Rock Paper Scissors and Bombs][1] *came to life.
+Last Saturday, I was bored. So, thought of writing a game in JavaScript using HTML5 and CSS3 techniques. And thats how *[Rock Paper Scissors and Bombs][1] *came to life.
 
  [1]: http://veerasundar.com/rock-paper-scissors/ "Rock Paper Scissors and Bombs - Online game"
 
@@ -29,7 +29,7 @@ It's a simple game that is played in many parts of the world (though with differ
 
  []: http://veerasundar.com/rock-paper-scissors/ "Rock Paper Scissor and Bombs"
 
-Initially, when I started coding this game, I didn't have any intention to add *Bombs*Â to it. But, finally when I completed the game UI, I'd the little idea of tilting the score panel based on the score weight. i.e. the bigger the score, the higher the score's side goes up.
+Initially, when I started coding this game, I didn't have any intention to add *Bombs* to it. But, finally when I completed the game UI, I'd the little idea of tilting the score panel based on the score weight. i.e. the bigger the score, the higher the score's side goes up.
 
 And then, I thought it would be nice to place a bomb over the score panel so that when the lower score side tilts more, the bomb will fell down on that side thereby killing that player.
 

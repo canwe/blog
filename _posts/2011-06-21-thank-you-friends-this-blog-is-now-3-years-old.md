@@ -21,7 +21,7 @@ Well, well, well, I completely forgot that I started this blog on this same mont
 
 Of course, without your support and feedback, this wouldn't have happened. So, **thank you one and all **for reading my blog and encouraging me through comments.
 
-Its time for some retrospection. Let's seeÂ  how this blog performed till now (thanks to WordPress Stats and Google Analytics for tracking the data)
+Its time for some retrospection. Let's see  how this blog performed till now (thanks to WordPress Stats and Google Analytics for tracking the data)
 
 ## Number of visitors:
 

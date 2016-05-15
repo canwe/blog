@@ -33,7 +33,7 @@ It's been an year since I wrote the first part of [Hosting Java applications in 
 
 Hence here I am, with the list of such hosting providers.
 
-Disclaimer: This is just a *list*Â and not a comparison between the listed cloud providers.
+Disclaimer: This is just a *list* and not a comparison between the listed cloud providers.
 
 ## 1. Google App Engine (GAE)
 

@@ -9,6 +9,8 @@ tags:
 ---
 How long can a writers block last? My personal record seems to be 6 months.
 
+{% include post-ad.html %}
+
 The last time I wrote something in this blog is on [October, 2015](http://veerasundar.com/blog/2015/10/rewrite-iterator-generator-example-in-es6/). Between then and now, a lot of things have happened.
 
 * I moved to US for work.

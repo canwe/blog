@@ -29,6 +29,8 @@ tags:
 
 I have already written about the *Spring Aspect Oriented Programming (AOP)* with the use of simple logging example. But, somehow I felt that the example code was little confusing for the newcomers. So, I decided to write a new Spring AOP example code that explains how to use Spring AOP for profiling method execution time.
 
+{% include post-ad.html %}
+
 ## Using Spring AOP to profile method execution time:
 
 The example I chose is very simple: our application has a business class and a business method. We are going to profile how much time does it take to execute the business method. We will use Spring AOP for profiling the execution time. Since, profiling is a best example for *cross cutting concern*, it's a good decision to use Spring AOP for implementing it. I'll explain these in step by step. Meanwhile, you can [download the source code][1](excluding dependent JAR file, for which you can see the download links below).
@@ -61,13 +63,19 @@ You need to download all the JARs that are in *Referenced Libraries* and add the
 
 We will first write our business logic and then we will add Spring AOP to profile our business methods. Open *Business.java* interface and copy the below code into it.
 
+{% highlight java %}
+
     package com.veerasundar.spring.aop;
     
     public interface Business {
             void doSomeOperation();
     }
 
+{% endhighlight %}
+
 Now, open the *BusinessImpl.java* and copy the below code into it.
+
+{% highlight java %}
 
     package com.veerasundar.spring.aop;
     
@@ -85,6 +93,8 @@ Now, open the *BusinessImpl.java* and copy the below code into it.
     
     }
 
+{% endhighlight %}
+
 I guess this code is self explanatory. Our business method just sleeps for 2 seconds (good business, isn't it!?) and then write some text on the console.
 
 ## 3. Writing a Spring Aspect to profile business method:
@@ -92,6 +102,8 @@ I guess this code is self explanatory. Our business method just sleeps for 2 sec
 Lets write a Aspect which will profile our business method. I'm gonna use **@Around** advice (Lost in the jargons? [Spring AOP basics][12]). Open the *BusinessProfiler.java* file and copy the below code into it.
 
  [12]: http://static.springsource.org/spring/docs/2.5.4/reference/aop.html#aop-introduction-defn "Spring AOP basics"
+
+{% highlight java %}
 
     package com.veerasundar.spring.aop;
     
@@ -119,6 +131,8 @@ Lets write a Aspect which will profile our business method. I'm gonna use **@Aro
     
     }
 
+{% endhighlight %}
+
 Here's what this code does:
 
 1.  Using *@AspectJ* annotation, we have declared that this class is an Aspect.
@@ -131,15 +145,22 @@ Here's what this code does:
 
 Open the *applicationContext.xml* file and copy the below code into it.
 
-    
-    
-    
-            
-            
-    
-            
-            
-    
+{% highlight xml %}
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+        <!-- Enable the @AspectJ support -->
+        <aop:aspectj-autoproxy />
+
+        <bean id="businessProfiler" class="com.veerasundar.spring.aop.BusinessProfiler" />
+        <bean id="myBusinessClass" class="com.veerasundar.spring.aop.BusinessImpl" />
+    </beans>
+
+{% endhighlight %}
 
 Here's what we are doing in the above XML file:
 
@@ -154,6 +175,8 @@ That's it. With all the above code is done, we have successfully added Spring AO
 ## 5. Testing the Spring AOP profiler:
 
 Open the file *SpringAOPDemo.java* and copy the below lines into it.
+
+{% highlight java %}
 
     package com.veerasundar.spring.aop;
     
@@ -174,7 +197,11 @@ Open the file *SpringAOPDemo.java* and copy the below lines into it.
     
     }
 
+{% endhighlight %}
+
 In the above code we are loading our Business bean from Spring Context and then calling our business method. If you run this class, it will produce the following output on the console.
+
+{% highlight java %}
 
     Going to call the method.
     I do what I do best, i.e sleep.
@@ -182,6 +209,6 @@ In the above code we are loading our Business bean from Spring Context and then 
     Method execution completed.
     Method execution time: 2000 milliseconds.
 
-Â 
-
+{% endhighlight %}
+ 
 I hope this tutorial helps you to understand the basics of Spring Aspect Oriented programming. If you have any questions regarding the above example, feel free to leave a comment**.**

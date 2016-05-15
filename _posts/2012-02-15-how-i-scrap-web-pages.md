@@ -16,7 +16,7 @@ tags:
   - Web
 ---
 
-Often I need to pull some content out of web pages. Of course, I can always do a simple *Ctrl C*.Â But many times, I want the scrapped content to be in a different format than it's already in. So,Â I used to write Java code that downloads the content and do some XML parsing and then converts it into the format I want. But, this became a tedious process soon.
+Often I need to pull some content out of web pages. Of course, I can always do a simple *Ctrl C*. But many times, I want the scrapped content to be in a different format than it's already in. So, I used to write Java code that downloads the content and do some XML parsing and then converts it into the format I want. But, this became a tedious process soon.
 
 So, these days I figured out another easy way to do the web scraping. JQuery!
 
@@ -24,14 +24,14 @@ IMO, JQuery is the best tool to do the DOM parsing and content extraction. Of co
 
 But the problem here is, not all websites include JQuery with them and even if they do, you can't just go and execute your JavaScript code in amother person's website.
 
-Thanks to Scratchpad from Firefox which solves the above problem. Starting lastÂ August, Firefox comes with a built-in webdev tool - [Scratchpad][1] that enables you to execute your own JavaScript code in the context of any website.
+Thanks to Scratchpad from Firefox which solves the above problem. Starting last August, Firefox comes with a built-in webdev tool - [Scratchpad][1] that enables you to execute your own JavaScript code in the context of any website.
 
  [1]: http://blog.mozilla.com/devtools/2011/08/15/introducing-scratchpad/ "Introducing Scratchpad"
 
 So, this is what I do to scrape any public content from any web page:
 
 1.  Open the page in Firefox.
-2.  Press **Shift F4 **or go to **Firefox menu->Web developer->Scratchpad**Â to open the JavaScript editor.
+2.  Press **Shift F4 **or go to **Firefox menu->Web developer->Scratchpad** to open the JavaScript editor.
 3.  Include the below lines to add JQuery library to the current page ([thanks to this page][2]). 
         var GM_JQ = document.createElement('script');
         GM_JQ.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js';

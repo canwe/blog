@@ -18,6 +18,8 @@ Sometime back, when Arun [posted][1] a Python version of **Mars Rover problem**,
 
  [1]: http://www.arunrocks.com/blog/archives/2010/02/01/mars-rover-in-python-and-haskell/ "Mars Rover in Python and Haskell"
 
+{% include post-ad.html %}
+
 ## Mars Rover problem:
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
@@ -26,11 +28,11 @@ This plateau, which is curiously rectangular, must be navigated by the rovers so
 
 A rover's position and location is represented by a combination of x and y co-ordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
 
-In order to control a rover , NASA sends a simple string of letters. The possible letters are 'ËœL', 'ËœR' and 'ËœM'. 'ËœL' and 'ËœR' makes the rover spin 90 degrees left or right respectively, without moving from its current spot. 'ËœM' means move forward one grid point, and maintain the same heading.
+In order to control a rover , NASA sends a simple string of letters. The possible letters are 'L', 'R' and 'M'. 'L' and 'R' makes the rover spin 90 degrees left or right respectively, without moving from its current spot. 'M' means move forward one grid point, and maintain the same heading.
 
 Assume that the square directly North from (x, y) is (x, y 1).
 
-**INPUT:**
+### INPUT:
 
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
@@ -40,7 +42,7 @@ The position is made up of two integers and a letter separated by spaces, corres
 
 Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
 
-**OUTPUT:**
+### OUTPUT:
 
 The output for each rover should be its final co-ordinates and heading.
 
@@ -60,6 +62,8 @@ Expected Output:
 5 1 E
 
 ## Solution in Java:
+
+{% highlight java %}
 
     package marsrover;
     public class Rover {
@@ -134,13 +138,14 @@ Expected Output:
     		rover.printPosition(); // prints 5 1 E
     	}
     }
-    
 
-After comparing my version with Arun's [version][2], all it came to my mind was, *Joe Armstrong's *this quote:
+{% endhighlight %}
+
+After comparing my version with Arun's [version][2], all it came to my mind was, *Joe Armstrong's* this quote:
 
  [2]: http://www.arunrocks.com/blog/archives/2010/02/01/mars-rover-in-python-and-haskell/
 
-> 'The problem with object-oriented languages is they've got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.'Â
+> 'The problem with object-oriented languages is they've got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.'
 
 Become java expert with [testking N10-004][3] web development course. Download the [testking 640-822][4] videos and [testking 642-813][5] study guides to learn java applications for the web.
 

@@ -19,6 +19,8 @@ tags:
 
 Thread Local is an interesting and useful concept, yet most of the Java developers are not aware of how to use that. In this post, I'll explain what is Thread Local and when to use it, with an example code.
 
+{% include post-ad.html %}
+
 Since it'll be little tough to understand this concept at first, I'll keep the explanation as simple as possible (**corollary**: you shouldn't use this code *as it is* in a production environment. Grasp the concept and modify upon it!)
 
 Let's begin.
@@ -143,8 +145,12 @@ public class BusinessService {
 
 When you run the ThreadLocalDemo file, you'll get the below output:
 
+{% highlight java %}
+
     Thread-0
     Thread-1
+
+{% endhighlight %}
 
 As you might see, even though we are not explicitly passing the transaction id, the value can be accessed from the business method and printed on the console. Adding to it, the transaction ID differs for each thread (0 and 1).
 
