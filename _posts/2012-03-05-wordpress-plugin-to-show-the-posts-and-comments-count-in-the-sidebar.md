@@ -22,7 +22,7 @@ tags:
 
 As part of this blog's re-design, I wanted to show the number of posts and comments as a widget in the sidebar. But I couldn't find a plugin that does exactly what I wanted. So, I wrote one on my own.
 
-Below is the source code for this wordpress plug-in which you can drop it in your *plugins *folder and then activate it as usual. Then, in your *Widgets*Â section, you'll see a new widget that you can use it in your sidebar.
+Below is the source code for this wordpress plug-in which you can drop it in your *plugins *folder and then activate it as usual. Then, in your *Widgets* section, you'll see a new widget that you can use it in your sidebar.
 
 ## Source for WordPress StatsBoard plugin to display the posts and comments count:
 

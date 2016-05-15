@@ -31,7 +31,7 @@ Confusing, huh !?
 
 ## A Ground-breaking(!) HelloWorld2 App:
 
-Let's take a simple example - a Web2.0 hello world - 'ËœHelloWorld2'Â². You are writing a 'ËœHelloWorld2'Â² class which has the capability to tweet the message you are giving. From this, it is clear that your 'ËœHelloWorld2'Â² will need a TwitterService object to complete it's task. So, usually you will declare a TwitterService variable in your 'ËœHelloWorld2'Â² class and you will instantiate a new 'ËœTwitterService' object. The 'ËœHelloWorld2'Â² may look like this:
+Let's take a simple example - a Web2.0 hello world - 'ËœHelloWorld2'². You are writing a 'ËœHelloWorld2'² class which has the capability to tweet the message you are giving. From this, it is clear that your 'ËœHelloWorld2'² will need a TwitterService object to complete it's task. So, usually you will declare a TwitterService variable in your 'ËœHelloWorld2'² class and you will instantiate a new 'ËœTwitterService' object. The 'ËœHelloWorld2'² may look like this:
 
     class HelloWorld2
     {
@@ -48,7 +48,7 @@ In the above, you are declaring and instantiating the TwitterService object in y
 
 Let's see a different version of HelloWorld2.
 
-## The 'ËœDependency Injected' version of 'ËœHelloWorld2'Â²:
+## The 'ËœDependency Injected' version of 'ËœHelloWorld2'²:
 
 Now, have a look at this code.
 

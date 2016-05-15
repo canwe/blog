@@ -28,6 +28,6 @@ System.out.println("This is a secret message!");
 ....
 `
 
-Above code will make the Eclipse to add a new task with the description 'Change system.out.print to logger.debug'Â and for TODO tasks, default priority will be *Normal*. Along with the description, the line number and the file name are also noted. So, when you double click this task on the Tasks view, it will directly take you to the above.
+Above code will make the Eclipse to add a new task with the description 'Change system.out.print to logger.debug' and for TODO tasks, default priority will be *Normal*. Along with the description, the line number and the file name are also noted. So, when you double click this task on the Tasks view, it will directly take you to the above.
 
 If you want, you can also add your own Task tags (like REMEMBER, BUG, etc) to Eclipse. To do this, open *Window->Preferences* and search for 'ËœTask tags'. There you can add new task tags and set their priorities too.

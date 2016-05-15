@@ -18,6 +18,13 @@
     margin-top: $pad;
     @include text;
 
+    img:first-child {
+      display: block;
+      text-align: center;
+      max-width: 90%;
+      margin: $pad auto 0 auto;
+    }
+
     h2 {
       @include h2Title;
     }
@@ -73,6 +80,20 @@
     iframe {
       margin-top: $pad;
     }
+  }
+
+  blockquote {
+    margin-left: $pad;
+    padding-left: $pad;
+    border-left: 2px solid $lighter-blue;
+  }
+
+  .ad {
+    margin-top: 2 * $pad;
+    padding: $pad;
+    border-top: 1px solid $lighter-blue;
+    border-bottom: 1px solid $lighter-blue;
+    text-align: center;
   }
 }
 

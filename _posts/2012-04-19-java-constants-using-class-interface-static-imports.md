@@ -39,7 +39,7 @@ In this approach, you define a class 'ËœConstants' and put all your constants 
     	}
     }
 
-But the con of this approach is that you need to prepend the class name 'ËœConstants' all the time. If you are using constants very frequently, then this will become littleÂ ineffective. We can do better.
+But the con of this approach is that you need to prepend the class name 'ËœConstants' all the time. If you are using constants very frequently, then this will become little ineffective. We can do better.
 
 ## 2. Define a Constants interface and implement it
 

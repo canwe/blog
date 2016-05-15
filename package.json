@@ -4,6 +4,7 @@
   "description": "A blog about web application development.",
   "main": "index.js",
   "scripts": {
+    "server" : "bundle exec jekyll server",
     "dev": "bundle exec jekyll server --watch --limit_posts=5",
     "build" : "bundle exec jekyll build && grunt",
     "sandbox" : "cd sandbox && npm run dev"

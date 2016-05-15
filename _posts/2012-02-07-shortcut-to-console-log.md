@@ -24,9 +24,9 @@ So, in every single JavaScript project I work on, I used to have this utility me
     ...
     echo('Hello World');
 
-It worked well. But there was a problem. The printed message on the console will always show the line number of *console.log Â *as the source line numberÂ instead of showing the where exactly the *echo() *function is invoked.
+It worked well. But there was a problem. The printed message on the console will always show the line number of *console.log  *as the source line number instead of showing the where exactly the *echo() *function is invoked.
 
-There's another way to solve this. Instead of creating a new *echo() *method, I just need to bind it to the existing *console.log() *to a variableÂ and the logging works like a charm. Like this,
+There's another way to solve this. Instead of creating a new *echo() *method, I just need to bind it to the existing *console.log() *to a variable and the logging works like a charm. Like this,
 
     window.echo = console.log.bind(console);
     window.oops = console.error.bind(console);

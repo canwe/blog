@@ -15,7 +15,7 @@ tags:
   - year
 ---
 
-First of all, let me say a BIG THANKS to all my readers who visited, read my posts, commented,Â  sent me emails, joined my network, subscribed to my postsÂ  (and *some times* clicked on the ads ![:)][1] ). Because of all your positive feedback, this blog turns **2 year old** in this month (June 3rd to be exact) . Thank you again, my readers.
+First of all, let me say a BIG THANKS to all my readers who visited, read my posts, commented,  sent me emails, joined my network, subscribed to my posts  (and *some times* clicked on the ads ![:)][1] ). Because of all your positive feedback, this blog turns **2 year old** in this month (June 3rd to be exact) . Thank you again, my readers.
 
  [1]: http://veerasundar.com/blog/wp-includes/images/smilies/icon_smile.gif
 

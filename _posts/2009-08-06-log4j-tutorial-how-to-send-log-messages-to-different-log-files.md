@@ -19,18 +19,24 @@ One of the common requirement in Java projects, that are [using Log4j logging][1
 
  [1]: http://veerasundar.com/blog/2009/07/log4j-tutorial-adding-log4j-logging-to-your-project/ "How to add Log4j support to your project?  Follow these steps if you want to add Log4j logging support to your Java project."
 
-Log4j has a concept called **Category **using which you can classify a package as a category and assign a appender to that category alone. To make this point clear, consider that we have the below Java classes in our project:
+{% include post-ad.html %}
 
+Log4j has a concept called **Category** using which you can classify a package as a category and assign a appender to that category alone. To make this point clear, consider that we have the below Java classes in our project:
+
+{% highlight java %}
     com.someapp.service.myservice.SomeServiceClass.java
     
     com.someapp.dao.SomeDaoClass.java
+{% endhighlight %}
     
 
 Now, if we want to send the log messages from SomeServiceClass.java to service.log and SomeDaoClass.java to dao.log files respectively, then the log4j configuration would be something like this:
 
+{% highlight java %}
     log4j.category.com.someapp.service = INFO, serviceFileAppender
     log4j.category.com.someapp.dao = INFO, daoFileAppender
     log4j.rootLogger = INFO, defaultAppender
+{% endhighlight %}
 
 As you can see in above snippet, we are defining two categories for the *service* and *dao* packages and associating them with the appenders serviceFileAppender and daoFileAppender respectively. These two appender are just any file appenders configured somewhere in the same log4j.properties file. (Have a look at this article: [How to configure the File Appenders in Log4j][2]). So, all the log messages that coming from the classes which resides under the *com.someapp.service* package will go to the serviceFileAppender, which in turn will go to service.log. The same logic applies to dao.log also.
 

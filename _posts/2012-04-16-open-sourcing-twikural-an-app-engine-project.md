@@ -19,13 +19,13 @@ tags:
   - twikural
 ---
 
-**tldr;Â **
+**tldr; **
 
 It all started when I asked the following question to my twitter friends:
 
 > Juts checking: If there's a service that sends you a Thirukkural every day, would you be signing up for it?
 > 
-> 'â€ Veera (@vraa) [January 31, 2012][1]
+> '€ Veera (@vraa) [January 31, 2012][1]
 
  [1]: https://twitter.com/vraa/status/164394058238799873
 
@@ -49,7 +49,7 @@ And, I'm now open sourcing the code. The project is now [hosted @ Github][6]. Yo
 
  [6]: https://github.com/vraa/twikural
 
-I would like to thank my fellow tweeples - [@iGhillli][7],Â [@anandhame][8], [@mgobi_php][9]Â Â Â for their continuous support to this project.
+I would like to thank my fellow tweeples - [@iGhillli][7], [@anandhame][8], [@mgobi_php][9]   for their continuous support to this project.
 
  [7]: https://twitter.com/#!/iGhillli
  [8]: https://twitter.com/#!/anandhame

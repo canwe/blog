@@ -22,9 +22,9 @@ It's my first trip to United States (or to any foreign country for that matter) 
 
 So, we planned a trip to San Francisco, which is close to San Jose and can be reachable by public commute. Including myself, there were five guys in the group. Our main aim was to go to Golden gate bridge (and of course, to take lots and lots of photos!).
 
-On a sunny Saturday morning, as decided to start at 7:30, we started at 9. I didn't have any jacket with me and I was getting severe warnings from folks who had already visited SFO that I'm going to freeze to an ice. At first I didn't believe any of those warnings (typical software engineer who ignores all the warnings!) mainly because the sun was out and shining like a'Â¦ sun (duh!) in San Jose and I hoped even SFO would be having same climate.
+On a sunny Saturday morning, as decided to start at 7:30, we started at 9. I didn't have any jacket with me and I was getting severe warnings from folks who had already visited SFO that I'm going to freeze to an ice. At first I didn't believe any of those warnings (typical software engineer who ignores all the warnings!) mainly because the sun was out and shining like a'¦ sun (duh!) in San Jose and I hoped even SFO would be having same climate.
 
-We went to the Karina rail station and boarded the Mountain View train. From there our plan was to catch the Cal train to SFO.Â It took almost an hour to reach Mountain view and we had around 20 minutes of waiting time before the Cal train comes. It was 10 in the morning but still it felt like the mid day. Who cares to wear jacket in this heat?
+We went to the Karina rail station and boarded the Mountain View train. From there our plan was to catch the Cal train to SFO. It took almost an hour to reach Mountain view and we had around 20 minutes of waiting time before the Cal train comes. It was 10 in the morning but still it felt like the mid day. Who cares to wear jacket in this heat?
 
 ![mountain view][1]
 Mountain view station
@@ -35,9 +35,9 @@ At 10.20, the Cal train reached mountain view. We got into it and went to the up
 
 While you were reading the above paragraph, our Cal train reached San Francisco. When we stepped out of the Cal train in SFO, it was 11:30 am. We walked out of the train station and directly opposite to the station there were several buses waiting. We got into one after making sure that the bus goes to Pier 39.
 
-Unfortunately, the bus we took was not taking the direct route to Pier 39. It was going around almost all the places in SFO and we got a cheap city tour for 2 bucks. On the way, we saw a group of old men, riding the bicycles in the middle of the road - naked! And, I said to myself 'WELCOME to AMERICA!'Â.
+Unfortunately, the bus we took was not taking the direct route to Pier 39. It was going around almost all the places in SFO and we got a cheap city tour for 2 bucks. On the way, we saw a group of old men, riding the bicycles in the middle of the road - naked! And, I said to myself 'WELCOME to AMERICA!'.
 
-After an hour or so, we finally reached our spot - Pier 39. It's the host of several tourist attractions, including anÂ aquarium, ferry ride, wax museum and sea food hotels.
+After an hour or so, we finally reached our spot - Pier 39. It's the host of several tourist attractions, including an aquarium, ferry ride, wax museum and sea food hotels.
 
 ![pier 39][2]
 Entering Pier 39

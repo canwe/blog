@@ -24,7 +24,7 @@ Recently I got a question from my blog reader *Kuruba*, regarding log4j logging.
 Here's the pseudo code for the logic we are going to implement.
 
 1.  Create a new Class *NewLogForEachRunFileAppender* (or any name as you wish), and extend it from the class *[org.apache.log4j.FileAppender][2].*
-2.  Override the *[activateOptions][3]() *function for setting the new log file name every time the logger is instantiated.
+2.  Override the *[activateOptions][3]()* function for setting the new log file name every time the logger is instantiated.
 3.  For simplicity, we will append the *current timestamp* to each log file name. So, each time when you run the application, you will get a fresh log file.
 
  [2]: http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/FileAppender.html
@@ -33,6 +33,8 @@ Here's the pseudo code for the logic we are going to implement.
 ## Customized FileAppender: NewLogForEachRunFileAppender:
 
 Here is the code for the customize FileAppender, which will create a new log file, appender with the current timestamp, for each run of the application. Please note that this code is tested in Windows environment. So, please be cautious and do a testing when running this code in Unix or other environment.
+
+{% highlight java %}
 
     package com.veerasundar.dynamiclogger;
     
@@ -109,9 +111,13 @@ Here is the code for the customize FileAppender, which will create a new log fil
     }
     }
 
+{% endhighlight %}
+
 ## log4j.properties file
 
 Since we created a custom file appender, we need to tell the Log4j to use our custom file appender. For demo purpose, I configured this custom FileAppender as a rootLogger. So, all log messages will go to our file appender. Below is the sample log4j.properties file.
+
+{% highlight java %}
 
     log4j.rootLogger = DEBUG, fileout
     log4j.appender.fileout = com.veerasundar.dynamiclogger.NewLogForEachRunFileAppender
@@ -119,4 +125,6 @@ Since we created a custom file appender, we need to tell the Log4j to use our cu
     log4j.appender.fileout.layout = org.apache.log4j.PatternLayout
     log4j.appender.fileout.File = D:/temp/dynamiclogger/logs.log
 
-If you look at the property *log4j.appender.fileout*, our customized file appender is associated with this appender. We have also given a log file name 'log.log'Â in the above configuration file. So, with the above configuration, when you run your application, the log files will be generated in this fashion: logs-1250696128437.log, logs-1250696142828.log.
+{% endhighlight %}
+
+If you look at the property *log4j.appender.fileout*, our customized file appender is associated with this appender. We have also given a log file name 'log.log' in the above configuration file. So, with the above configuration, when you run your application, the log files will be generated in this fashion: logs-1250696128437.log, logs-1250696142828.log.

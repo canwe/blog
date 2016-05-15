@@ -20,7 +20,7 @@ tags:
   - Web
 ---
 
-Recently I got hold of an empty Rackspace server in which we have installed Ubuntu 11.04 NattyÂ Narwhal version. My next step was to setup the LAMP stack in that server to run our PHP site.
+Recently I got hold of an empty Rackspace server in which we have installed Ubuntu 11.04 Natty Narwhal version. My next step was to setup the LAMP stack in that server to run our PHP site.
 
 First I tried to install XAMPP for Linux. But unfortunately, it failed because XAMPP only supports 32 bit operating system and ours was 64. I didn't want to spend much time on fixing that issue, so I moved to setup the LAMP stack by other means.
 
@@ -30,12 +30,12 @@ Here's what I did (after googling/referring a lot):
 
 1.  **sudo apt-get install tasksel **[installs the tasksel that helps you to install multiple packages as a single task]
 2.  **sudo tasksel install lamp-server **[it will install the lamp stack in location */etc/*]
-3.  *http://yourdomain.comÂ *should work now.
+3.  *http://yourdomain.com *should work now.
 
 ## 2. Configure PHP Curl module
 
 1.  **sudo apt-get install php5-curl **[downloads and installs curl module]
-2.  **sudo /etc/init.d/apache2 restart**Â [restarts server for the changes to take effect]
+2.  **sudo /etc/init.d/apache2 restart** [restarts server for the changes to take effect]
 
 ## 3. Install phpmyadmin
 

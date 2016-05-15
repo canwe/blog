@@ -15,13 +15,17 @@ tags:
 
 Let's say you have two Date objects *DateOne* and *DateTwo*. Now you want to find the difference between these two dates and show that in a human readable format; for example '*the difference is 2 hours and 30 minutes*'. How do you do it in Java?
 
+{% include post-ad.html %}
+
 The obvious answer is, get the milliseconds from these two dates and find the difference. And, then manually convert these milliseconds into hours, minutes, seconds etc.
 
 But, wait a second. There's an easy way to do this using the[ TimeUnit][1] class. TimeUnit represents time durations at a given unit of granularity and provides utility methods to convert across units, and to perform timing and delay operations in these units.
 
  [1]: http://download.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html
 
-Have a look the below code which finds out the difference between two dates and returns them in the form of 'h* hours and m minutes'Â*.
+Have a look the below code which finds out the difference between two dates and returns them in the form of 'h* hours and m minutes'*.
+
+{% highlight java %}
 
     public String getTimeDiff(Date dateOne, Date dateTwo) {
             String diff = "";
@@ -30,5 +34,7 @@ Have a look the below code which finds out the difference between two dates and 
                     TimeUnit.MILLISECONDS.toMinutes(timeDiff) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(timeDiff)));
             return diff;
     }
+
+{% endhighlight %}
 
 That simple, isn't it?

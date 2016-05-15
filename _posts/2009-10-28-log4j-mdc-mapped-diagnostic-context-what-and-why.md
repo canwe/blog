@@ -18,7 +18,7 @@ I hope that Log4j does not need any introduction and I assume that you already h
 
 That said, now I'll start with MDC or **Mapped Diagnostic Context**. Don't get scared with this name! MDC is not that tough. It's a simple yet useful concept. Before I explain what is MDC, lets assume that we are going to develop a simple web application with one servlet `MyServlet` that serves requests from multiple clients. And, this servlet uses log4j framework for logging. A file appender has been defined for this servlet, so all the log messages will be logged into a text file.
 
-With the above said configuration, all the log messages from `MyServlet` will go into a single log file. And when this servlet is serving more than one clients at the same time, the log statements will be mixed and there'sÂ  no way to differentiate which log statement is belongs to which client's processing. This'll make it difficult to trace and debug if any processing error occured in `MyServlet` life cycle.
+With the above said configuration, all the log messages from `MyServlet` will go into a single log file. And when this servlet is serving more than one clients at the same time, the log statements will be mixed and there's  no way to differentiate which log statement is belongs to which client's processing. This'll make it difficult to trace and debug if any processing error occured in `MyServlet` life cycle.
 
 ## How to differentiate log statements with respective to each clients?
 
@@ -26,7 +26,7 @@ To avoid the log statements mix-in, we could add a *user name* (or some other da
 
 ## So, What is Log4j MDC (Mapped Diagnostic Context)
 
-To put it simple, the MDC is a map which stores the context data of the particular thread where the context is running. To explain it, come back to our simple application - every client request will be served by different thread of the `MyServlet`. So, if you use log4j for logging, then each thread can have it's own MDC which isÂ  global to the entire thread. Any code which is part of that thread can easily access the values that are present in thread's MDC.
+To put it simple, the MDC is a map which stores the context data of the particular thread where the context is running. To explain it, come back to our simple application - every client request will be served by different thread of the `MyServlet`. So, if you use log4j for logging, then each thread can have it's own MDC which is  global to the entire thread. Any code which is part of that thread can easily access the values that are present in thread's MDC.
 
 So, how do we make MDC to differentiate logging statements from multiple clients? Simple : Before starting any business process in your code, get the user name (for our Servlet, we can get it from `request` object) and put that into MDC. Now the *user name* will be available to the further processing. In your **log4j.properties** while defining the `conversionPattern`, add a pattern `%X{key}` to retrievce the values that are present in the MDC. The key will be *userName* in our example. It's like getting a value from a Session object.
 

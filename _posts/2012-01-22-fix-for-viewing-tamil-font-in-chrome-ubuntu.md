@@ -26,7 +26,7 @@ So, after searching through the Chromium group for a while, found the fix for th
 ## To fix Tamil font in Ubuntu Chrome
 
 1.  Open Terminal
-2.  Go to the folder: **cdÂ /usr/share/fonts/truetype/freefont**
+2.  Go to the folder: **cd /usr/share/fonts/truetype/freefont**
 3.  Delete *FreeSerif.ttf: ***sudo rm FreeSerif.ttf**
 4.  Delete *FreeSans.ttf: ***sudo rm FreeSans.ttf**
 5.  Close and re-open the browser.

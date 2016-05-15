@@ -21,7 +21,7 @@ categories:
 
 Recently, I was surprised to get an email from an Java fresher, who asked me to give some suggestions on learning J2EE technologies. Here is what I've replied:
 
-'â€
+'€
 
 ### My advice to the Java Freshers:
 

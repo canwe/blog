@@ -23,7 +23,7 @@ In my last article about **Aspect Oriented Programming** (AOP), I explained [how
 
 > Profiling and logging seem to be to only imaginable AOP use cases.
 
-But, I think **it is not**. Because AOP is an extensive area where a lot of examples can be shown as use cases of AOP. Here, 'Use cases'Â are nothing but the **cross cutting concerns** in your application. That is, the functionalities that are used by many part of your application. Logging and Profiling are the best examples and can be easily explained for the cross cutting concerns. That is why in most of the AOP tutorials you can see a logging example or profiling.
+But, I think **it is not**. Because AOP is an extensive area where a lot of examples can be shown as use cases of AOP. Here, 'Use cases' are nothing but the **cross cutting concerns** in your application. That is, the functionalities that are used by many part of your application. Logging and Profiling are the best examples and can be easily explained for the cross cutting concerns. That is why in most of the AOP tutorials you can see a logging example or profiling.
 
 Anyway, I tried to do some search on the various AOP cross-cutting concerns (i.e. the *use cases*) that can be found in an J2EE applications. Here is the list of them. Feel free to add if I'm missing/wrongly added something.
 

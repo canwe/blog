@@ -30,11 +30,17 @@ I opened the *helloworld *project from [my last example][4] with a clean working
 
  [4]: http://veerasundar.com/blog/2011/06/git-tutorial-my-git-work-flow/ "My Git work flow"
 
+{% highlight text %}
+
     C:/vraa/projects/helloworld> git status
     # On branch master
     nothing to commit (working directory clean)
 
+{% endhighlight %}
+
 Let's make a change in the *helloworld.txt *file now and compare this file with previously committed version.
+
+{% highlight text %}
 
     C:/vraa/projects/helloworld> edit helloworld.txt
     C:/vraa/projects/helloworld> git diff HEAD helloworld.txt
@@ -46,22 +52,49 @@ Let's make a change in the *helloworld.txt *file now and compare this file with 
     -Hello India
      Hello World
 
+ {% endhighlight %}
+
 There it is. Git shows the exact change I made in the file. But, if you look at the diff command, you might wonder what HEAD is doing there! Well, it is there for a purpose.
 
 If you can recall, Git has an* index *between local repository and your working directory. So most of Git commands can either refer to *index *or *the local repo*. When you say HEAD in your Git command, it refers the *local repo*.
 
-    git diff HEAD [filename] //  compare the working directory with local repository.
-    git diff [filename] // compare the working directory with index.
-    git diff --cached [filename] // compare the index with local repository.
+{% highlight text %}
+
+    //  compare the working directory with local repository.
+    git diff HEAD [filename]
+
+    // compare the working directory with index.
+    git diff [filename]
+
+    // compare the index with local repository.
+    git diff --cached [filename]
+
+{% endhighlight %}
 
 You can also compare files between two different commits. Every commit in Git has a commit id which you can get when you give** git log**. Then you can use the commit id if diff command like this.
 
+{% highlight text %}
+
     git diff 7eb2..e03 812...a3f35
+
+{% endhighlight %}
 
 You can compare not just a single file, but all your changes at once. If you made changes in many files, just don't mention any file name in the diff command which will diff all the changed files.
 
-    git diff // compares working directory with index, i.e. shows the changes that are not staged yet.
-    git diff HEAD // compares working directory with local repository. shows the list of changes after your last commit.
-    git diff --cached // compares index with local repository. shows the diff between your last commit and changes to be committed next.
+{% highlight text %}
+
+    // compares working directory with index,
+    // i.e. shows the changes that are not staged yet.
+    git diff
+
+    // compares working directory with local repository.
+    // shows the list of changes after your last commit.
+    git diff HEAD
+
+    // compares index with local repository.
+    // shows the diff between your last commit and changes to be committed next.
+    git diff --cached
+
+{% endhighlight %}
 
 That's it about the basic introduction to compare files in Git. If you have any comments about this series, do let me know. I'll continue with other topics in my next post.

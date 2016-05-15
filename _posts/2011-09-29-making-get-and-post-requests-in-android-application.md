@@ -63,7 +63,7 @@ Before making any use of internet in your android application, you should enable
 
 ## HTTP POST request in Android application:
 
-A POST request is slightly (well, vastly) different from a GET request (I have seen most developers use there requestsÂ interchangeably!). In a POST, we often send some parameters to change state of the objects in server.
+A POST request is slightly (well, vastly) different from a GET request (I have seen most developers use there requests interchangeably!). In a POST, we often send some parameters to change state of the objects in server.
 
 In Android too, we have some mechanisms to send HTTP parameters while sending a POST request, which is shown in below code snippet.
 

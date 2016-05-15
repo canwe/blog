@@ -17,6 +17,8 @@ As a continuation of my previous post about [Log4j MDC (Mapped Diagnostic Contex
 
  [1]: http://veerasundar.com/blog/2009/10/log4j-mdc-mapped-diagnostic-context-what-and-why/ "Log4j MDC (Mapped Diagnostic Context) : What and Why"
 
+{% include post-ad.html %}
+
 ## The Servlet Class:
 
 {% highlight java %}
@@ -145,6 +147,8 @@ public class AuthenticationFilter implements Filter {
 
 ## Log4j.properties file which uses the data present in MDC
 
+{% highlight java %}
+
     # sample log4j.properties file, explaining log4j MDC concept
     # author: veerasundar.com/blog
     
@@ -156,10 +160,16 @@ public class AuthenticationFilter implements Filter {
     
     log4j.rootLogger = DEBUG, consoleAppender
 
+{% endhighlight %}
+
 I hope that code explains the concept of MDC. Do let me know if you have any questions/suggestions in the comments.
 
 ## Output from the log file:
 
+{% highlight java %}
+
     0    [http-8084-2]  INFO Log4jMDCDemo  - This is  demo for the Log4j MDC concept - veera
     0    [http-8084-2]  INFO Log4jMDCDemo  - From Veerasundar.com/blog - veera
     0    [http-8084-2] DEBUG Log4jMDCDemo  - Just some sample messages - veera
+
+{% endhighlight %}

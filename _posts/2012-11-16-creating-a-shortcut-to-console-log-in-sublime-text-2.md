@@ -20,15 +20,15 @@ tags:
   - Web
 ---
 
-While writing JavaScript code, I often write debug messages to console usingÂ *console.log.* Though it is shorter thanÂ *System.out.println()* (hey, you Java!), which I am used to a lot, I still find it ineffective to type it every time.
+While writing JavaScript code, I often write debug messages to console using *console.log.* Though it is shorter than *System.out.println()* (hey, you Java!), which I am used to a lot, I still find it ineffective to type it every time.
 
 So, I was following the approach to [bind console.log function to shorter name][1]. Here's another technique which is specific to Sublime Text.
 
  [1]: http://veerasundar.com/blog/2012/02/shortcut-to-console-log/ "Shortcut to console.log"
 
-Using Sublime TextÂ *Snippets* option, you can create a shortcut to a template and then you can insert that template in multiple places just by triggering the shortcut. Here's how I did it so that every time, I typeÂ *echo*, Sublime Text converts it intoÂ *console.log();*
+Using Sublime Text *Snippets* option, you can create a shortcut to a template and then you can insert that template in multiple places just by triggering the shortcut. Here's how I did it so that every time, I type *echo*, Sublime Text converts it into *console.log();*
 
-Go toÂ *Tools -> New Snippet*. Sublime will open a template in a new file. Now make sure you have this content in that file (or change it the way you want). 
+Go to *Tools -> New Snippet*. Sublime will open a template in a new file. Now make sure you have this content in that file (or change it the way you want).
 
     <snippet>
     <content><![CDATA[
@@ -40,6 +40,6 @@ Go toÂ *Tools -> New Snippet*. Sublime will open a template in a new file. Now
     <scope>source.js</scope>
     </snippet>
 
-Then save this snippet file asÂ *echo.sublime-snippet* underÂ *Packages/User* folder. To find the location ofÂ *Packages/User* folder, in Sublime, go toÂ *Preferences -> Browser packages* and note the location.
+Then save this snippet file as *echo.sublime-snippet* under *Packages/User* folder. To find the location of *Packages/User* folder, in Sublime, go to *Preferences -> Browser packages* and note the location.
 
-Restart sublime and then in a JavaScript file, start typingÂ *echo* and Sublime will provide you with a drop down to replaceÂ *echo* with the template you just created.
+Restart sublime and then in a JavaScript file, start typing *echo* and Sublime will provide you with a drop down to replace *echo* with the template you just created.

@@ -169,7 +169,7 @@ For example, from the below code,
       logger.log("My Application"   f);
     }
 
-The string literal 'My Application'Â can be made as an Constant and used in the code.
+The string literal 'My Application' can be made as an Constant and used in the code.
 
     public static final String MY_APP = "My Application";
     

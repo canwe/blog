@@ -19,7 +19,7 @@ tags:
   - usability
 ---
 
-Now, lets do a small exercise. Have a look at the below photo and tell me which button will you press to see the balance in your account? second one'Â¦or the third one?
+Now, lets do a small exercise. Have a look at the below photo and tell me which button will you press to see the balance in your account? second one'¦or the third one?
 
 ![the problem with ATM menus][1]
 the problem with ATM menus
