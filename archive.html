@@ -1,12 +1,13 @@
 ---
-layout: v8-base
-title: Archive page of Veera Sundar's blog
+layout: page
+title: Archive
+className: archive
 ---
-<div class='page archive'>
-  <h1>Archive:</h1>
-  <ol class="posts">
+
+<ol class="posts">
     {% for post in site.posts %}
-      <li><a href="/blog{{ post.url }}">{{ post.title }}</a><small>  {{ post.date | date_to_string }}</small></li>
+    <li><a href="/blog{{ post.url }}">{{ post.title }}</a>
+        <small> {{ post.date | date_to_string }}</small>
+    </li>
     {% endfor %}
-  </ol>
-</div>
+</ol>
