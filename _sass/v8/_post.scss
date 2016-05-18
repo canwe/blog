@@ -3,6 +3,7 @@
 .post {
 
   padding: 2 * $pad;
+  padding-bottom: 0;
 
   .title {
     @include h1Title;
@@ -69,7 +70,7 @@
 
     .highlighter-rouge {
       font: .9rem Consolas;
-      background-color: $lighter-grey;
+      background-color: $lightest-grey;
       padding: 3px;
     }
 
@@ -99,6 +100,57 @@
 
 .comments {
   padding: 2 * $pad;
-  border-top: 1px solid $blue;
   font: 1rem 'Open Sans', sans-serif;
+}
+
+.written-by {
+
+  position: relative;
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  margin-top: 4 * $pad;
+
+  .photo {
+    position: absolute;
+    left: 50%;
+    margin-top: -26px;
+    transform: translateX(-50%);
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid $blue;
+    padding: $pad/2;
+    background-color: $white;
+  }
+
+  .wrapper {
+    margin-top: 2 * $pad;
+    margin-bottom: 2 * $pad;
+    position: relative;
+  }
+
+  a.cta {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: $blue;
+    padding: $pad/2 $pad;
+    text-decoration: none;
+    color: $white;
+    border-radius: $pad/2;
+    border: 1px solid $blue;
+    font-size: .9rem;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $blue;
+    }
+  }
+
+  p:nth-child(2) {
+    font-size: .8rem;
+    color: $grey;
+  }
+
 }
