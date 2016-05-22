@@ -224,4 +224,71 @@ a {
   }
 }
 
+.home .comments {
+  h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: $blue;
+  }
+
+  ul {
+    margin-top: 2* $pad;
+  }
+
+  .dsq-widget-item {
+    position: relative;
+    margin-top: 4 * $pad;
+    margin-bottom: 0;
+    border-top: 1px solid $blue;
+  }
+
+  .dsq-widget-item > :first-child {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+  }
+
+  .dsq-widget-avatar {
+    border-radius: 50%;
+    float: none;
+    background-color: $white;
+    padding: $pad / 2;
+    border: 1px solid $blue;
+  }
+
+  .dsq-widget-user {
+    display: block;
+    text-decoration: none;
+    color: $light-blue;
+    font-size: .8rem;
+    margin-top: $pad;
+
+    &:after {
+      content: 'said';
+      margin-left: $pad/2;
+      color: $grey;
+    }
+  }
+
+  .dsq-widget-comment {
+    display: block;
+    margin-top: $pad;
+  }
+
+  .dsq-widget-meta {
+    margin-top: $pad;
+    font-size: .8rem;
+
+    a {
+      text-decoration: none;
+      color: $lighter-grey;
+
+      &:first-child {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
 @import "_responsive";
