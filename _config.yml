@@ -6,3 +6,6 @@ exclude: ["node_modules", "sandbox", "blog.iml", "Gem*", "Gruntfile.js", "packag
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
