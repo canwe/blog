@@ -1,4 +1,4 @@
-url: http://veerasundar.com/blog
+url: http://veerasundar.com
 markdown: kramdown
 permalink: /:year/:month/:title/
 baseurl: /blog
