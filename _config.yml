@@ -3,7 +3,7 @@ markdown: kramdown
 permalink: /:year/:month/:title/
 baseurl: /blog
 highlighter : rouge
-exclude: ["node_modules", "sandbox", "blog.iml", "Gem*", "Gruntfile.js", "package.json", "README.md"]
+exclude: ["node_modules", "sandbox", "blog.iml", "Gem*", "Gruntfile.js", "package.json", "README.md", "_dev", "*.log"]
 kramdown:
   input: GFM
   syntax_highlighter: rouge
