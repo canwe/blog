@@ -4,10 +4,11 @@
   "description": "A blog about web application development.",
   "main": "index.js",
   "scripts": {
-    "server" : "bundle exec jekyll server",
+    "server": "bundle exec jekyll server",
     "dev": "bundle exec jekyll server --watch --limit_posts=5",
-    "build" : "bundle exec jekyll build && grunt",
-    "sandbox" : "cd sandbox && npm run dev"
+    "build": "bundle exec jekyll build && grunt",
+    "sandbox": "cd sandbox && npm run dev",
+    "new-post": "node _dev/new-post"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-cssmin": "^0.10.0",
-    "grunt-contrib-htmlmin": "^0.5.0"
+    "grunt-contrib-htmlmin": "^0.5.0",
+    "prompt": "^1.0.0"
   }
 }
