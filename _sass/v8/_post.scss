@@ -60,7 +60,7 @@
       margin-top: $pad;
       margin-left: -(2 * $pad);
       margin-right: -(2 * $pad);
-      padding: 2 * $pad;
+      padding: $pad/2 2 * $pad;
 
       code {
         font: 1rem "Ubuntu Mono";
@@ -80,6 +80,10 @@
 
     iframe {
       margin-top: $pad;
+    }
+
+    em {
+      font-style: italic;
     }
   }
 
